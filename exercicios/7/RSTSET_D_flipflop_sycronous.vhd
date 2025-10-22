@@ -1,7 +1,6 @@
 --- EXERCISE 3. Provide a VHDL behavioral model of the D flip-flop shown on the right. The S and R inputs are synchronous preset and clear. Assume both the S and R inputs will never be asserted simultaneously
 ---
 
-
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
