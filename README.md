@@ -4,9 +4,9 @@ Laboratorio de Sistemas Digitais - ELT029 - UFMG 2025/2
 - DE10 - 10050DAF484C7G
 - Software Usado: QUARTUS PRIME
 ### Links:
-5.
+5. 
 6. https://edaplayground.com/x/wfqp
-7. https://edaplayground.com/x/uSwq
+7. https://edaplayground.com/x/b9Pv
 8. https://edaplayground.com/x/gQrd
 9. https://edaplayground.com/x/WrnP
 10. https://www.edaplayground.com/x/qXUz
