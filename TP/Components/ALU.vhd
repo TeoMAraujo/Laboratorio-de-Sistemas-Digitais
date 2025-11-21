@@ -5,7 +5,7 @@ use ieee.numeric_std
 entity ALU is
     generic(
     W : positive := 8 
-           )
+    );
 port(
     A, B   : in  std_logic_vector (W-1 downto 0);
     opcode : in  std_logic_vector (2 downto 0);

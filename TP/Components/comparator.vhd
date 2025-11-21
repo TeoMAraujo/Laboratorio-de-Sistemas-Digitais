@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 entity comparator is
     generic (
         W : positive := 1
-    )
+    );
     port( 
         A, B  : in std_logic_vector(W downto 0);
         equal : out std_logic

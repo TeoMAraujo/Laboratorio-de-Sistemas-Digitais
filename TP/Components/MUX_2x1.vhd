@@ -5,7 +5,7 @@ entity Mux_2x1 is
     port(  
         A, B : in std_logic;
         S    : in std_logic;
-        Y    : out std_logic;  
+        Y    : out std_logic  
     );
 end Mux_2x1;
 

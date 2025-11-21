@@ -5,7 +5,7 @@ entity d_flip_flop is
     port(  
         D     : in std_logic;
         CLK   : in std_logic;
-        Q, Qn : out std_logic;  
+        Q, Qn : out std_logic 
     );
 end d_flip_flop;
 
@@ -15,7 +15,7 @@ begin
     begin
         if rising_edge(CLK) then 
             Q <=D;
-            Qn <= not(Q);
+            Qn <= not(D);
         end if;
     end process ffd_process;
 
