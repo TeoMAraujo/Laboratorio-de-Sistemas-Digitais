@@ -1,7 +1,7 @@
 ## Disciplina:
 Laboratorio de Sistemas Digitais - ELT029 - UFMG 2025/2
 ### Placa:
-- DE10 - 10050DAF484C7G
+- DE10 - 10M50DAF484C7G
 - Software Usado: QUARTUS PRIME
 ### Links:
 5. [https://www.edaplayground.com/x/P2E_](https://www.edaplayground.com/x/P2E_)
