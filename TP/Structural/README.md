@@ -1,1 +1,1 @@
-<img width="1700" height="1100" alt="barramento drawio(2)" src="https://github.com/user-attachments/assets/efdae222-f801-4aa6-bc51-c07b870faf8a" />
+<img width="865" height="614" alt="barramento drawio(4)" src="https://github.com/user-attachments/assets/3b1a7d0a-c826-4ba0-a96f-9e94826d5589" />
