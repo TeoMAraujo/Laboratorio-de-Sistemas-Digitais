@@ -1,0 +1,9 @@
+|D_Flip_Flop
+D[0] => Q[0]~reg0.DATAIN
+D[0] => Qn[0]~reg0.DATAIN
+CLK => Qn[0]~reg0.CLK
+CLK => Q[0]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn[0] <= Qn[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

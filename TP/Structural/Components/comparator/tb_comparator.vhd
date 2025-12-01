@@ -1,4 +1,4 @@
- library ieee;
+library ieee;
 use ieee.std_logic_1164.all;
 
 entity tb_comparator is
@@ -6,25 +6,33 @@ end entity;
 
 architecture tb_arch of tb_comparator is
  
+    -- FIXED: Component must match the Design Entity exactly
     component Comparator
+        generic (
+            W : positive := 1
+        );
         port (
-            A    : in  std_logic_vector(3 downto 0);
-            B    : in  std_logic_vector(3 downto 0);
-            Igual: out std_logic
+            A     : in  std_logic_vector(W-1 downto 0);
+            B     : in  std_logic_vector(W-1 downto 0);
+            equal : out std_logic -- FIXED: Changed 'Igual' to 'equal'
         );
     end component;
    
-    signal s_A    : std_logic_vector(3 downto 0) := (others => '0');
-    signal s_B    : std_logic_vector(3 downto 0) := (others => '0');
-    signal s_Igual: std_logic;
+    signal s_A     : std_logic_vector(3 downto 0) := (others => '0');
+    signal s_B     : std_logic_vector(3 downto 0) := (others => '0');
+    signal s_Igual : std_logic;
 
 begin
     
-    DUT : Comparador
+    -- FIXED: Instantiation name changed to 'Comparator'
+    DUT : Comparator
+        generic map (
+            W => 4 -- FIXED: Sets design width to 4 bits
+        )
         port map (
             A     => s_A,
             B     => s_B,
-            Igual => s_Igual
+            equal => s_Igual -- FIXED: Maps 'equal' port to 's_Igual' signal
         );
 
     -- Processo de geração de estímulos

@@ -16,14 +16,14 @@ end ALU;
 architecture data_flow of ALU is 
 begin
     with opcode select 
-        Y <= B                                             when "000",
-             B                                             when "001",
-             NOT(A)                                        when "010", 
-             A AND B                                       when "011",
-             std_logic_vector(signed(A) + signed(B))       when "100", --implicitally would not work
-             std_logic_vector(signed(A) - signed(B))       when "101",
-             std_logic_vector(shift_left(unsigned(A), 1))  when "110", --sll wont work
-             std_logic_vector(shift_right(unsigned(A), 1)) when "111",
+        Y <= B                                           when "000",
+             B                                           when "001",
+             NOT(A)                                      when "010", 
+             A AND B                                     when "011",
+             std_logic_vector(signed(A) + signed(B))     when "100", --implicitally would not work
+             std_logic_vector(signed(A) - signed(B))     when "101",
+             std_logic_vector(shift_left(signed(A), 1))  when "110", --sll wont work
+             std_logic_vector(shift_right(signed(A), 1)) when "111",
              (others => '0') when others;
 end data_flow;
     

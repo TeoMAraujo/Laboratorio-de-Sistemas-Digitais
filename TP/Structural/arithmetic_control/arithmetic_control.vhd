@@ -15,7 +15,6 @@ entity arithmetic_control is
 end arithmetic_control;
 
 architecture structural of arithmetic_control is
--- wires    
     signal toALUB                 : std_logic_vector(7 downto 0);
     signal toMuxA                 : std_logic_vector(2 downto 0);
     signal toMuxB                 : std_logic_vector(7 downto 0);
@@ -26,10 +25,9 @@ architecture structural of arithmetic_control is
     signal toDemuxA               : std_logic_vector(7 downto 0);
     signal toDemuxSel_read_dff    : std_logic;
     signal toALUS_Comparator      : std_logic_vector(2 downto 0);
-
+	 signal demux_to_data_bus      : std_logic_vector(7 downto 0);
 begin
-    -- part where the inputs are stored, until the next clock
-    U_DFF1: entity work.d_flip_flop
+    U_DFF1: entity work.D_flip_flop
         generic map (W => 3)
         port map (
             D   => OPCODE,            
@@ -38,7 +36,7 @@ begin
             Qn  => open
         );
  
-    U_DFF2: entity work.d_flip_flop
+    U_DFF2: entity work.D_flip_flop
         generic map (W => 8)
         port map (
             D   => OPERAND1, 
@@ -47,7 +45,7 @@ begin
             Qn  => open
         );
 
-    U_DFF3: entity work.d_flip_flop
+    U_DFF3: entity work.D_flip_flop
         generic map (W => 3)
         port map (
             D   => OPERAND2, 
@@ -63,24 +61,26 @@ begin
             B     => "000",
             equal => toDemuxSel_Read_dff
         );
+		  
     U_DEMUX: entity work.Demux_1x2
         generic map (W => 8)
         port map (
             A  => toDemuxA, 
             S  => not(toDemuxSel_Read_dff),
-            Y0 => DATA,   
+            Y0 => demux_to_data_bus, --por conta impedancia
             Y1 => toMuxB
         );
-    
-    U_DFF4: entity work.d_flip_flop
+		  
+    DATA <= demux_to_data_bus when toDemuxSel_Read_dff = '0' else (others => 'Z');
+	 
+    U_DFF4: entity work.D_flip_flop
         generic map (W => 1)
         port map (
-            D   => toDemuxSel_Read_dff, 
+            D(0)   => toDemuxSel_Read_dff, 
             CLK => CLK,
-            Q   => toMuxS,              
+            Q(0)   => toMuxS,              
             Qn  => open
         );
-
 
     U_MUX: entity work.Mux_2x1
         generic map(W => 3)
@@ -91,7 +91,7 @@ begin
             Y => ADDR
         );
 
-    U_DFF5: entity work.d_flip_flop
+    U_DFF5: entity work.D_flip_flop
         generic map (W => 8)
         port map (
             D   => DATA,   
