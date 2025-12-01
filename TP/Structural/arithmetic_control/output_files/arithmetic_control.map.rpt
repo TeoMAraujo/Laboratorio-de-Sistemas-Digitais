@@ -1,5 +1,5 @@
 Analysis & Synthesis report for arithmetic_control
-Sun Nov 30 23:57:21 2025
+Mon Dec  1 12:57:09 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -24,17 +24,23 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
  16. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF4
  17. Parameter Settings for User Entity Instance: Mux_2x1:U_MUX
  18. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF5
- 19. Parameter Settings for User Entity Instance: ALU:U_ALU
- 20. Port Connectivity Checks: "D_flip_flop:U_DFF5"
- 21. Port Connectivity Checks: "D_flip_flop:U_DFF4"
- 22. Port Connectivity Checks: "Demux_1x2:U_DEMUX"
- 23. Port Connectivity Checks: "comparator:U_COMP"
- 24. Port Connectivity Checks: "D_flip_flop:U_DFF3"
- 25. Port Connectivity Checks: "D_flip_flop:U_DFF2"
- 26. Port Connectivity Checks: "D_flip_flop:U_DFF1"
- 27. Post-Synthesis Netlist Statistics for Top Partition
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
+ 19. Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU1
+ 20. Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU2
+ 21. Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU3
+ 22. Parameter Settings for User Entity Instance: ALU:U_ALU
+ 23. Port Connectivity Checks: "D_flip_flop:U_DFFALU3"
+ 24. Port Connectivity Checks: "D_flip_flop:U_DFFALU2"
+ 25. Port Connectivity Checks: "D_flip_flop:U_DFFALU1"
+ 26. Port Connectivity Checks: "D_flip_flop:U_DFF5"
+ 27. Port Connectivity Checks: "D_flip_flop:U_DFF4"
+ 28. Port Connectivity Checks: "Demux_1x2:U_DEMUX"
+ 29. Port Connectivity Checks: "comparator:U_COMP"
+ 30. Port Connectivity Checks: "D_flip_flop:U_DFF3"
+ 31. Port Connectivity Checks: "D_flip_flop:U_DFF2"
+ 32. Port Connectivity Checks: "D_flip_flop:U_DFF1"
+ 33. Post-Synthesis Netlist Statistics for Top Partition
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
 
 
 
@@ -61,15 +67,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 30 23:57:21 2025          ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec  1 12:57:09 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; arithmetic_control                             ;
 ; Top-level Entity Name              ; arithmetic_control                             ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 70                                             ;
+; Total logic elements               ; 79                                             ;
 ;     Total combinational functions  ; 53                                             ;
-;     Dedicated logic registers      ; 18                                             ;
-; Total registers                    ; 18                                             ;
+;     Dedicated logic registers      ; 27                                             ;
+; Total registers                    ; 27                                             ;
 ; Total pins                         ; 35                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
@@ -179,7 +185,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -197,53 +204,56 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                           ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 70                      ;
-;                                             ;                         ;
-; Total combinational functions               ; 53                      ;
-; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 31                      ;
-;     -- 3 input functions                    ; 12                      ;
-;     -- <=2 input functions                  ; 10                      ;
-;                                             ;                         ;
-; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 45                      ;
-;     -- arithmetic mode                      ; 8                       ;
-;                                             ;                         ;
-; Total registers                             ; 18                      ;
-;     -- Dedicated logic registers            ; 18                      ;
-;     -- I/O registers                        ; 0                       ;
-;                                             ;                         ;
-; I/O pins                                    ; 35                      ;
-;                                             ;                         ;
-; Embedded Multiplier 9-bit elements          ; 0                       ;
-;                                             ;                         ;
-; Maximum fan-out node                        ; D_flip_flop:U_DFF1|Q[2] ;
-; Maximum fan-out                             ; 25                      ;
-; Total fan-out                               ; 279                     ;
-; Average fan-out                             ; 1.87                    ;
-+---------------------------------------------+-------------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 79        ;
+;                                             ;           ;
+; Total combinational functions               ; 53        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 31        ;
+;     -- 3 input functions                    ; 12        ;
+;     -- <=2 input functions                  ; 10        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 45        ;
+;     -- arithmetic mode                      ; 8         ;
+;                                             ;           ;
+; Total registers                             ; 27        ;
+;     -- Dedicated logic registers            ; 27        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 35        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 27        ;
+; Total fan-out                               ; 297       ;
+; Average fan-out                             ; 1.88      ;
++---------------------------------------------+-----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                          ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                    ; Entity Name        ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------+--------------------+--------------+
-; |arithmetic_control        ; 53 (0)              ; 18 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 35   ; 0            ; 0          ; |arithmetic_control                    ; arithmetic_control ; work         ;
-;    |ALU:U_ALU|             ; 49 (49)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|ALU:U_ALU          ; ALU                ; work         ;
-;    |D_flip_flop:U_DFF1|    ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF1 ; D_flip_flop        ; work         ;
-;    |D_flip_flop:U_DFF2|    ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF2 ; D_flip_flop        ; work         ;
-;    |D_flip_flop:U_DFF3|    ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF3 ; D_flip_flop        ; work         ;
-;    |D_flip_flop:U_DFF4|    ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF4 ; D_flip_flop        ; work         ;
-;    |D_flip_flop:U_DFF5|    ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF5 ; D_flip_flop        ; work         ;
-;    |Mux_2x1:U_MUX|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|Mux_2x1:U_MUX      ; Mux_2x1            ; work         ;
-;    |comparator:U_COMP|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|comparator:U_COMP  ; comparator         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------+--------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                       ; Entity Name        ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------+--------------------+--------------+
+; |arithmetic_control        ; 53 (0)              ; 27 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 35   ; 0            ; 0          ; |arithmetic_control                       ; arithmetic_control ; work         ;
+;    |ALU:U_ALU|             ; 49 (49)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|ALU:U_ALU             ; ALU                ; work         ;
+;    |D_flip_flop:U_DFF1|    ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF1    ; D_flip_flop        ; work         ;
+;    |D_flip_flop:U_DFF2|    ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF2    ; D_flip_flop        ; work         ;
+;    |D_flip_flop:U_DFF3|    ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF3    ; D_flip_flop        ; work         ;
+;    |D_flip_flop:U_DFF4|    ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF4    ; D_flip_flop        ; work         ;
+;    |D_flip_flop:U_DFF5|    ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF5    ; D_flip_flop        ; work         ;
+;    |D_flip_flop:U_DFFALU1| ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFFALU1 ; D_flip_flop        ; work         ;
+;    |D_flip_flop:U_DFFALU2| ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFFALU2 ; D_flip_flop        ; work         ;
+;    |D_flip_flop:U_DFFALU3| ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFFALU3 ; D_flip_flop        ; work         ;
+;    |Mux_2x1:U_MUX|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|Mux_2x1:U_MUX         ; Mux_2x1            ; work         ;
+;    |comparator:U_COMP|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|comparator:U_COMP     ; comparator         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -262,7 +272,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 18    ;
+; Total registers                              ; 27    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -362,6 +372,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU1 ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; w              ; 3     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU2 ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; w              ; 3     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU3 ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; w              ; 3     ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: ALU:U_ALU ;
 +----------------+-------+-------------------------------+
@@ -370,6 +410,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; w              ; 8     ; Signed Integer                ;
 +----------------+-------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "D_flip_flop:U_DFFALU3"                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "D_flip_flop:U_DFFALU2"                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "D_flip_flop:U_DFFALU1"                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -441,8 +508,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 35                          ;
-; cycloneiii_ff         ; 18                          ;
-;     plain             ; 18                          ;
+; cycloneiii_ff         ; 27                          ;
+;     plain             ; 27                          ;
 ; cycloneiii_io_obuf    ; 8                           ;
 ; cycloneiii_lcell_comb ; 53                          ;
 ;     arith             ; 8                           ;
@@ -454,7 +521,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         4 data inputs ; 31                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.70                        ;
-; Average LUT depth     ; 2.86                        ;
+; Average LUT depth     ; 2.68                        ;
 +-----------------------+-----------------------------+
 
 
@@ -473,7 +540,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sun Nov 30 23:57:13 2025
+    Info: Processing started: Mon Dec  1 12:57:00 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arithmetic_control -c arithmetic_control
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -502,13 +569,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file tb_arit
     Info (12022): Found design unit 1: arithmetic_control_tb-sim File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/tb_arithmetic_control.vhd Line: 8
     Info (12023): Found entity 1: arithmetic_control_tb File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/tb_arithmetic_control.vhd Line: 5
 Info (12127): Elaborating entity "arithmetic_control" for the top level hierarchy
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 30
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 39
-Info (12128): Elaborating entity "comparator" for hierarchy "comparator:U_COMP" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 57
-Info (12128): Elaborating entity "Demux_1x2" for hierarchy "Demux_1x2:U_DEMUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 65
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF4" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 76
-Info (12128): Elaborating entity "Mux_2x1" for hierarchy "Mux_2x1:U_MUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 85
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U_ALU" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 104
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 39
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 48
+Info (12128): Elaborating entity "comparator" for hierarchy "comparator:U_COMP" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 66
+Info (12128): Elaborating entity "Demux_1x2" for hierarchy "Demux_1x2:U_DEMUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 74
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF4" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 86
+Info (12128): Elaborating entity "Mux_2x1" for hierarchy "Mux_2x1:U_MUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 96
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U_ALU" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 141
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -519,15 +586,15 @@ Warning (21074): Design contains 5 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "OPERAND1[5]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 7
     Warning (15610): No output dependent on input pin "OPERAND1[6]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 7
     Warning (15610): No output dependent on input pin "OPERAND1[7]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 7
-Info (21057): Implemented 106 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 115 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 12 output pins
     Info (21060): Implemented 8 bidirectional pins
-    Info (21061): Implemented 71 logic cells
+    Info (21061): Implemented 80 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 456 megabytes
-    Info: Processing ended: Sun Nov 30 23:57:21 2025
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 453 megabytes
+    Info: Processing ended: Mon Dec  1 12:57:09 2025
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:19
 
 

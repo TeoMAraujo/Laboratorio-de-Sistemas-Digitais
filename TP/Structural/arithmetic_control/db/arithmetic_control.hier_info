@@ -18,6 +18,9 @@ CLK => d_flip_flop:U_DFF2.CLK
 CLK => d_flip_flop:U_DFF3.CLK
 CLK => d_flip_flop:U_DFF4.CLK
 CLK => d_flip_flop:U_DFF5.CLK
+CLK => d_flip_flop:U_DFFALU1.CLK
+CLK => d_flip_flop:U_DFFALU2.CLK
+CLK => d_flip_flop:U_DFFALU3.CLK
 OUTP[0] <= alu:U_ALU.Y[0]
 OUTP[1] <= alu:U_ALU.Y[1]
 OUTP[2] <= alu:U_ALU.Y[2]
@@ -270,6 +273,69 @@ Qn[4] <= Qn[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Qn[5] <= Qn[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Qn[6] <= Qn[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Qn[7] <= Qn[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_control|D_flip_flop:U_DFFALU1
+D[0] => Q[0]~reg0.DATAIN
+D[0] => Qn[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[1] => Qn[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[2] => Qn[2]~reg0.DATAIN
+CLK => Qn[0]~reg0.CLK
+CLK => Qn[1]~reg0.CLK
+CLK => Qn[2]~reg0.CLK
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn[0] <= Qn[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn[1] <= Qn[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn[2] <= Qn[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_control|D_flip_flop:U_DFFALU2
+D[0] => Q[0]~reg0.DATAIN
+D[0] => Qn[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[1] => Qn[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[2] => Qn[2]~reg0.DATAIN
+CLK => Qn[0]~reg0.CLK
+CLK => Qn[1]~reg0.CLK
+CLK => Qn[2]~reg0.CLK
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn[0] <= Qn[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn[1] <= Qn[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn[2] <= Qn[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_control|D_flip_flop:U_DFFALU3
+D[0] => Q[0]~reg0.DATAIN
+D[0] => Qn[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[1] => Qn[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[2] => Qn[2]~reg0.DATAIN
+CLK => Qn[0]~reg0.CLK
+CLK => Qn[1]~reg0.CLK
+CLK => Qn[2]~reg0.CLK
+CLK => Q[0]~reg0.CLK
+CLK => Q[1]~reg0.CLK
+CLK => Q[2]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn[0] <= Qn[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn[1] <= Qn[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qn[2] <= Qn[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |arithmetic_control|ALU:U_ALU
