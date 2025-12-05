@@ -1,6 +1,6 @@
 Flow report for D_Flip_Flop
-Sun Nov 30 22:10:39 2025
-Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Thu Dec 04 18:08:38 2025
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2024  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,28 +38,28 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------------+
-; Flow Summary                                                                        ;
-+------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Sun Nov 30 22:10:39 2025          ;
-; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
-; Revision Name                      ; D_Flip_Flop                                    ;
-; Top-level Entity Name              ; D_flip_flop                                    ;
-; Family                             ; MAX 10                                         ;
-; Device                             ; 10M50DAF484C7G                                 ;
-; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 3 / 49,760 ( < 1 % )                           ;
-;     Total combinational functions  ; 2 / 49,760 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 2 / 49,760 ( < 1 % )                           ;
-; Total registers                    ; 2                                              ;
-; Total pins                         ; 4 / 360 ( 1 % )                                ;
-; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                          ;
-; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                                ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                  ;
-; UFM blocks                         ; 0 / 1 ( 0 % )                                  ;
-; ADC blocks                         ; 0 / 2 ( 0 % )                                  ;
-+------------------------------------+------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Thu Dec 04 18:08:38 2025       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; D_Flip_Flop                                 ;
+; Top-level Entity Name              ; D_flip_flop                                 ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M50DAF484C7G                              ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 2 / 49,760 ( < 1 % )                        ;
+;     Total combinational functions  ; 1 / 49,760 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 1 / 49,760 ( < 1 % )                        ;
+; Total registers                    ; 1                                           ;
+; Total pins                         ; 5 / 360 ( 1 % )                             ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/30/2025 22:10:07 ;
+; Start date & time ; 12/04/2025 18:08:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; D_Flip_Flop         ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 493634088142.176455140727336           ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 35490522554927.176487889001824         ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_D_flip_flop.vhd                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -86,7 +86,7 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_D_flip_flop.vhd                     ; --            ; --          ; eda_simulation                    ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; Questa Intel FPGA (VHDL)               ; <None>        ; --          ; --                                ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --                                ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_FILE                  ; tb_D_flip_flop.vhd                     ; --            ; --          ; tb_D_flip_flop.vhd                ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_D_flip_flop.vhd                     ; --            ; --          ; tb_D_flip_flop.vhd                ;
@@ -108,26 +108,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 447 MB              ; 00:00:17                           ;
-; Fitter               ; 00:00:12     ; 1.0                     ; 1364 MB             ; 00:00:14                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 373 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 584 MB              ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 579 MB              ; 00:00:00                           ;
-; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:39                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 647 MB              ; 00:00:26                           ;
+; Fitter               ; 00:00:08     ; 1.0                     ; 1183 MB             ; 00:00:10                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 551 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 650 MB              ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 499 MB              ; 00:00:00                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:41                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Flow OS Summary                                                                 ;
-+----------------------+------------------+---------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name ; OS Version ; Processor type ;
-+----------------------+------------------+---------+------------+----------------+
-; Analysis & Synthesis ; nixos            ; nixos   ; nixos      ; x86_64         ;
-; Fitter               ; nixos            ; nixos   ; nixos      ; x86_64         ;
-; Assembler            ; nixos            ; nixos   ; nixos      ; x86_64         ;
-; Timing Analyzer      ; nixos            ; nixos   ; nixos      ; x86_64         ;
-; EDA Netlist Writer   ; nixos            ; nixos   ; nixos      ; x86_64         ;
-+----------------------+------------------+---------+------------+----------------+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; EEUFMG-PC        ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter               ; EEUFMG-PC        ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler            ; EEUFMG-PC        ; Windows 7 ; 6.1        ; x86_64         ;
+; Timing Analyzer      ; EEUFMG-PC        ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer   ; EEUFMG-PC        ; Windows 7 ; 6.1        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
 
 
 ------------

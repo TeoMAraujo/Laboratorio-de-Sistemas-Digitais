@@ -18,6 +18,10 @@
 				{
 					"name" : "CLK",
 					"strict" : false
+				},
+				{
+					"name" : "RST",
+					"strict" : false
 				}
 			]
 		}

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for System
-Mon Dec  1 13:09:10 2025
+Fri Dec  5 00:28:44 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -15,42 +15,36 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |System|FSM:U_FSM|CS
   9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF1
- 14. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2
- 15. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3
- 16. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|comparator:U_COMP
- 17. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|Demux_1x2:U_DEMUX
- 18. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF4
- 19. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|Mux_2x1:U_MUX
- 20. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF5
- 21. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU1
- 22. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU2
- 23. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU3
- 24. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU
- 25. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P1
- 26. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P2
- 27. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P3
- 28. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P4
- 29. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P5
- 30. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P6
- 31. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P7
- 32. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU3"
- 33. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU2"
- 34. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU1"
- 35. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF5"
- 36. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF4"
- 37. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|Demux_1x2:U_DEMUX"
- 38. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|comparator:U_COMP"
- 39. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3"
- 40. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2"
- 41. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF1"
- 42. Port Connectivity Checks: "FSM:U_FSM"
- 43. Post-Synthesis Netlist Statistics for Top Partition
- 44. Elapsed Time Per Partition
- 45. Analysis & Synthesis Messages
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF1
+ 13. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2
+ 14. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3
+ 15. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|comparator:U_COMP
+ 16. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|Demux_1x2:U_DEMUX
+ 17. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|Mux_2x1:U_MUX
+ 18. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF5
+ 19. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU1
+ 20. Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU
+ 21. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P0
+ 22. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P1
+ 23. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P2
+ 24. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P3
+ 25. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P4
+ 26. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P5
+ 27. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P6
+ 28. Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P7
+ 29. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU1"
+ 30. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF5"
+ 31. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|Demux_1x2:U_DEMUX"
+ 32. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|comparator:U_COMP"
+ 33. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3"
+ 34. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2"
+ 35. Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF1"
+ 36. Port Connectivity Checks: "FSM:U_FSM"
+ 37. Post-Synthesis Netlist Statistics for Top Partition
+ 38. Elapsed Time Per Partition
+ 39. Analysis & Synthesis Messages
 
 
 
@@ -77,16 +71,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec  1 13:09:10 2025          ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec  5 00:28:44 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; System                                         ;
 ; Top-level Entity Name              ; System                                         ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 41                                             ;
-;     Total combinational functions  ; 32                                             ;
-;     Dedicated logic registers      ; 15                                             ;
-; Total registers                    ; 15                                             ;
-; Total pins                         ; 23                                             ;
+; Total logic elements               ; 214                                            ;
+;     Total combinational functions  ; 136                                            ;
+;     Dedicated logic registers      ; 91                                             ;
+; Total registers                    ; 91                                             ;
+; Total pins                         ; 24                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
 ; Embedded Multiplier 9-bit elements ; 0                                              ;
@@ -223,30 +217,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 41        ;
+; Estimated Total logic elements              ; 214       ;
 ;                                             ;           ;
-; Total combinational functions               ; 32        ;
+; Total combinational functions               ; 136       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 14        ;
-;     -- 3 input functions                    ; 11        ;
-;     -- <=2 input functions                  ; 7         ;
+;     -- 4 input functions                    ; 96        ;
+;     -- 3 input functions                    ; 24        ;
+;     -- <=2 input functions                  ; 16        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 24        ;
+;     -- normal mode                          ; 128       ;
 ;     -- arithmetic mode                      ; 8         ;
 ;                                             ;           ;
-; Total registers                             ; 15        ;
-;     -- Dedicated logic registers            ; 15        ;
+; Total registers                             ; 91        ;
+;     -- Dedicated logic registers            ; 91        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 23        ;
+; I/O pins                                    ; 24        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 15        ;
-; Total fan-out                               ; 163       ;
-; Average fan-out                             ; 1.75      ;
+; Maximum fan-out                             ; 91        ;
+; Total fan-out                               ; 790       ;
+; Average fan-out                             ; 2.87      ;
 +---------------------------------------------+-----------+
 
 
@@ -255,16 +249,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                             ; Entity Name        ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------+--------------------+--------------+
-; |System                          ; 32 (3)              ; 15 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 23   ; 0            ; 0          ; |System                                                         ; System             ; work         ;
-;    |CPU:U_CPU|                   ; 27 (0)              ; 13 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU                                               ; CPU                ; work         ;
-;       |arithmetic_control:U_AC|  ; 27 (0)              ; 13 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC                       ; arithmetic_control ; work         ;
-;          |ALU:U_ALU|             ; 26 (26)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU             ; ALU                ; work         ;
+; |System                          ; 136 (3)             ; 91 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 24   ; 0            ; 0          ; |System                                                         ; System             ; work         ;
+;    |CPU:U_CPU|                   ; 131 (0)             ; 89 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU                                               ; CPU                ; work         ;
+;       |arithmetic_control:U_AC|  ; 110 (56)            ; 25 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC                       ; arithmetic_control ; work         ;
+;          |ALU:U_ALU|             ; 49 (49)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU             ; ALU                ; work         ;
 ;          |D_flip_flop:U_DFF1|    ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF1    ; D_flip_flop        ; work         ;
-;          |D_flip_flop:U_DFF5|    ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF5    ; D_flip_flop        ; work         ;
+;          |D_flip_flop:U_DFF2|    ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2    ; D_flip_flop        ; work         ;
+;          |D_flip_flop:U_DFF3|    ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3    ; D_flip_flop        ; work         ;
+;          |D_flip_flop:U_DFF5|    ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF5    ; D_flip_flop        ; work         ;
 ;          |D_flip_flop:U_DFFALU1| ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU1 ; D_flip_flop        ; work         ;
-;          |D_flip_flop:U_DFFALU2| ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU2 ; D_flip_flop        ; work         ;
-;          |D_flip_flop:U_DFFALU3| ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU3 ; D_flip_flop        ; work         ;
+;          |Mux_2x1:U_MUX|         ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC|Mux_2x1:U_MUX         ; Mux_2x1            ; work         ;
 ;          |comparator:U_COMP|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|arithmetic_control:U_AC|comparator:U_COMP     ; comparator         ; work         ;
+;       |barramento:U_REG|         ; 21 (0)              ; 64 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|barramento:U_REG                              ; barramento         ; work         ;
+;          |reg_8bit:P0|           ; 3 (3)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|barramento:U_REG|reg_8bit:P0                  ; reg_8bit           ; work         ;
+;          |reg_8bit:P1|           ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|barramento:U_REG|reg_8bit:P1                  ; reg_8bit           ; work         ;
+;          |reg_8bit:P2|           ; 3 (3)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|barramento:U_REG|reg_8bit:P2                  ; reg_8bit           ; work         ;
+;          |reg_8bit:P3|           ; 3 (3)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|barramento:U_REG|reg_8bit:P3                  ; reg_8bit           ; work         ;
+;          |reg_8bit:P4|           ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|barramento:U_REG|reg_8bit:P4                  ; reg_8bit           ; work         ;
+;          |reg_8bit:P5|           ; 3 (3)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|barramento:U_REG|reg_8bit:P5                  ; reg_8bit           ; work         ;
+;          |reg_8bit:P6|           ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|barramento:U_REG|reg_8bit:P6                  ; reg_8bit           ; work         ;
+;          |reg_8bit:P7|           ; 3 (3)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|CPU:U_CPU|barramento:U_REG|reg_8bit:P7                  ; reg_8bit           ; work         ;
 ;    |FSM:U_FSM|                   ; 2 (2)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |System|FSM:U_FSM                                               ; FSM                ; work         ;
 +----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -282,94 +286,14 @@ Encoding Type:  One-Hot
 +--------------+--------------+----------+-----------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                   ;
-+--------------------------------------------------------------+-----------------------------------------------------------------------+
-; Register name                                                ; Reason for Removal                                                    ;
-+--------------------------------------------------------------+-----------------------------------------------------------------------+
-; FSM:U_FSM|CS.ALU_STATE                                       ; Lost fanout                                                           ;
-; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2|Q[3..7] ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P1|Q[0]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P2|Q[0]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P3|Q[0]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P4|Q[0]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P5|Q[0]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P6|Q[0]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P7|Q[0]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P1|Q[1]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P2|Q[1]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P3|Q[1]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P4|Q[1]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P5|Q[1]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P6|Q[1]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P7|Q[1]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P1|Q[2]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P2|Q[2]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P3|Q[2]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P4|Q[2]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P5|Q[2]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P6|Q[2]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P7|Q[2]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P1|Q[3]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P2|Q[3]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P3|Q[3]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P4|Q[3]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P5|Q[3]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P6|Q[3]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P7|Q[3]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P1|Q[4]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P2|Q[4]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P3|Q[4]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P4|Q[4]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P5|Q[4]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P6|Q[4]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P7|Q[4]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P1|Q[5]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P2|Q[5]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P3|Q[5]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P4|Q[5]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P5|Q[5]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P6|Q[5]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P7|Q[5]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P1|Q[6]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P2|Q[6]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P3|Q[6]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P4|Q[6]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P5|Q[6]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P6|Q[6]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P7|Q[6]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P1|Q[7]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P2|Q[7]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P3|Q[7]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P4|Q[7]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P5|Q[7]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P6|Q[7]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P7|Q[7]                  ; Lost fanout                                                           ;
-; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2|Q[2]    ; Lost fanout                                                           ;
-; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3|Q[2]    ; Lost fanout                                                           ;
-; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2|Q[1]    ; Lost fanout                                                           ;
-; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3|Q[1]    ; Lost fanout                                                           ;
-; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2|Q[0]    ; Lost fanout                                                           ;
-; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3|Q[0]    ; Lost fanout                                                           ;
-; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF4|Q[0]    ; Lost fanout                                                           ;
-; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF5|Q[1..7] ; Merged with CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF5|Q[0] ;
-; Total Number of Removed Registers = 76                       ;                                                                       ;
-+--------------------------------------------------------------+-----------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                   ;
-+---------------------------------------------+--------------------+------------------------------------------------------------+
-; Register name                               ; Reason for Removal ; Registers Removed due to This Register                     ;
-+---------------------------------------------+--------------------+------------------------------------------------------------+
-; CPU:U_CPU|barramento:U_REG|reg_8bit:P1|Q[0] ; Lost Fanouts       ; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2|Q[2], ;
-;                                             ;                    ; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3|Q[2], ;
-;                                             ;                    ; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2|Q[1], ;
-;                                             ;                    ; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3|Q[1], ;
-;                                             ;                    ; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2|Q[0], ;
-;                                             ;                    ; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3|Q[0], ;
-;                                             ;                    ; CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF4|Q[0]  ;
-+---------------------------------------------+--------------------+------------------------------------------------------------+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; FSM:U_FSM|CS.ALU_STATE                ; Lost fanout        ;
+; Total Number of Removed Registers = 1 ;                    ;
++---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -377,24 +301,23 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 15    ;
+; Total registers                              ; 91    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 25    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 64    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |System|CPU:U_CPU|arithmetic_control:U_AC|Mux_2x1:U_MUX|Selector2 ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |System|CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux6          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
+; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |System|CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux6 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -447,16 +370,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF4 ;
-+----------------+-------+--------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                     ;
-+----------------+-------+--------------------------------------------------------------------------+
-; w              ; 1     ; Signed Integer                                                           ;
-+----------------+-------+--------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +----------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|Mux_2x1:U_MUX ;
 +----------------+-------+---------------------------------------------------------------------+
@@ -487,26 +400,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU2 ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                        ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; w              ; 3     ; Signed Integer                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU3 ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                        ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; w              ; 3     ; Signed Integer                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU ;
 +----------------+-------+-----------------------------------------------------------------+
@@ -514,6 +407,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------------------------+
 ; w              ; 8     ; Signed Integer                                                  ;
 +----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CPU:U_CPU|barramento:U_REG|reg_8bit:P0 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; faddr          ; 000   ; Unsigned Binary                                            ;
++----------------+-------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -588,24 +491,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU3"                            ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU2"                            ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU1"                            ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
@@ -616,15 +501,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF5"                               ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF4"                               ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -691,21 +567,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 23                          ;
-; cycloneiii_ff         ; 15                          ;
-;     plain             ; 15                          ;
-; cycloneiii_lcell_comb ; 32                          ;
+; boundary_port         ; 24                          ;
+; cycloneiii_ff         ; 91                          ;
+;     CLR               ; 25                          ;
+;     ENA               ; 64                          ;
+;     plain             ; 2                           ;
+; cycloneiii_lcell_comb ; 136                         ;
 ;     arith             ; 8                           ;
 ;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 7                           ;
-;     normal            ; 24                          ;
+;     normal            ; 128                         ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 4                           ;
-;         4 data inputs ; 14                          ;
+;         2 data inputs ; 14                          ;
+;         3 data inputs ; 17                          ;
+;         4 data inputs ; 96                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.18                        ;
+; Max LUT depth         ; 8.70                        ;
+; Average LUT depth     ; 6.22                        ;
 +-----------------------+-----------------------------+
 
 
@@ -714,7 +592,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -724,7 +602,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Dec  1 13:09:01 2025
+    Info: Processing started: Fri Dec  5 00:28:28 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off System -c System
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -732,7 +610,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/p
     Info (12022): Found design unit 1: barramento-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 13
     Info (12023): Found entity 1: barramento File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd
-    Info (12022): Found design unit 1: CPU-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 14
+    Info (12022): Found design unit 1: CPU-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 15
     Info (12023): Found entity 1: CPU File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/FSM/FSM.vhd
     Info (12022): Found design unit 1: FSM-behavioral File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/FSM/FSM.vhd Line: 13
@@ -747,74 +625,64 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/p
     Info (12022): Found design unit 1: Demux_1x2-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd Line: 15
     Info (12023): Found entity 1: Demux_1x2 File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
-    Info (12022): Found design unit 1: D_flip_flop-behavourial File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 15
+    Info (12022): Found design unit 1: D_flip_flop-behavourial File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 14
     Info (12023): Found entity 1: D_flip_flop File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd
-    Info (12022): Found design unit 1: comparator-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd Line: 14
+    Info (12022): Found design unit 1: comparator-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd Line: 15
     Info (12023): Found entity 1: comparator File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd
     Info (12022): Found design unit 1: ALU-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd Line: 16
     Info (12023): Found entity 1: ALU File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd
-    Info (12022): Found design unit 1: arithmetic_control-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 17
+    Info (12022): Found design unit 1: arithmetic_control-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 18
     Info (12023): Found entity 1: arithmetic_control File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 4
-Info (12021): Found 0 design units, including 0 entities, in source file tb_System.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file tb_System.vhd
+    Info (12022): Found design unit 1: tb_System-behavior File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/tb_System.vhd Line: 9
+    Info (12023): Found entity 1: tb_System File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/tb_System.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file System.vhd
-    Info (12022): Found design unit 1: System-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 14
+    Info (12022): Found design unit 1: System-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 15
     Info (12023): Found entity 1: System File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 4
 Info (12127): Elaborating entity "System" for the top level hierarchy
-Info (12128): Elaborating entity "FSM" for hierarchy "FSM:U_FSM" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 21
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:U_FSM" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 22
 Warning (10541): VHDL Signal Declaration warning at FSM.vhd(9): used implicit default value for signal "outALU" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/FSM/FSM.vhd Line: 9
-Info (12128): Elaborating entity "CPU" for hierarchy "CPU:U_CPU" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 28
-Info (12128): Elaborating entity "arithmetic_control" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 19
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 38
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 47
-Info (12128): Elaborating entity "comparator" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|comparator:U_COMP" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 65
-Info (12128): Elaborating entity "Demux_1x2" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|Demux_1x2:U_DEMUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 73
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF4" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 85
-Info (12128): Elaborating entity "Mux_2x1" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|Mux_2x1:U_MUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 95
-Info (12128): Elaborating entity "ALU" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 140
-Info (12128): Elaborating entity "barramento" for hierarchy "CPU:U_CPU|barramento:U_REG" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 31
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 15
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 19
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P3" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 23
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P4" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 27
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P5" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 31
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P6" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 35
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P7" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 39
+Info (12128): Elaborating entity "CPU" for hierarchy "CPU:U_CPU" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 31
+Info (12128): Elaborating entity "arithmetic_control" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 20
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 36
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 40
+Info (12128): Elaborating entity "comparator" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|comparator:U_COMP" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 48
+Info (12128): Elaborating entity "Demux_1x2" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|Demux_1x2:U_DEMUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 55
+Info (12128): Elaborating entity "Mux_2x1" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|Mux_2x1:U_MUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 72
+Info (12128): Elaborating entity "ALU" for hierarchy "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 85
+Info (12128): Elaborating entity "barramento" for hierarchy "CPU:U_CPU|barramento:U_REG" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 33
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P0" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 15
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 19
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 23
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P3" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 27
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P4" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 31
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P5" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 35
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P6" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 39
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "CPU:U_CPU|barramento:U_REG|reg_8bit:P7" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 43
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[0]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Y" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 12
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[1]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Y" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 12
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[2]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux6" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 12
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[3]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Y" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 12
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[4]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux4" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 12
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[5]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Y" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 12
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[6]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux2" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 12
-    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[7]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux1" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 12
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[0]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Y" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[1]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Y" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[2]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux6" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[3]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Y" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[4]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux4" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[5]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Y" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[6]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux2" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "CPU:U_CPU|arithmetic_control:U_AC|DATA[7]" to the node "CPU:U_CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux1" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 69 registers lost all their fanouts during netlist optimizations.
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "OPERAND1[0]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 7
-    Warning (15610): No output dependent on input pin "OPERAND2[2]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 8
-    Warning (15610): No output dependent on input pin "OPERAND1[2]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 7
-    Warning (15610): No output dependent on input pin "OPERAND2[1]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 8
-    Warning (15610): No output dependent on input pin "OPERAND1[1]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 7
-    Warning (15610): No output dependent on input pin "OPERAND2[0]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 8
-    Warning (15610): No output dependent on input pin "OPERAND1[3]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 7
-    Warning (15610): No output dependent on input pin "OPERAND1[4]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 7
-    Warning (15610): No output dependent on input pin "OPERAND1[5]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 7
-    Warning (15610): No output dependent on input pin "OPERAND1[6]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 7
-    Warning (15610): No output dependent on input pin "OPERAND1[7]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/System/System.vhd Line: 7
-Info (21057): Implemented 65 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 15 input pins
+Info (21057): Implemented 246 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 42 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 460 megabytes
-    Info: Processing ended: Mon Dec  1 13:09:10 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:19
+    Info (21061): Implemented 222 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 459 megabytes
+    Info: Processing ended: Fri Dec  5 00:28:44 2025
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:29
 
 

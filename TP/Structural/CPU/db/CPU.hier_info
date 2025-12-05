@@ -15,6 +15,7 @@ OPERAND2[1] => arithmetic_control:U_AC.OPERAND2[1]
 OPERAND2[2] => arithmetic_control:U_AC.OPERAND2[2]
 CLK => arithmetic_control:U_AC.CLK
 CLK => barramento:U_REG.CLK
+RST => arithmetic_control:U_AC.RST
 OUTP[0] <= arithmetic_control:U_AC.OUTP[0]
 OUTP[1] <= arithmetic_control:U_AC.OUTP[1]
 OUTP[2] <= arithmetic_control:U_AC.OUTP[2]
@@ -43,11 +44,13 @@ OPERAND2[2] => d_flip_flop:U_DFF3.D[2]
 CLK => d_flip_flop:U_DFF1.CLK
 CLK => d_flip_flop:U_DFF2.CLK
 CLK => d_flip_flop:U_DFF3.CLK
-CLK => d_flip_flop:U_DFF4.CLK
 CLK => d_flip_flop:U_DFF5.CLK
 CLK => d_flip_flop:U_DFFALU1.CLK
-CLK => d_flip_flop:U_DFFALU2.CLK
-CLK => d_flip_flop:U_DFFALU3.CLK
+RST => d_flip_flop:U_DFF1.RST
+RST => d_flip_flop:U_DFF2.RST
+RST => d_flip_flop:U_DFF3.RST
+RST => d_flip_flop:U_DFF5.RST
+RST => d_flip_flop:U_DFFALU1.RST
 OUTP[0] <= alu:U_ALU.Y[0]
 OUTP[1] <= alu:U_ALU.Y[1]
 OUTP[2] <= alu:U_ALU.Y[2]
@@ -71,96 +74,82 @@ READW <= comparator:U_COMP.equal
 
 
 |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF1
-D[0] => Q[0]~reg0.DATAIN
-D[0] => Qn[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[1] => Qn[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[2] => Qn[2]~reg0.DATAIN
-CLK => Qn[0]~reg0.CLK
-CLK => Qn[1]~reg0.CLK
-CLK => Qn[2]~reg0.CLK
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[0] <= Qn[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[1] <= Qn[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[2] <= Qn[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => internal_Q[0].DATAIN
+D[1] => internal_Q[1].DATAIN
+D[2] => internal_Q[2].DATAIN
+CLK => internal_Q[0].CLK
+CLK => internal_Q[1].CLK
+CLK => internal_Q[2].CLK
+RST => internal_Q[0].ACLR
+RST => internal_Q[1].ACLR
+RST => internal_Q[2].ACLR
+Q[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Qn[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2
-D[0] => Q[0]~reg0.DATAIN
-D[0] => Qn[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[1] => Qn[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[2] => Qn[2]~reg0.DATAIN
-D[3] => Q[3]~reg0.DATAIN
-D[3] => Qn[3]~reg0.DATAIN
-D[4] => Q[4]~reg0.DATAIN
-D[4] => Qn[4]~reg0.DATAIN
-D[5] => Q[5]~reg0.DATAIN
-D[5] => Qn[5]~reg0.DATAIN
-D[6] => Q[6]~reg0.DATAIN
-D[6] => Qn[6]~reg0.DATAIN
-D[7] => Q[7]~reg0.DATAIN
-D[7] => Qn[7]~reg0.DATAIN
-CLK => Qn[0]~reg0.CLK
-CLK => Qn[1]~reg0.CLK
-CLK => Qn[2]~reg0.CLK
-CLK => Qn[3]~reg0.CLK
-CLK => Qn[4]~reg0.CLK
-CLK => Qn[5]~reg0.CLK
-CLK => Qn[6]~reg0.CLK
-CLK => Qn[7]~reg0.CLK
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-CLK => Q[3]~reg0.CLK
-CLK => Q[4]~reg0.CLK
-CLK => Q[5]~reg0.CLK
-CLK => Q[6]~reg0.CLK
-CLK => Q[7]~reg0.CLK
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[0] <= Qn[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[1] <= Qn[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[2] <= Qn[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[3] <= Qn[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[4] <= Qn[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[5] <= Qn[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[6] <= Qn[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[7] <= Qn[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => internal_Q[0].DATAIN
+D[1] => internal_Q[1].DATAIN
+D[2] => internal_Q[2].DATAIN
+D[3] => internal_Q[3].DATAIN
+D[4] => internal_Q[4].DATAIN
+D[5] => internal_Q[5].DATAIN
+D[6] => internal_Q[6].DATAIN
+D[7] => internal_Q[7].DATAIN
+CLK => internal_Q[0].CLK
+CLK => internal_Q[1].CLK
+CLK => internal_Q[2].CLK
+CLK => internal_Q[3].CLK
+CLK => internal_Q[4].CLK
+CLK => internal_Q[5].CLK
+CLK => internal_Q[6].CLK
+CLK => internal_Q[7].CLK
+RST => internal_Q[0].ACLR
+RST => internal_Q[1].ACLR
+RST => internal_Q[2].ACLR
+RST => internal_Q[3].ACLR
+RST => internal_Q[4].ACLR
+RST => internal_Q[5].ACLR
+RST => internal_Q[6].ACLR
+RST => internal_Q[7].ACLR
+Q[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= internal_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
+Qn[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Qn[3] <= internal_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+Qn[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+Qn[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+Qn[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+Qn[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3
-D[0] => Q[0]~reg0.DATAIN
-D[0] => Qn[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[1] => Qn[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[2] => Qn[2]~reg0.DATAIN
-CLK => Qn[0]~reg0.CLK
-CLK => Qn[1]~reg0.CLK
-CLK => Qn[2]~reg0.CLK
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[0] <= Qn[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[1] <= Qn[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[2] <= Qn[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => internal_Q[0].DATAIN
+D[1] => internal_Q[1].DATAIN
+D[2] => internal_Q[2].DATAIN
+CLK => internal_Q[0].CLK
+CLK => internal_Q[1].CLK
+CLK => internal_Q[2].CLK
+RST => internal_Q[0].ACLR
+RST => internal_Q[1].ACLR
+RST => internal_Q[2].ACLR
+Q[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Qn[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|arithmetic_control:U_AC|comparator:U_COMP
@@ -224,15 +213,6 @@ Y1[6] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
 Y1[7] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF4
-D[0] => Q[0]~reg0.DATAIN
-D[0] => Qn[0]~reg0.DATAIN
-CLK => Qn[0]~reg0.CLK
-CLK => Q[0]~reg0.CLK
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[0] <= Qn[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |CPU|arithmetic_control:U_AC|Mux_2x1:U_MUX
 A[0] => Selector2.IN3
 A[1] => Selector1.IN3
@@ -252,117 +232,64 @@ Y[2] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF5
-D[0] => Q[0]~reg0.DATAIN
-D[0] => Qn[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[1] => Qn[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[2] => Qn[2]~reg0.DATAIN
-D[3] => Q[3]~reg0.DATAIN
-D[3] => Qn[3]~reg0.DATAIN
-D[4] => Q[4]~reg0.DATAIN
-D[4] => Qn[4]~reg0.DATAIN
-D[5] => Q[5]~reg0.DATAIN
-D[5] => Qn[5]~reg0.DATAIN
-D[6] => Q[6]~reg0.DATAIN
-D[6] => Qn[6]~reg0.DATAIN
-D[7] => Q[7]~reg0.DATAIN
-D[7] => Qn[7]~reg0.DATAIN
-CLK => Qn[0]~reg0.CLK
-CLK => Qn[1]~reg0.CLK
-CLK => Qn[2]~reg0.CLK
-CLK => Qn[3]~reg0.CLK
-CLK => Qn[4]~reg0.CLK
-CLK => Qn[5]~reg0.CLK
-CLK => Qn[6]~reg0.CLK
-CLK => Qn[7]~reg0.CLK
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-CLK => Q[3]~reg0.CLK
-CLK => Q[4]~reg0.CLK
-CLK => Q[5]~reg0.CLK
-CLK => Q[6]~reg0.CLK
-CLK => Q[7]~reg0.CLK
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[0] <= Qn[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[1] <= Qn[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[2] <= Qn[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[3] <= Qn[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[4] <= Qn[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[5] <= Qn[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[6] <= Qn[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[7] <= Qn[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => internal_Q[0].DATAIN
+D[1] => internal_Q[1].DATAIN
+D[2] => internal_Q[2].DATAIN
+D[3] => internal_Q[3].DATAIN
+D[4] => internal_Q[4].DATAIN
+D[5] => internal_Q[5].DATAIN
+D[6] => internal_Q[6].DATAIN
+D[7] => internal_Q[7].DATAIN
+CLK => internal_Q[0].CLK
+CLK => internal_Q[1].CLK
+CLK => internal_Q[2].CLK
+CLK => internal_Q[3].CLK
+CLK => internal_Q[4].CLK
+CLK => internal_Q[5].CLK
+CLK => internal_Q[6].CLK
+CLK => internal_Q[7].CLK
+RST => internal_Q[0].ACLR
+RST => internal_Q[1].ACLR
+RST => internal_Q[2].ACLR
+RST => internal_Q[3].ACLR
+RST => internal_Q[4].ACLR
+RST => internal_Q[5].ACLR
+RST => internal_Q[6].ACLR
+RST => internal_Q[7].ACLR
+Q[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= internal_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
+Qn[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Qn[3] <= internal_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+Qn[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+Qn[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+Qn[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+Qn[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU1
-D[0] => Q[0]~reg0.DATAIN
-D[0] => Qn[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[1] => Qn[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[2] => Qn[2]~reg0.DATAIN
-CLK => Qn[0]~reg0.CLK
-CLK => Qn[1]~reg0.CLK
-CLK => Qn[2]~reg0.CLK
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[0] <= Qn[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[1] <= Qn[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[2] <= Qn[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU2
-D[0] => Q[0]~reg0.DATAIN
-D[0] => Qn[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[1] => Qn[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[2] => Qn[2]~reg0.DATAIN
-CLK => Qn[0]~reg0.CLK
-CLK => Qn[1]~reg0.CLK
-CLK => Qn[2]~reg0.CLK
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[0] <= Qn[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[1] <= Qn[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[2] <= Qn[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU3
-D[0] => Q[0]~reg0.DATAIN
-D[0] => Qn[0]~reg0.DATAIN
-D[1] => Q[1]~reg0.DATAIN
-D[1] => Qn[1]~reg0.DATAIN
-D[2] => Q[2]~reg0.DATAIN
-D[2] => Qn[2]~reg0.DATAIN
-CLK => Qn[0]~reg0.CLK
-CLK => Qn[1]~reg0.CLK
-CLK => Qn[2]~reg0.CLK
-CLK => Q[0]~reg0.CLK
-CLK => Q[1]~reg0.CLK
-CLK => Q[2]~reg0.CLK
-Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[0] <= Qn[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[1] <= Qn[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Qn[2] <= Qn[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[0] => internal_Q[0].DATAIN
+D[1] => internal_Q[1].DATAIN
+D[2] => internal_Q[2].DATAIN
+CLK => internal_Q[0].CLK
+CLK => internal_Q[1].CLK
+CLK => internal_Q[2].CLK
+RST => internal_Q[0].ACLR
+RST => internal_Q[1].ACLR
+RST => internal_Q[2].ACLR
+Q[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Qn[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|arithmetic_control:U_AC|ALU:U_ALU
@@ -488,6 +415,7 @@ Y[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|barramento:U_REG
+CLK => reg_8bit:P0.CLK
 CLK => reg_8bit:P1.CLK
 CLK => reg_8bit:P2.CLK
 CLK => reg_8bit:P3.CLK
@@ -495,6 +423,7 @@ CLK => reg_8bit:P4.CLK
 CLK => reg_8bit:P5.CLK
 CLK => reg_8bit:P6.CLK
 CLK => reg_8bit:P7.CLK
+addr[0] => reg_8bit:P0.addr[0]
 addr[0] => reg_8bit:P1.addr[0]
 addr[0] => reg_8bit:P2.addr[0]
 addr[0] => reg_8bit:P3.addr[0]
@@ -502,6 +431,7 @@ addr[0] => reg_8bit:P4.addr[0]
 addr[0] => reg_8bit:P5.addr[0]
 addr[0] => reg_8bit:P6.addr[0]
 addr[0] => reg_8bit:P7.addr[0]
+addr[1] => reg_8bit:P0.addr[1]
 addr[1] => reg_8bit:P1.addr[1]
 addr[1] => reg_8bit:P2.addr[1]
 addr[1] => reg_8bit:P3.addr[1]
@@ -509,6 +439,7 @@ addr[1] => reg_8bit:P4.addr[1]
 addr[1] => reg_8bit:P5.addr[1]
 addr[1] => reg_8bit:P6.addr[1]
 addr[1] => reg_8bit:P7.addr[1]
+addr[2] => reg_8bit:P0.addr[2]
 addr[2] => reg_8bit:P1.addr[2]
 addr[2] => reg_8bit:P2.addr[2]
 addr[2] => reg_8bit:P3.addr[2]
@@ -516,6 +447,7 @@ addr[2] => reg_8bit:P4.addr[2]
 addr[2] => reg_8bit:P5.addr[2]
 addr[2] => reg_8bit:P6.addr[2]
 addr[2] => reg_8bit:P7.addr[2]
+data[0] <> reg_8bit:P0.data[0]
 data[0] <> reg_8bit:P1.data[0]
 data[0] <> reg_8bit:P2.data[0]
 data[0] <> reg_8bit:P3.data[0]
@@ -523,6 +455,7 @@ data[0] <> reg_8bit:P4.data[0]
 data[0] <> reg_8bit:P5.data[0]
 data[0] <> reg_8bit:P6.data[0]
 data[0] <> reg_8bit:P7.data[0]
+data[1] <> reg_8bit:P0.data[1]
 data[1] <> reg_8bit:P1.data[1]
 data[1] <> reg_8bit:P2.data[1]
 data[1] <> reg_8bit:P3.data[1]
@@ -530,6 +463,7 @@ data[1] <> reg_8bit:P4.data[1]
 data[1] <> reg_8bit:P5.data[1]
 data[1] <> reg_8bit:P6.data[1]
 data[1] <> reg_8bit:P7.data[1]
+data[2] <> reg_8bit:P0.data[2]
 data[2] <> reg_8bit:P1.data[2]
 data[2] <> reg_8bit:P2.data[2]
 data[2] <> reg_8bit:P3.data[2]
@@ -537,6 +471,7 @@ data[2] <> reg_8bit:P4.data[2]
 data[2] <> reg_8bit:P5.data[2]
 data[2] <> reg_8bit:P6.data[2]
 data[2] <> reg_8bit:P7.data[2]
+data[3] <> reg_8bit:P0.data[3]
 data[3] <> reg_8bit:P1.data[3]
 data[3] <> reg_8bit:P2.data[3]
 data[3] <> reg_8bit:P3.data[3]
@@ -544,6 +479,7 @@ data[3] <> reg_8bit:P4.data[3]
 data[3] <> reg_8bit:P5.data[3]
 data[3] <> reg_8bit:P6.data[3]
 data[3] <> reg_8bit:P7.data[3]
+data[4] <> reg_8bit:P0.data[4]
 data[4] <> reg_8bit:P1.data[4]
 data[4] <> reg_8bit:P2.data[4]
 data[4] <> reg_8bit:P3.data[4]
@@ -551,6 +487,7 @@ data[4] <> reg_8bit:P4.data[4]
 data[4] <> reg_8bit:P5.data[4]
 data[4] <> reg_8bit:P6.data[4]
 data[4] <> reg_8bit:P7.data[4]
+data[5] <> reg_8bit:P0.data[5]
 data[5] <> reg_8bit:P1.data[5]
 data[5] <> reg_8bit:P2.data[5]
 data[5] <> reg_8bit:P3.data[5]
@@ -558,6 +495,7 @@ data[5] <> reg_8bit:P4.data[5]
 data[5] <> reg_8bit:P5.data[5]
 data[5] <> reg_8bit:P6.data[5]
 data[5] <> reg_8bit:P7.data[5]
+data[6] <> reg_8bit:P0.data[6]
 data[6] <> reg_8bit:P1.data[6]
 data[6] <> reg_8bit:P2.data[6]
 data[6] <> reg_8bit:P3.data[6]
@@ -565,6 +503,7 @@ data[6] <> reg_8bit:P4.data[6]
 data[6] <> reg_8bit:P5.data[6]
 data[6] <> reg_8bit:P6.data[6]
 data[6] <> reg_8bit:P7.data[6]
+data[7] <> reg_8bit:P0.data[7]
 data[7] <> reg_8bit:P1.data[7]
 data[7] <> reg_8bit:P2.data[7]
 data[7] <> reg_8bit:P3.data[7]
@@ -572,6 +511,7 @@ data[7] <> reg_8bit:P4.data[7]
 data[7] <> reg_8bit:P5.data[7]
 data[7] <> reg_8bit:P6.data[7]
 data[7] <> reg_8bit:P7.data[7]
+readw => reg_8bit:P0.readw
 readw => reg_8bit:P1.readw
 readw => reg_8bit:P2.readw
 readw => reg_8bit:P3.readw
@@ -579,6 +519,30 @@ readw => reg_8bit:P4.readw
 readw => reg_8bit:P5.readw
 readw => reg_8bit:P6.readw
 readw => reg_8bit:P7.readw
+
+
+|CPU|barramento:U_REG|reg_8bit:P0
+CLK => Q[0].CLK
+CLK => Q[1].CLK
+CLK => Q[2].CLK
+CLK => Q[3].CLK
+CLK => Q[4].CLK
+CLK => Q[5].CLK
+CLK => Q[6].CLK
+CLK => Q[7].CLK
+addr[0] => Equal0.IN2
+addr[1] => Equal0.IN1
+addr[2] => Equal0.IN0
+data[0] <> data[0]
+data[1] <> data[1]
+data[2] <> data[2]
+data[3] <> data[3]
+data[4] <> data[4]
+data[5] <> data[5]
+data[6] <> data[6]
+data[7] <> data[7]
+readw => process_0.IN1
+readw => data.IN1
 
 
 |CPU|barramento:U_REG|reg_8bit:P1

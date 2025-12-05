@@ -7,6 +7,7 @@ port (
         OPERAND1           : in    std_logic_vector(7 downto 0);
         OPERAND2           : in    std_logic_vector(2 downto 0);
         CLK                : in    std_logic;
+        RST                : in    std_logic; 
         OUTP               : out   std_logic_vector(7 downto 0)
     );
 end CPU;
@@ -21,7 +22,8 @@ begin
             OPCODE   => OPCODE,
             OPERAND1 => OPERAND1,        
             OPERAND2 => OPERAND2,      
-            CLK      => CLK,    
+            CLK      => CLK, 
+            RST      => RST,    
             OUTP     => OUTP,  
             ADDR     => toADDR,
             DATA     => toDATA,
@@ -36,5 +38,3 @@ begin
             readw => toREADW
         );
 end structural;
-
-

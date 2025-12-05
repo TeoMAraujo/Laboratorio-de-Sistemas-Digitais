@@ -1,0 +1,452 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Aluno/Downloads/TP/System/simulation/modelsim
+Ealu
+Z1 w1764623360
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 6
+R0
+Z5 8C:/Users/Aluno/Downloads/TP/Structural/Components/ALU/ALU.vhd
+Z6 FC:/Users/Aluno/Downloads/TP/Structural/Components/ALU/ALU.vhd
+l0
+L5 1
+VXAR=FC61WB=jEhN5PQeUQ1
+!s100 <j6<0^Wd?:5B_?=JVkHo33
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1764805891
+!i10b 1
+Z9 !s108 1764805891.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Aluno/Downloads/TP/Structural/Components/ALU/ALU.vhd|
+Z11 !s107 C:/Users/Aluno/Downloads/TP/Structural/Components/ALU/ALU.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Adata_flow
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 XAR=FC61WB=jEhN5PQeUQ1
+!i122 6
+l17
+L16 13
+V9hlCkYaX1gTM6lY=Ce?5d2
+!s100 QE6PiEYMBo724mOWObZ]M0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Earithmetic_control
+R1
+R3
+R4
+!i122 3
+R0
+8C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd
+FC:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd
+l0
+L4 1
+Vj;>DA:6FD4Y@ah_U=S`:R3
+!s100 NYE^]>676?EP69OZCG8fa0
+R7
+32
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd|
+!s107 C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd|
+!i113 1
+R12
+R13
+Ebarramento
+R1
+R3
+R4
+!i122 2
+R0
+8C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd
+FC:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd
+l0
+L4 1
+VDATo4XJCabncnOLXjfPE70
+!s100 hi5]4F`64DiZfZd82a4US1
+R7
+32
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd|
+!s107 C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd|
+!i113 1
+R12
+R13
+Ecomparator
+R1
+R3
+R4
+!i122 7
+R0
+Z14 8C:/Users/Aluno/Downloads/TP/Structural/Components/comparator/comparator.vhd
+Z15 FC:/Users/Aluno/Downloads/TP/Structural/Components/comparator/comparator.vhd
+l0
+L4 1
+V?@h<Ym[VV`VRPM?c2i=[R0
+!s100 >XdRS`6zOD?YQ[R15oa`?2
+R7
+32
+Z16 !s110 1764805892
+!i10b 1
+Z17 !s108 1764805892.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Aluno/Downloads/TP/Structural/Components/comparator/comparator.vhd|
+Z19 !s107 C:/Users/Aluno/Downloads/TP/Structural/Components/comparator/comparator.vhd|
+!i113 1
+R12
+R13
+Adata_flow
+R3
+R4
+DEx4 work 10 comparator 0 22 ?@h<Ym[VV`VRPM?c2i=[R0
+!i122 7
+l15
+L14 4
+V]9:]nC;D=?o1j<UkL^a4V3
+!s100 g0lk^aG3[<nVXN5z`N4iZ1
+R7
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Ecpu
+R1
+R3
+R4
+!i122 4
+R0
+Z20 8C:/Users/Aluno/Downloads/TP/Structural/CPU/CPU.vhd
+Z21 FC:/Users/Aluno/Downloads/TP/Structural/CPU/CPU.vhd
+l0
+L4 1
+VRD5>3Q7h=G5JLON<BJInW1
+!s100 0l=]EleBOK@0zgZcW8?QT0
+R7
+32
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Aluno/Downloads/TP/Structural/CPU/CPU.vhd|
+Z23 !s107 C:/Users/Aluno/Downloads/TP/Structural/CPU/CPU.vhd|
+!i113 1
+R12
+R13
+Astructural
+DEx4 work 10 barramento 0 22 DATo4XJCabncnOLXjfPE70
+DEx4 work 18 arithmetic_control 0 22 j;>DA:6FD4Y@ah_U=S`:R3
+R3
+R4
+DEx4 work 3 cpu 0 22 RD5>3Q7h=G5JLON<BJInW1
+!i122 4
+l18
+L14 25
+VWdi57<Lj[nm96C33d6ESL0
+!s100 WF_MSIK^]7OLz?D]N8AME0
+R7
+32
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Ed_flip_flop
+R1
+R3
+R4
+!i122 8
+R0
+Z24 8C:/Users/Aluno/Downloads/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
+Z25 FC:/Users/Aluno/Downloads/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
+l0
+L4 1
+V@6EKhYZHZ[X;3=0POj^;E2
+!s100 EeB;ljndF=9HIW^SHoJ@?1
+R7
+32
+R16
+!i10b 1
+R17
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Aluno/Downloads/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd|
+Z27 !s107 C:/Users/Aluno/Downloads/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd|
+!i113 1
+R12
+R13
+Abehavourial
+R3
+R4
+DEx4 work 11 d_flip_flop 0 22 @6EKhYZHZ[X;3=0POj^;E2
+!i122 8
+l16
+L15 11
+VX_4YW8cc85LnIiN3:d6TL1
+!s100 @:c@ZU@5@cfJfn3dXIAo81
+R7
+32
+R16
+!i10b 1
+R17
+R26
+R27
+!i113 1
+R12
+R13
+Edemux_1x2
+R1
+R3
+R4
+!i122 9
+R0
+Z28 8C:/Users/Aluno/Downloads/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd
+Z29 FC:/Users/Aluno/Downloads/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd
+l0
+L4 1
+VgXozjznd@^2EMjHQdPfX52
+!s100 lWCb2ReKeWAOo>BFVi_DE1
+R7
+32
+R16
+!i10b 1
+R17
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Aluno/Downloads/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd|
+Z31 !s107 C:/Users/Aluno/Downloads/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd|
+!i113 1
+R12
+R13
+Adata_flow
+R3
+R4
+DEx4 work 9 demux_1x2 0 22 gXozjznd@^2EMjHQdPfX52
+!i122 9
+l16
+L15 5
+V1:<hiWlSP0=JNk7am6:T[0
+!s100 XWgn=XN4DogAJZ39kQ1L52
+R7
+32
+R16
+!i10b 1
+R17
+R30
+R31
+!i113 1
+R12
+R13
+Efsm
+R1
+R3
+R4
+!i122 5
+R0
+Z32 8C:/Users/Aluno/Downloads/TP/Structural/FSM/FSM.vhd
+Z33 FC:/Users/Aluno/Downloads/TP/Structural/FSM/FSM.vhd
+l0
+L4 1
+VTe0h3@VWdkRV2eboNa7Ln3
+!s100 Hh54E2T?dVMlQK7?_Yf720
+R7
+32
+R8
+!i10b 1
+R9
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Aluno/Downloads/TP/Structural/FSM/FSM.vhd|
+Z35 !s107 C:/Users/Aluno/Downloads/TP/Structural/FSM/FSM.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 3 fsm 0 22 Te0h3@VWdkRV2eboNa7Ln3
+!i122 5
+l17
+L13 41
+V`91j@DakYd4lPdzZf7Hf<0
+!s100 c<3m>QM]9>KW2fbfkIQ<k0
+R7
+32
+R8
+!i10b 1
+R9
+R34
+R35
+!i113 1
+R12
+R13
+Emux_2x1
+R1
+R3
+R4
+!i122 10
+R0
+Z36 8C:/Users/Aluno/Downloads/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd
+Z37 FC:/Users/Aluno/Downloads/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd
+l0
+L4 1
+V9B;Q`Pih5]JY249@`V5?<2
+!s100 lK]=6SaBTR5VbWGcbdSBH1
+R7
+32
+R16
+!i10b 1
+R17
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Aluno/Downloads/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd|
+Z39 !s107 C:/Users/Aluno/Downloads/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd|
+!i113 1
+R12
+R13
+Adata_flow
+R3
+R4
+DEx4 work 7 mux_2x1 0 22 9B;Q`Pih5]JY249@`V5?<2
+!i122 10
+l16
+L15 7
+V:kJ`98=eAV7A`6k>925zO0
+!s100 U8g_V<HE1]d^j>;Yc]RHK0
+R7
+32
+R16
+!i10b 1
+R17
+R38
+R39
+!i113 1
+R12
+R13
+Ereg_8bit
+R1
+R3
+R4
+!i122 11
+R0
+Z40 8C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd
+Z41 FC:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd
+l0
+L4 1
+VJF[DghcQGlCm0R`PPkimL0
+!s100 `77>CICa?gBU6bPMdk8LV1
+R7
+32
+R16
+!i10b 1
+R17
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd|
+!s107 C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd|
+!i113 1
+R12
+R13
+Astructural
+R3
+R4
+DEx4 work 8 reg_8bit 0 22 JF[DghcQGlCm0R`PPkimL0
+!i122 11
+l20
+L16 22
+V9Lha36DFf^B;G1==RQEg30
+!s100 aGdod39J_jS@0AZ<]MUQl0
+R7
+32
+R16
+!i10b 1
+R17
+R42
+Z43 !s107 C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd|
+!i113 1
+R12
+R13
+Esystem
+R1
+R3
+R4
+!i122 1
+R0
+8C:/Users/Aluno/Downloads/TP/System/System.vhd
+FC:/Users/Aluno/Downloads/TP/System/System.vhd
+l0
+L4 1
+Vn:YLeD2]9663N`XJC?]UR2
+!s100 Z[K]^@P^UD[ogWk2EU5n>0
+R7
+32
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Aluno/Downloads/TP/System/System.vhd|
+!s107 C:/Users/Aluno/Downloads/TP/System/System.vhd|
+!i113 1
+R12
+R13
+Etb_system
+R1
+R2
+R3
+R4
+!i122 0
+R0
+Z44 8C:/Users/Aluno/Downloads/TP/System/tb_System.vhd
+Z45 FC:/Users/Aluno/Downloads/TP/System/tb_System.vhd
+l0
+L5 1
+VQDP<D`6WQ_9aKWG;fLD]z1
+!s100 [[ZJIc?J?d[hOPo8]BRmA0
+R7
+32
+R8
+!i10b 1
+R9
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Aluno/Downloads/TP/System/tb_System.vhd|
+Z47 !s107 C:/Users/Aluno/Downloads/TP/System/tb_System.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R2
+R3
+R4
+DEx4 work 9 tb_system 0 22 QDP<D`6WQ_9aKWG;fLD]z1
+!i122 0
+l34
+L9 134
+VF]9_VnT48AMPmlVkG8bO40
+!s100 lJX[H_d]PTgS7E6f1NIH?1
+R7
+32
+R8
+!i10b 1
+R9
+R46
+R47
+!i113 1
+R12
+R13

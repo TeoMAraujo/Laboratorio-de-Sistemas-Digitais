@@ -1,6 +1,6 @@
 Analysis & Synthesis report for arithmetic_control
-Mon Dec  1 12:57:09 2025
-Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Thu Dec 04 19:14:28 2025
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -13,41 +13,34 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF1
- 12. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF2
- 13. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF3
- 14. Parameter Settings for User Entity Instance: comparator:U_COMP
- 15. Parameter Settings for User Entity Instance: Demux_1x2:U_DEMUX
- 16. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF4
- 17. Parameter Settings for User Entity Instance: Mux_2x1:U_MUX
- 18. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF5
- 19. Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU1
- 20. Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU2
- 21. Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU3
- 22. Parameter Settings for User Entity Instance: ALU:U_ALU
- 23. Port Connectivity Checks: "D_flip_flop:U_DFFALU3"
- 24. Port Connectivity Checks: "D_flip_flop:U_DFFALU2"
- 25. Port Connectivity Checks: "D_flip_flop:U_DFFALU1"
- 26. Port Connectivity Checks: "D_flip_flop:U_DFF5"
- 27. Port Connectivity Checks: "D_flip_flop:U_DFF4"
- 28. Port Connectivity Checks: "Demux_1x2:U_DEMUX"
- 29. Port Connectivity Checks: "comparator:U_COMP"
- 30. Port Connectivity Checks: "D_flip_flop:U_DFF3"
- 31. Port Connectivity Checks: "D_flip_flop:U_DFF2"
- 32. Port Connectivity Checks: "D_flip_flop:U_DFF1"
- 33. Post-Synthesis Netlist Statistics for Top Partition
- 34. Elapsed Time Per Partition
- 35. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF1
+ 11. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF2
+ 12. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF3
+ 13. Parameter Settings for User Entity Instance: comparator:U_COMP
+ 14. Parameter Settings for User Entity Instance: Demux_1x2:U_DEMUX
+ 15. Parameter Settings for User Entity Instance: Mux_2x1:U_MUX
+ 16. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF5
+ 17. Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU1
+ 18. Parameter Settings for User Entity Instance: ALU:U_ALU
+ 19. Port Connectivity Checks: "D_flip_flop:U_DFFALU1"
+ 20. Port Connectivity Checks: "D_flip_flop:U_DFF5"
+ 21. Port Connectivity Checks: "Demux_1x2:U_DEMUX"
+ 22. Port Connectivity Checks: "comparator:U_COMP"
+ 23. Port Connectivity Checks: "D_flip_flop:U_DFF3"
+ 24. Port Connectivity Checks: "D_flip_flop:U_DFF2"
+ 25. Port Connectivity Checks: "D_flip_flop:U_DFF1"
+ 26. Post-Synthesis Netlist Statistics for Top Partition
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2024  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -64,26 +57,26 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                        ;
-+------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec  1 12:57:09 2025          ;
-; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
-; Revision Name                      ; arithmetic_control                             ;
-; Top-level Entity Name              ; arithmetic_control                             ;
-; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 79                                             ;
-;     Total combinational functions  ; 53                                             ;
-;     Dedicated logic registers      ; 27                                             ;
-; Total registers                    ; 27                                             ;
-; Total pins                         ; 35                                             ;
-; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 0                                              ;
-; Embedded Multiplier 9-bit elements ; 0                                              ;
-; Total PLLs                         ; 0                                              ;
-; UFM blocks                         ; 0                                              ;
-; ADC blocks                         ; 0                                              ;
-+------------------------------------+------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Dec 04 19:14:28 2025       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; arithmetic_control                          ;
+; Top-level Entity Name              ; arithmetic_control                          ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 78                                          ;
+;     Total combinational functions  ; 53                                          ;
+;     Dedicated logic registers      ; 25                                          ;
+; Total registers                    ; 25                                          ;
+; Total pins                         ; 36                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -177,31 +170,30 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                ;
-+-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                ; Library ;
-+-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
-; ../Components/Mux_2x1/Mux_2x1.vhd         ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd            ;         ;
-; ../Components/D_flip_flop/D_flip_flop.vhd ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd    ;         ;
-; ../Components/Demux_1x2/Demux_1x2.vhd     ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd        ;         ;
-; ../Components/comparator/comparator.vhd   ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd      ;         ;
-; ../Components/ALU/ALU.vhd                 ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd                    ;         ;
-; arithmetic_control.vhd                    ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd ;         ;
-+-------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                     ;
++-------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
++-------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; ../Components/Mux_2x1/Mux_2x1.vhd         ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd            ;         ;
+; ../Components/D_flip_flop/D_flip_flop.vhd ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd    ;         ;
+; ../Components/Demux_1x2/Demux_1x2.vhd     ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd        ;         ;
+; ../Components/comparator/comparator.vhd   ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/TP/Structural/Components/comparator/comparator.vhd      ;         ;
+; ../Components/ALU/ALU.vhd                 ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/TP/Structural/Components/ALU/ALU.vhd                    ;         ;
+; arithmetic_control.vhd                    ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd ;         ;
++-------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -209,30 +201,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 79        ;
+; Estimated Total logic elements              ; 78        ;
 ;                                             ;           ;
 ; Total combinational functions               ; 53        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 31        ;
-;     -- 3 input functions                    ; 12        ;
+;     -- 4 input functions                    ; 28        ;
+;     -- 3 input functions                    ; 15        ;
 ;     -- <=2 input functions                  ; 10        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
 ;     -- normal mode                          ; 45        ;
 ;     -- arithmetic mode                      ; 8         ;
 ;                                             ;           ;
-; Total registers                             ; 27        ;
-;     -- Dedicated logic registers            ; 27        ;
+; Total registers                             ; 25        ;
+;     -- Dedicated logic registers            ; 25        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 35        ;
+; I/O pins                                    ; 36        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 27        ;
-; Total fan-out                               ; 297       ;
-; Average fan-out                             ; 1.88      ;
+; Maximum fan-out                             ; 25        ;
+; Total fan-out                               ; 324       ;
+; Average fan-out                             ; 2.05      ;
 +---------------------------------------------+-----------+
 
 
@@ -241,30 +233,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                       ; Entity Name        ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------+--------------------+--------------+
-; |arithmetic_control        ; 53 (0)              ; 27 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 35   ; 0            ; 0          ; |arithmetic_control                       ; arithmetic_control ; work         ;
+; |arithmetic_control        ; 53 (0)              ; 25 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 36   ; 0            ; 0          ; |arithmetic_control                       ; arithmetic_control ; work         ;
 ;    |ALU:U_ALU|             ; 49 (49)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|ALU:U_ALU             ; ALU                ; work         ;
 ;    |D_flip_flop:U_DFF1|    ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF1    ; D_flip_flop        ; work         ;
-;    |D_flip_flop:U_DFF2|    ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF2    ; D_flip_flop        ; work         ;
+;    |D_flip_flop:U_DFF2|    ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF2    ; D_flip_flop        ; work         ;
 ;    |D_flip_flop:U_DFF3|    ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF3    ; D_flip_flop        ; work         ;
-;    |D_flip_flop:U_DFF4|    ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF4    ; D_flip_flop        ; work         ;
 ;    |D_flip_flop:U_DFF5|    ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF5    ; D_flip_flop        ; work         ;
 ;    |D_flip_flop:U_DFFALU1| ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFFALU1 ; D_flip_flop        ; work         ;
-;    |D_flip_flop:U_DFFALU2| ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFFALU2 ; D_flip_flop        ; work         ;
-;    |D_flip_flop:U_DFFALU3| ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFFALU3 ; D_flip_flop        ; work         ;
 ;    |Mux_2x1:U_MUX|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|Mux_2x1:U_MUX         ; Mux_2x1            ; work         ;
 ;    |comparator:U_COMP|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|comparator:U_COMP     ; comparator         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; D_flip_flop:U_DFF2|Q[3..7]            ; Lost fanout        ;
-; Total Number of Removed Registers = 5 ;                    ;
-+---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -272,24 +251,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 27    ;
+; Total registers                              ; 25    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 25    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |arithmetic_control|Mux_2x1:U_MUX|Selector2 ;
-; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |arithmetic_control|ALU:U_ALU|Mux6          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; 6:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |arithmetic_control|ALU:U_ALU|Mux6 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 
 
 +-----------------------------------------------------------------+
@@ -342,16 +320,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: D_flip_flop:U_DFF4 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; w              ; 1     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Mux_2x1:U_MUX ;
 +----------------+-------+-----------------------------------+
@@ -382,26 +350,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU2 ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; w              ; 3     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU3 ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; w              ; 3     ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +--------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: ALU:U_ALU ;
 +----------------+-------+-------------------------------+
@@ -410,24 +358,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; w              ; 8     ; Signed Integer                ;
 +----------------+-------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "D_flip_flop:U_DFFALU3"                                                              ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "D_flip_flop:U_DFFALU2"                                                              ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -441,15 +371,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "D_flip_flop:U_DFF5"                                                                 ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "D_flip_flop:U_DFF4"                                                                 ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -507,9 +428,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 35                          ;
-; cycloneiii_ff         ; 27                          ;
-;     plain             ; 27                          ;
+; boundary_port         ; 36                          ;
+; cycloneiii_ff         ; 25                          ;
+;     CLR               ; 25                          ;
 ; cycloneiii_io_obuf    ; 8                           ;
 ; cycloneiii_lcell_comb ; 53                          ;
 ;     arith             ; 8                           ;
@@ -517,11 +438,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 7                           ;
 ;     normal            ; 45                          ;
 ;         2 data inputs ; 9                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 31                          ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 28                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.70                        ;
-; Average LUT depth     ; 2.68                        ;
+; Average LUT depth     ; 2.58                        ;
 +-----------------------+-----------------------------+
 
 
@@ -530,7 +451,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -539,62 +460,54 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Dec  1 12:57:00 2025
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Thu Dec 04 19:14:16 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arithmetic_control -c arithmetic_control
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd
-    Info (12022): Found design unit 1: Mux_2x1-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 15
-    Info (12023): Found entity 1: Mux_2x1 File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
-    Info (12022): Found design unit 1: D_flip_flop-behavourial File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 15
-    Info (12023): Found entity 1: D_flip_flop File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd
-    Info (12022): Found design unit 1: Demux_1x2-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd Line: 15
-    Info (12023): Found entity 1: Demux_1x2 File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd
-    Info (12022): Found design unit 1: comparator-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd Line: 14
-    Info (12023): Found entity 1: comparator File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd
-    Info (12022): Found design unit 1: ALU-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd Line: 16
-    Info (12023): Found entity 1: ALU File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd
-    Info (12022): Found design unit 1: reg_8bit-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 16
-    Info (12023): Found entity 1: reg_8bit File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 4
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/tp/structural/components/mux_2x1/mux_2x1.vhd
+    Info (12022): Found design unit 1: Mux_2x1-data_flow File: C:/Users/Aluno/Downloads/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 15
+    Info (12023): Found entity 1: Mux_2x1 File: C:/Users/Aluno/Downloads/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/tp/structural/components/d_flip_flop/d_flip_flop.vhd
+    Info (12022): Found design unit 1: D_flip_flop-behavourial File: C:/Users/Aluno/Downloads/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 14
+    Info (12023): Found entity 1: D_flip_flop File: C:/Users/Aluno/Downloads/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/tp/structural/components/demux_1x2/demux_1x2.vhd
+    Info (12022): Found design unit 1: Demux_1x2-data_flow File: C:/Users/Aluno/Downloads/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd Line: 15
+    Info (12023): Found entity 1: Demux_1x2 File: C:/Users/Aluno/Downloads/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/tp/structural/components/comparator/comparator.vhd
+    Info (12022): Found design unit 1: comparator-data_flow File: C:/Users/Aluno/Downloads/TP/Structural/Components/comparator/comparator.vhd Line: 15
+    Info (12023): Found entity 1: comparator File: C:/Users/Aluno/Downloads/TP/Structural/Components/comparator/comparator.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/tp/structural/components/alu/alu.vhd
+    Info (12022): Found design unit 1: ALU-data_flow File: C:/Users/Aluno/Downloads/TP/Structural/Components/ALU/ALU.vhd Line: 16
+    Info (12023): Found entity 1: ALU File: C:/Users/Aluno/Downloads/TP/Structural/Components/ALU/ALU.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/tp/structural/components/reg_8bit/reg_8bit.vhd
+    Info (12022): Found design unit 1: reg_8bit-structural File: C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 16
+    Info (12023): Found entity 1: reg_8bit File: C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file arithmetic_control.vhd
-    Info (12022): Found design unit 1: arithmetic_control-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 17
-    Info (12023): Found entity 1: arithmetic_control File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 4
+    Info (12022): Found design unit 1: arithmetic_control-structural File: C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 18
+    Info (12023): Found entity 1: arithmetic_control File: C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_arithmetic_control.vhd
-    Info (12022): Found design unit 1: arithmetic_control_tb-sim File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/tb_arithmetic_control.vhd Line: 8
-    Info (12023): Found entity 1: arithmetic_control_tb File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/tb_arithmetic_control.vhd Line: 5
+    Info (12022): Found design unit 1: arithmetic_control_tb-sim File: C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/tb_arithmetic_control.vhd Line: 8
+    Info (12023): Found entity 1: arithmetic_control_tb File: C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/tb_arithmetic_control.vhd Line: 5
 Info (12127): Elaborating entity "arithmetic_control" for the top level hierarchy
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 39
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 48
-Info (12128): Elaborating entity "comparator" for hierarchy "comparator:U_COMP" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 66
-Info (12128): Elaborating entity "Demux_1x2" for hierarchy "Demux_1x2:U_DEMUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 74
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF4" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 86
-Info (12128): Elaborating entity "Mux_2x1" for hierarchy "Mux_2x1:U_MUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 96
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U_ALU" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 141
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF1" File: C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 32
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF2" File: C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 36
+Info (12128): Elaborating entity "comparator" for hierarchy "comparator:U_COMP" File: C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 44
+Info (12128): Elaborating entity "Demux_1x2" for hierarchy "Demux_1x2:U_DEMUX" File: C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 48
+Info (12128): Elaborating entity "Mux_2x1" for hierarchy "Mux_2x1:U_MUX" File: C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 58
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U_ALU" File: C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 71
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 5 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "OPERAND1[3]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 7
-    Warning (15610): No output dependent on input pin "OPERAND1[4]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 7
-    Warning (15610): No output dependent on input pin "OPERAND1[5]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 7
-    Warning (15610): No output dependent on input pin "OPERAND1[6]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 7
-    Warning (15610): No output dependent on input pin "OPERAND1[7]" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 7
-Info (21057): Implemented 115 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 15 input pins
+Info (21057): Implemented 114 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
     Info (21059): Implemented 12 output pins
     Info (21060): Implemented 8 bidirectional pins
-    Info (21061): Implemented 80 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 453 megabytes
-    Info: Processing ended: Mon Dec  1 12:57:09 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:19
+    Info (21061): Implemented 78 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 651 megabytes
+    Info: Processing ended: Thu Dec 04 19:14:28 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:26
 
 

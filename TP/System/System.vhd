@@ -7,6 +7,7 @@ entity System is
         OPERAND1    : in    std_logic_vector(7 downto 0);
         OPERAND2    : in    std_logic_vector(2 downto 0);
         CLK         : in    std_logic;
+        RST         : in    std_logic;
         OUTP        : out   std_logic_vector(7 downto 0)
     );
 end System;
@@ -31,6 +32,7 @@ begin
             OPERAND1  => OPERAND1,
             OPERAND2  => OPERAND2,
             CLK       => CLK,
+            RST       => RST, 
             OUTP      => OUTP 
         );
     

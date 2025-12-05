@@ -1,75 +1,104 @@
- library IEEE;
+library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity tb_cpu is
-end tb_cpu;
+entity tb_CPU is
+    -- Testbench has no ports
+end tb_CPU;
 
-architecture sim of tb_cpu is
+architecture behavior of tb_CPU is
 
+    -- Component Declaration for the Unit Under Test (UUT)
     component CPU
-    port (
-        OPCODE   : in    std_logic_vector(2 downto 0);
-        OPERAND1 : in    std_logic_vector(7 downto 0);
-        OPERAND2 : in    std_logic_vector(2 downto 0);
-        CLK      : in    std_logic;
-        OUTP     : out   std_logic_vector(7 downto 0)
+    port(
+        OPCODE   : in  std_logic_vector(2 downto 0);
+        OPERAND1 : in  std_logic_vector(7 downto 0);
+        OPERAND2 : in  std_logic_vector(2 downto 0);
+        CLK      : in  std_logic;
+        RST      : in  std_logic;
+        OUTP     : out std_logic_vector(7 downto 0)
     );
     end component;
 
-    signal s_OPCODE   : std_logic_vector(2 downto 0) := (others => '0');
-    signal s_OPERAND1 : std_logic_vector(7 downto 0) := (others => '0');
-    signal s_OPERAND2 : std_logic_vector(2 downto 0) := (others => '0');
-    signal s_CLK      : std_logic := '0';
-    signal s_OUTP     : std_logic_vector(7 downto 0);
+    -- Inputs
+    signal OPCODE   : std_logic_vector(2 downto 0) := (others => '0');
+    signal OPERAND1 : std_logic_vector(7 downto 0) := (others => '0');
+    signal OPERAND2 : std_logic_vector(2 downto 0) := (others => '0');
+    signal CLK      : std_logic := '0';
+    signal RST      : std_logic := '0';
 
-    constant clk_period : time := 20 ns;
+    -- Outputs
+    signal OUTP     : std_logic_vector(7 downto 0);
+
+    -- Clock period definitions
+    constant CLK_period : time := 10 ns;
 
 begin
 
-    uut: CPU
-    port map (
-        OPCODE   => s_OPCODE,
-        OPERAND1 => s_OPERAND1,
-        OPERAND2 => s_OPERAND2,
-        CLK      => s_CLK,
-        OUTP     => s_OUTP
+    -- Instantiate the Unit Under Test (UUT)
+    uut: CPU PORT MAP (
+        OPCODE   => OPCODE,
+        OPERAND1 => OPERAND1,
+        OPERAND2 => OPERAND2,
+        CLK      => CLK,
+        RST      => RST,
+        OUTP     => OUTP
     );
 
-    clk_process: process
+    -- Clock process definitions
+    CLK_process :process
     begin
-        s_CLK <= '0';
-        wait for clk_period/2;
-        s_CLK <= '1';
-        wait for clk_period/2;
+        CLK <= '0';
+        wait for CLK_period/2;
+        CLK <= '1';
+        wait for CLK_period/2;
     end process;
 
+    -- Stimulus process
     stim_proc: process
     begin
+        -- 1. Hold reset state for 100 ns.
+        RST <= '1';
         wait for 100 ns;
 
-        -- Write 0x0A to Register 1
-        s_OPCODE   <= "000";
-        s_OPERAND1 <= x"0A";
-        s_OPERAND2 <= "001";
-        wait for clk_period;
+        -- 2. Release reset and wait for global reset to finish
+        RST <= '0';
+        wait for CLK_period*2;
 
-        -- Write 0x05 to Register 2
-        s_OPCODE   <= "000";
-        s_OPERAND1 <= x"05";
-        s_OPERAND2 <= "010";
-        wait for clk_period;
+        ------------------------------------------------------------------
+        -- Test Case 1: Example Operation (e.g., LOAD or ADD)
+        -- Modify inputs based on your specific arithmetic_control logic
+        ------------------------------------------------------------------
+        OPCODE   <= "001";      -- Example Opcode
+        OPERAND1 <= "00000101"; -- 5
+        OPERAND2 <= "000";      -- Address 0 or Value 0
+        wait for CLK_period;
 
-        -- ADD operation using Register 1
-        s_OPCODE   <= "100";
-        s_OPERAND2 <= "001";
-        wait for clk_period;
+        ------------------------------------------------------------------
+        -- Test Case 2: Change Operands
+        ------------------------------------------------------------------
+        OPCODE   <= "010";      -- Example Opcode
+        OPERAND1 <= "00001010"; -- 10
+        OPERAND2 <= "001";      -- Address 1 or Value 1
+        wait for CLK_period;
 
-        -- ADD operation using Register 2
-        s_OPCODE   <= "100";
-        s_OPERAND2 <= "010";
-        wait for clk_period;
+        ------------------------------------------------------------------
+        -- Test Case 3: Zero Inputs
+        ------------------------------------------------------------------
+        OPCODE   <= "000";
+        OPERAND1 <= "00000000";
+        OPERAND2 <= "000";
+        wait for CLK_period;
 
+        ------------------------------------------------------------------
+        -- Test Case 4: Max Values
+        ------------------------------------------------------------------
+        OPCODE   <= "111";
+        OPERAND1 <= "11111111";
+        OPERAND2 <= "111";
+        wait for CLK_period;
+
+        -- Wait indefinitely to stop the process looping
         wait;
     end process;
 
-end sim;
+end behavior;

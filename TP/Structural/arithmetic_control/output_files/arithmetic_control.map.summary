@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Dec  1 12:57:09 2025
-Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Analysis & Synthesis Status : Successful - Thu Dec 04 19:14:28 2025
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : arithmetic_control
 Top-level Entity Name : arithmetic_control
 Family : MAX 10
-Total logic elements : 79
+Total logic elements : 78
     Total combinational functions : 53
-    Dedicated logic registers : 27
-Total registers : 27
-Total pins : 35
+    Dedicated logic registers : 25
+Total registers : 25
+Total pins : 36
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

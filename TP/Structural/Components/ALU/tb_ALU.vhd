@@ -46,6 +46,10 @@ begin
         wait for 10 ns;
         assert(s_Y = not s_A) report "Error: 010 failed" severity error;
 
+        s_opcode <= "011";
+        wait for 10 ns;
+        assert(s_Y = not s_A) report "Error: 010 failed" severity error;
+		  
         s_opcode <= "100";
         wait for 10 ns;
         assert(signed(s_Y) = 5) report "Error: Add failed" severity error;

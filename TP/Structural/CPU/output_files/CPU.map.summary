@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Dec  1 13:02:18 2025
-Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Analysis & Synthesis Status : Successful - Thu Dec 04 19:20:39 2025
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : CPU
 Top-level Entity Name : CPU
 Family : MAX 10
-Total logic elements : 39
-    Total combinational functions : 27
-    Dedicated logic registers : 13
-Total registers : 13
-Total pins : 23
+Total logic elements : 211
+    Total combinational functions : 130
+    Dedicated logic registers : 89
+Total registers : 89
+Total pins : 24
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

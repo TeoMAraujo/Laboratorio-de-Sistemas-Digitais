@@ -1,0 +1,13 @@
+# Compile of tb_System.vhd was successful.
+# Compile of System.vhd failed with 6 errors.
+# Compile of barramento.vhd failed with 21 errors.
+# Compile of arithmetic_control.vhd failed with 36 errors.
+# Compile of CPU.vhd was successful.
+# Compile of FSM.vhd was successful.
+# Compile of ALU.vhd was successful.
+# Compile of comparator.vhd was successful.
+# Compile of D_flip_flop.vhd was successful.
+# Compile of Demux_1x2.vhd was successful.
+# Compile of Mux_2x1.vhd was successful.
+# Compile of reg_8bit.vhd was successful.
+# 12 compiles, 3 failed with 63 errors.

@@ -2,64 +2,70 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity tb_comparator is
-end entity;
+end entity tb_comparator;
 
 architecture tb_arch of tb_comparator is
- 
-    -- FIXED: Component must match the Design Entity exactly
-    component Comparator
+
+    -- Component Declaration
+    component comparator
         generic (
             W : positive := 1
         );
         port (
             A     : in  std_logic_vector(W-1 downto 0);
             B     : in  std_logic_vector(W-1 downto 0);
-            equal : out std_logic -- FIXED: Changed 'Igual' to 'equal'
+            equal : out std_logic
         );
     end component;
-   
+
+    -- Signals
     signal s_A     : std_logic_vector(3 downto 0) := (others => '0');
     signal s_B     : std_logic_vector(3 downto 0) := (others => '0');
-    signal s_Igual : std_logic;
+    signal s_equal : std_logic;
 
 begin
-    
-    -- FIXED: Instantiation name changed to 'Comparator'
-    DUT : Comparator
+
+    -- Device Under Test (DUT) Instantiation
+    DUT : comparator
         generic map (
-            W => 4 -- FIXED: Sets design width to 4 bits
+            W => 4  -- Setting width to 4 bits
         )
         port map (
             A     => s_A,
             B     => s_B,
-            equal => s_Igual -- FIXED: Maps 'equal' port to 's_Igual' signal
+            equal => s_equal
         );
 
-    -- Processo de geração de estímulos
+    -- Stimulus Process
     stim_proc : process
     begin
-        
+        -- Case 1: Equal (0101 == 0101) -> Expect equal = '1'
         s_A <= "0101";
         s_B <= "0101";
         wait for 10 ns;
 
+        -- Case 2: Not Equal (0101 != 1010) -> Expect equal = '0'
         s_A <= "0101";
         s_B <= "1010";
         wait for 10 ns;
-        
+
+        -- Case 3: Equal (1111 == 1111) -> Expect equal = '1'
         s_A <= "1111";
         s_B <= "1111";
         wait for 10 ns;
-        
+
+        -- Case 4: Not Equal (1000 != 0000) -> Expect equal = '0'
         s_A <= "1000";
         s_B <= "0000";
         wait for 10 ns;
-        
+
+        -- Case 5: Equal (0000 == 0000) -> Expect equal = '1'
         s_A <= "0000";
         s_B <= "0000";
         wait for 10 ns;
 
+        -- Stop simulation
         wait;
     end process;
 
-end architecture;
+end architecture tb_arch;

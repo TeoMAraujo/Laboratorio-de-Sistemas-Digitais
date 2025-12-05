@@ -12,8 +12,12 @@ end barramento;
 
 architecture structural of barramento is
 begin
+	P0: entity work.reg_8bit 
+    generic map(faddr => "000") --identificação de cada per
+    port map(CLK => CLK, addr => addr, data => data, readw => readw);
+    
     P1: entity work.reg_8bit 
-    generic map(faddr => "001") --identificação de cada per
+    generic map(faddr => "001") 
     port map(CLK => CLK, addr => addr, data => data, readw => readw);
     
     P2: entity work.reg_8bit 
