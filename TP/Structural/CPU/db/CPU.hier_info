@@ -16,14 +16,14 @@ OPERAND2[2] => arithmetic_control:U_AC.OPERAND2[2]
 CLK => arithmetic_control:U_AC.CLK
 CLK => barramento:U_REG.CLK
 RST => arithmetic_control:U_AC.RST
-OUTP[0] << arithmetic_control:U_AC.OUTP[0]
-OUTP[1] << arithmetic_control:U_AC.OUTP[1]
-OUTP[2] << arithmetic_control:U_AC.OUTP[2]
-OUTP[3] << arithmetic_control:U_AC.OUTP[3]
-OUTP[4] << arithmetic_control:U_AC.OUTP[4]
-OUTP[5] << arithmetic_control:U_AC.OUTP[5]
-OUTP[6] << arithmetic_control:U_AC.OUTP[6]
-OUTP[7] << arithmetic_control:U_AC.OUTP[7]
+OUTP[0] <= arithmetic_control:U_AC.OUTP[0]
+OUTP[1] <= arithmetic_control:U_AC.OUTP[1]
+OUTP[2] <= arithmetic_control:U_AC.OUTP[2]
+OUTP[3] <= arithmetic_control:U_AC.OUTP[3]
+OUTP[4] <= arithmetic_control:U_AC.OUTP[4]
+OUTP[5] <= arithmetic_control:U_AC.OUTP[5]
+OUTP[6] <= arithmetic_control:U_AC.OUTP[6]
+OUTP[7] <= arithmetic_control:U_AC.OUTP[7]
 
 
 |CPU|arithmetic_control:U_AC

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for CPU
-Fri Dec 05 18:18:00 2025
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Fri Dec  5 17:33:39 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -49,7 +49,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -66,26 +66,26 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 05 18:18:00 2025       ;
-; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                      ; CPU                                         ;
-; Top-level Entity Name              ; CPU                                         ;
-; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 198                                         ;
-;     Total combinational functions  ; 125                                         ;
-;     Dedicated logic registers      ; 92                                          ;
-; Total registers                    ; 92                                          ;
-; Total pins                         ; 24                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-; UFM blocks                         ; 0                                           ;
-; ADC blocks                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Dec  5 17:33:39 2025          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; CPU                                            ;
+; Top-level Entity Name              ; CPU                                            ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 198                                            ;
+;     Total combinational functions  ; 125                                            ;
+;     Dedicated logic registers      ; 92                                             ;
+; Total registers                    ; 92                                             ;
+; Total pins                         ; 24                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -179,33 +179,33 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                      ;
-+----------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path             ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                   ; Library ;
-+----------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
-; ../Components/reg_8bit/reg_8bit.vhd          ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd          ;         ;
-; ../Components/Mux_2x1/Mux_2x1.vhd            ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd            ;         ;
-; ../Components/Demux_1x2/Demux_1x2.vhd        ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd        ;         ;
-; ../Components/comparator/comparator.vhd      ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd      ;         ;
-; ../Components/ALU/ALU.vhd                    ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd                    ;         ;
-; ../Components/D_flip_flop/D_flip_flop.vhd    ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd    ;         ;
-; ../barramento/barramento.vhd                 ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd                 ;         ;
-; ../arithmetic_control/arithmetic_control.vhd ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd ;         ;
-; CPU.vhd                                      ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd                               ;         ;
-+----------------------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                   ;
++----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path             ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                ; Library ;
++----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
+; ../Components/reg_8bit/reg_8bit.vhd          ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd          ;         ;
+; ../Components/Mux_2x1/Mux_2x1.vhd            ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd            ;         ;
+; ../Components/Demux_1x2/Demux_1x2.vhd        ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd        ;         ;
+; ../Components/comparator/comparator.vhd      ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd      ;         ;
+; ../Components/ALU/ALU.vhd                    ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd                    ;         ;
+; ../Components/D_flip_flop/D_flip_flop.vhd    ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd    ;         ;
+; ../barramento/barramento.vhd                 ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd                 ;         ;
+; ../arithmetic_control/arithmetic_control.vhd ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd ;         ;
+; CPU.vhd                                      ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd                               ;         ;
++----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -289,7 +289,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux4 ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux1 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 
 
@@ -565,7 +565,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -574,67 +574,67 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Dec 05 18:17:49 2025
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Fri Dec  5 17:33:30 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/jiovana/laboratorio-de-sistemas-digitais-main/tp/structural/components/reg_8bit/reg_8bit.vhd
-    Info (12022): Found design unit 1: reg_8bit-structural File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 16
-    Info (12023): Found entity 1: reg_8bit File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/jiovana/laboratorio-de-sistemas-digitais-main/tp/structural/components/mux_2x1/mux_2x1.vhd
-    Info (12022): Found design unit 1: Mux_2x1-data_flow File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 15
-    Info (12023): Found entity 1: Mux_2x1 File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/jiovana/laboratorio-de-sistemas-digitais-main/tp/structural/components/demux_1x2/demux_1x2.vhd
-    Info (12022): Found design unit 1: Demux_1x2-data_flow File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd Line: 15
-    Info (12023): Found entity 1: Demux_1x2 File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/jiovana/laboratorio-de-sistemas-digitais-main/tp/structural/components/comparator/comparator.vhd
-    Info (12022): Found design unit 1: comparator-data_flow File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd Line: 15
-    Info (12023): Found entity 1: comparator File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/jiovana/laboratorio-de-sistemas-digitais-main/tp/structural/components/alu/alu.vhd
-    Info (12022): Found design unit 1: ALU-data_flow File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd Line: 16
-    Info (12023): Found entity 1: ALU File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/jiovana/laboratorio-de-sistemas-digitais-main/tp/structural/components/d_flip_flop/d_flip_flop.vhd
-    Info (12022): Found design unit 1: D_flip_flop-behavourial File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 14
-    Info (12023): Found entity 1: D_flip_flop File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/jiovana/laboratorio-de-sistemas-digitais-main/tp/structural/barramento/barramento.vhd
-    Info (12022): Found design unit 1: barramento-structural File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd Line: 13
-    Info (12023): Found entity 1: barramento File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/jiovana/laboratorio-de-sistemas-digitais-main/tp/structural/arithmetic_control/arithmetic_control.vhd
-    Info (12022): Found design unit 1: arithmetic_control-structural File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 18
-    Info (12023): Found entity 1: arithmetic_control File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
-    Info (12022): Found design unit 1: CPU-structural File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd Line: 15
-    Info (12023): Found entity 1: CPU File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file tb_cpu.vhd
-    Info (12022): Found design unit 1: tb_CPU-Behavioral File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/tb_CPU.vhd Line: 9
-    Info (12023): Found entity 1: tb_CPU File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/tb_CPU.vhd Line: 5
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd
+    Info (12022): Found design unit 1: reg_8bit-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 16
+    Info (12023): Found entity 1: reg_8bit File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd
+    Info (12022): Found design unit 1: Mux_2x1-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 15
+    Info (12023): Found entity 1: Mux_2x1 File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd
+    Info (12022): Found design unit 1: Demux_1x2-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd Line: 15
+    Info (12023): Found entity 1: Demux_1x2 File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd
+    Info (12022): Found design unit 1: comparator-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd Line: 15
+    Info (12023): Found entity 1: comparator File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd
+    Info (12022): Found design unit 1: ALU-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd Line: 16
+    Info (12023): Found entity 1: ALU File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
+    Info (12022): Found design unit 1: D_flip_flop-behavourial File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 14
+    Info (12023): Found entity 1: D_flip_flop File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd
+    Info (12022): Found design unit 1: barramento-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 13
+    Info (12023): Found entity 1: barramento File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd
+    Info (12022): Found design unit 1: arithmetic_control-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 18
+    Info (12023): Found entity 1: arithmetic_control File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file CPU.vhd
+    Info (12022): Found design unit 1: CPU-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 15
+    Info (12023): Found entity 1: CPU File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file tb_CPU.vhd
+    Info (12022): Found design unit 1: tb_CPU-Behavioral File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/tb_CPU.vhd Line: 9
+    Info (12023): Found entity 1: tb_CPU File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/tb_CPU.vhd Line: 5
 Info (12127): Elaborating entity "CPU" for the top level hierarchy
-Info (12128): Elaborating entity "arithmetic_control" for hierarchy "arithmetic_control:U_AC" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd Line: 20
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "arithmetic_control:U_AC|D_flip_flop:U_DFF1" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 47
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "arithmetic_control:U_AC|D_flip_flop:U_DFF2" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 52
-Info (12128): Elaborating entity "comparator" for hierarchy "arithmetic_control:U_AC|comparator:U_COMP" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 62
-Info (12128): Elaborating entity "Demux_1x2" for hierarchy "arithmetic_control:U_AC|Demux_1x2:U_DEMUX" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 71
-Info (12128): Elaborating entity "Mux_2x1" for hierarchy "arithmetic_control:U_AC|Mux_2x1:U_MUX" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 102
-Info (12128): Elaborating entity "ALU" for hierarchy "arithmetic_control:U_AC|ALU:U_ALU" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 118
-Info (12128): Elaborating entity "barramento" for hierarchy "barramento:U_REG" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd Line: 33
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P0" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd Line: 15
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P1" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd Line: 19
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P2" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd Line: 23
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P3" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd Line: 27
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P4" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd Line: 31
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P5" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd Line: 35
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P6" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd Line: 39
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P7" File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd Line: 43
+Info (12128): Elaborating entity "arithmetic_control" for hierarchy "arithmetic_control:U_AC" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 20
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "arithmetic_control:U_AC|D_flip_flop:U_DFF1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 47
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "arithmetic_control:U_AC|D_flip_flop:U_DFF2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 52
+Info (12128): Elaborating entity "comparator" for hierarchy "arithmetic_control:U_AC|comparator:U_COMP" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 62
+Info (12128): Elaborating entity "Demux_1x2" for hierarchy "arithmetic_control:U_AC|Demux_1x2:U_DEMUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 71
+Info (12128): Elaborating entity "Mux_2x1" for hierarchy "arithmetic_control:U_AC|Mux_2x1:U_MUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 102
+Info (12128): Elaborating entity "ALU" for hierarchy "arithmetic_control:U_AC|ALU:U_ALU" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 118
+Info (12128): Elaborating entity "barramento" for hierarchy "barramento:U_REG" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 33
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P0" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 15
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 19
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 23
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P3" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 27
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P4" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 31
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P5" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 35
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P6" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 39
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P7" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 43
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[0]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux7" into an OR gate File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[1]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux6" into an OR gate File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[2]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux5" into an OR gate File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[3]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux4" into an OR gate File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[4]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux3" into an OR gate File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[5]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux2" into an OR gate File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[6]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux1" into an OR gate File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[7]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux0" into an OR gate File: C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[0]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux7" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[1]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux6" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[2]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux5" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[3]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux4" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[4]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux3" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[5]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux2" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[6]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux1" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[7]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux0" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -643,9 +643,9 @@ Info (21057): Implemented 238 device resources after synthesis - the final resou
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 214 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 652 megabytes
-    Info: Processing ended: Fri Dec 05 18:18:00 2025
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 462 megabytes
+    Info: Processing ended: Fri Dec  5 17:33:39 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:21
 
 
