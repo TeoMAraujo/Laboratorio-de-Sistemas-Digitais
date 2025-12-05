@@ -96,10 +96,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "OPERAND1[0]",
-					"strict" : false
-				},
-				{
 					"name" : "OPCODE[2]",
 					"strict" : false
 				},
@@ -116,11 +112,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "OPERAND1[1]",
+					"name" : "OPERAND2[2]",
 					"strict" : false
 				},
 				{
-					"name" : "OPERAND2[2]",
+					"name" : "OPERAND1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OPERAND1[1]",
 					"strict" : false
 				},
 				{

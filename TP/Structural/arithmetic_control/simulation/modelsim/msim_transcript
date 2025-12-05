@@ -11,74 +11,134 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/Aluno/Downloads/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd}
+# vcom -93 -work work {C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:17 on Dec 04,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd 
+# Start time: 17:44:38 on Dec 05,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Mux_2x1
 # -- Compiling architecture data_flow of Mux_2x1
-# End time: 19:17:17 on Dec 04,2025, Elapsed time: 0:00:00
+# End time: 17:44:38 on Dec 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Aluno/Downloads/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd}
+# vcom -93 -work work {C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:17 on Dec 04,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd 
+# Start time: 17:44:38 on Dec 05,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity D_flip_flop
 # -- Compiling architecture behavourial of D_flip_flop
-# End time: 19:17:17 on Dec 04,2025, Elapsed time: 0:00:00
+# End time: 17:44:38 on Dec 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Aluno/Downloads/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd}
+# vcom -93 -work work {C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:17 on Dec 04,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd 
+# Start time: 17:44:38 on Dec 05,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Demux_1x2
 # -- Compiling architecture data_flow of Demux_1x2
-# End time: 19:17:17 on Dec 04,2025, Elapsed time: 0:00:00
+# End time: 17:44:38 on Dec 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Aluno/Downloads/TP/Structural/Components/comparator/comparator.vhd}
+# vcom -93 -work work {C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:17 on Dec 04,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/TP/Structural/Components/comparator/comparator.vhd 
+# Start time: 17:44:39 on Dec 05,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity comparator
 # -- Compiling architecture data_flow of comparator
-# End time: 19:17:17 on Dec 04,2025, Elapsed time: 0:00:00
+# End time: 17:44:39 on Dec 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Aluno/Downloads/TP/Structural/Components/ALU/ALU.vhd}
+# vcom -93 -work work {C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:17 on Dec 04,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/TP/Structural/Components/ALU/ALU.vhd 
+# Start time: 17:44:39 on Dec 05,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ALU
 # -- Compiling architecture data_flow of ALU
-# End time: 19:17:17 on Dec 04,2025, Elapsed time: 0:00:00
+# End time: 17:44:39 on Dec 05,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd}
+# vcom -93 -work work {C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:17:17 on Dec 04,2025
-# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd 
+# Start time: 17:44:39 on Dec 05,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd 
 # -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity arithmetic_control
 # -- Compiling architecture structural of arithmetic_control
-# ** Error: (vcom-11) Could not find work.arithmetic_control.
-# ** Note: C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd(1): VHDL Compiler exiting
-# End time: 19:17:17 on Dec 04,2025, Elapsed time: 0:00:00
+# -- Loading entity D_flip_flop
+# -- Loading entity comparator
+# -- Loading entity Demux_1x2
+# -- Loading entity Mux_2x1
+# -- Loading package NUMERIC_STD
+# -- Loading entity ALU
+# End time: 17:44:39 on Dec 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/tb_arithmetic_control.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:44:39 on Dec 05,2025
+# vcom -reportprogress 300 -93 -work work C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/tb_arithmetic_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity arithmetic_control_tb
+# -- Compiling architecture sim of arithmetic_control_tb
+# End time: 17:44:39 on Dec 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  tb_arithmetic_control.vhd
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" tb_arithmetic_control.vhd 
+# Start time: 17:44:39 on Dec 05,2025
+# ** Error (suppressible): (vsim-19) Failed to access library 'tb_arithmetic_control' at "tb_arithmetic_control".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./arithmetic_control_run_msim_rtl_vhdl.do PAUSED at line 17
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=\"+acc\" work.arithmetic_control_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" work.arithmetic_control_tb 
+# Start time: 17:44:39 on Dec 05,2025
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.arithmetic_control_tb(sim)
+# Loading work.arithmetic_control(structural)
+# Loading work.d_flip_flop(behavourial)
+# Loading work.comparator(data_flow)
+# Loading work.demux_1x2(data_flow)
+# Loading work.mux_2x1(data_flow)
+# Loading work.alu(data_flow)
+add wave  \
+sim:/arithmetic_control_tb/clk_period \
+sim:/arithmetic_control_tb/s_ADDR \
+sim:/arithmetic_control_tb/s_CLK \
+sim:/arithmetic_control_tb/s_DATA \
+sim:/arithmetic_control_tb/s_OPCODE \
+sim:/arithmetic_control_tb/s_OPERAND1 \
+sim:/arithmetic_control_tb/s_OPERAND2 \
+sim:/arithmetic_control_tb/s_OUTP \
+sim:/arithmetic_control_tb/s_READW \
+sim:/arithmetic_control_tb/s_RST \
+sim:/arithmetic_control_tb/s_TB_DATA
+run
+# ** Note: Starting Arithmetic Control Testbench...
+#    Time: 0 ps  Iteration: 0  Instance: /arithmetic_control_tb
+# ** Note: Test 1: Check Write Mode (Opcode 000)
+#    Time: 80 ns  Iteration: 0  Instance: /arithmetic_control_tb
+# ** Note: Test 1 Passed: Bus correctly driven with xAA by DUT
+#    Time: 101 ns  Iteration: 0  Instance: /arithmetic_control_tb
+# End time: 17:48:22 on Dec 05,2025, Elapsed time: 0:03:43
 # Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./arithmetic_control_run_msim_rtl_vhdl.do line 13
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 -work work {C:/Users/Aluno/Downloads/TP/Structural/arithmetic_control/arithmetic_control.vhd}"

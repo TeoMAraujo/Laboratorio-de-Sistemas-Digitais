@@ -16,24 +16,26 @@ OPERAND2[2] => d_flip_flop:U_DFF3.D[2]
 CLK => d_flip_flop:U_DFF1.CLK
 CLK => d_flip_flop:U_DFF2.CLK
 CLK => d_flip_flop:U_DFF3.CLK
-CLK => d_flip_flop:U_DFF5.CLK
+CLK => d_flip_flop:U_DFF_PIPE.CLK
 CLK => d_flip_flop:U_DFFALU1.CLK
+CLK => d_flip_flop:U_DFF_ACC.CLK
 RST => d_flip_flop:U_DFF1.RST
 RST => d_flip_flop:U_DFF2.RST
 RST => d_flip_flop:U_DFF3.RST
-RST => d_flip_flop:U_DFF5.RST
+RST => d_flip_flop:U_DFF_PIPE.RST
 RST => d_flip_flop:U_DFFALU1.RST
-OUTP[0] << alu:U_ALU.Y[0]
-OUTP[1] << alu:U_ALU.Y[1]
-OUTP[2] << alu:U_ALU.Y[2]
-OUTP[3] << alu:U_ALU.Y[3]
-OUTP[4] << alu:U_ALU.Y[4]
-OUTP[5] << alu:U_ALU.Y[5]
-OUTP[6] << alu:U_ALU.Y[6]
-OUTP[7] << alu:U_ALU.Y[7]
-ADDR[0] << mux_2x1:U_MUX.Y[0]
-ADDR[1] << mux_2x1:U_MUX.Y[1]
-ADDR[2] << mux_2x1:U_MUX.Y[2]
+RST => d_flip_flop:U_DFF_ACC.RST
+OUTP[0] <= alu:U_ALU.Y[0]
+OUTP[1] <= alu:U_ALU.Y[1]
+OUTP[2] <= alu:U_ALU.Y[2]
+OUTP[3] <= alu:U_ALU.Y[3]
+OUTP[4] <= alu:U_ALU.Y[4]
+OUTP[5] <= alu:U_ALU.Y[5]
+OUTP[6] <= alu:U_ALU.Y[6]
+OUTP[7] <= alu:U_ALU.Y[7]
+ADDR[0] <= mux_2x1:U_MUX.Y[0]
+ADDR[1] <= mux_2x1:U_MUX.Y[1]
+ADDR[2] <= mux_2x1:U_MUX.Y[2]
 DATA[0] <> DATA[0]
 DATA[1] <> DATA[1]
 DATA[2] <> DATA[2]
@@ -42,7 +44,7 @@ DATA[4] <> DATA[4]
 DATA[5] <> DATA[5]
 DATA[6] <> DATA[6]
 DATA[7] <> DATA[7]
-READW << comparator:U_COMP.equal
+READW <= comparator:U_COMP.equal
 
 
 |arithmetic_control|D_flip_flop:U_DFF1
@@ -185,25 +187,7 @@ Y1[6] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
 Y1[7] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arithmetic_control|Mux_2x1:U_MUX
-A[0] => Selector2.IN3
-A[1] => Selector1.IN3
-A[2] => Selector0.IN3
-B[0] => Selector2.IN4
-B[1] => Selector1.IN4
-B[2] => Selector0.IN4
-S => Selector0.IN5
-S => Selector1.IN5
-S => Selector2.IN5
-S => Selector0.IN1
-S => Selector1.IN1
-S => Selector2.IN1
-Y[0] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
-Y[1] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
-Y[2] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|arithmetic_control|D_flip_flop:U_DFF5
+|arithmetic_control|D_flip_flop:U_DFF_PIPE
 D[0] => internal_Q[0].DATAIN
 D[1] => internal_Q[1].DATAIN
 D[2] => internal_Q[2].DATAIN
@@ -244,6 +228,24 @@ Qn[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
 Qn[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
 Qn[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
 Qn[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_control|Mux_2x1:U_MUX
+A[0] => Selector2.IN3
+A[1] => Selector1.IN3
+A[2] => Selector0.IN3
+B[0] => Selector2.IN4
+B[1] => Selector1.IN4
+B[2] => Selector0.IN4
+S => Selector0.IN5
+S => Selector1.IN5
+S => Selector2.IN5
+S => Selector0.IN1
+S => Selector1.IN1
+S => Selector2.IN1
+Y[0] <= Selector2.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |arithmetic_control|D_flip_flop:U_DFFALU1
@@ -384,5 +386,48 @@ Y[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 Y[5] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 Y[6] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 Y[7] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|arithmetic_control|D_flip_flop:U_DFF_ACC
+D[0] => internal_Q[0].DATAIN
+D[1] => internal_Q[1].DATAIN
+D[2] => internal_Q[2].DATAIN
+D[3] => internal_Q[3].DATAIN
+D[4] => internal_Q[4].DATAIN
+D[5] => internal_Q[5].DATAIN
+D[6] => internal_Q[6].DATAIN
+D[7] => internal_Q[7].DATAIN
+CLK => internal_Q[0].CLK
+CLK => internal_Q[1].CLK
+CLK => internal_Q[2].CLK
+CLK => internal_Q[3].CLK
+CLK => internal_Q[4].CLK
+CLK => internal_Q[5].CLK
+CLK => internal_Q[6].CLK
+CLK => internal_Q[7].CLK
+RST => internal_Q[0].ACLR
+RST => internal_Q[1].ACLR
+RST => internal_Q[2].ACLR
+RST => internal_Q[3].ACLR
+RST => internal_Q[4].ACLR
+RST => internal_Q[5].ACLR
+RST => internal_Q[6].ACLR
+RST => internal_Q[7].ACLR
+Q[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= internal_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
+Qn[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Qn[3] <= internal_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+Qn[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+Qn[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+Qn[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+Qn[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
