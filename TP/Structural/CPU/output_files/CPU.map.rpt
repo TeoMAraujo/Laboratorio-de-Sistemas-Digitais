@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU
-Fri Dec  5 17:33:39 2025
+Tue Dec  9 23:23:02 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -20,29 +20,52 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
  12. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFF3
  13. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|comparator:U_COMP
  14. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|Demux_1x2:U_DEMUX
- 15. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFF_PIPE
+ 15. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFF4
  16. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|Mux_2x1:U_MUX
  17. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFFALU1
- 18. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|ALU:U_ALU
- 19. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFF_ACC
- 20. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P0
- 21. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P1
- 22. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P2
- 23. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P3
- 24. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P4
- 25. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P5
- 26. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P6
- 27. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P7
- 28. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF_ACC"
- 29. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFFALU1"
- 30. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF_PIPE"
- 31. Port Connectivity Checks: "arithmetic_control:U_AC|comparator:U_COMP"
- 32. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF3"
- 33. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF2"
- 34. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF1"
- 35. Post-Synthesis Netlist Statistics for Top Partition
- 36. Elapsed Time Per Partition
- 37. Analysis & Synthesis Messages
+ 18. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFFALU2
+ 19. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFF5
+ 20. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFFALU3
+ 21. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFF6
+ 22. Parameter Settings for User Entity Instance: arithmetic_control:U_AC|ALU:U_ALU
+ 23. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P0
+ 24. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P0|D_flip_flop:my_storage_element
+ 25. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P1
+ 26. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P1|D_flip_flop:my_storage_element
+ 27. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P2
+ 28. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P2|D_flip_flop:my_storage_element
+ 29. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P3
+ 30. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P3|D_flip_flop:my_storage_element
+ 31. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P4
+ 32. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P4|D_flip_flop:my_storage_element
+ 33. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P5
+ 34. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P5|D_flip_flop:my_storage_element
+ 35. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P6
+ 36. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P6|D_flip_flop:my_storage_element
+ 37. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P7
+ 38. Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P7|D_flip_flop:my_storage_element
+ 39. Port Connectivity Checks: "barramento:U_REG|reg_8bit:P7|D_flip_flop:my_storage_element"
+ 40. Port Connectivity Checks: "barramento:U_REG|reg_8bit:P6|D_flip_flop:my_storage_element"
+ 41. Port Connectivity Checks: "barramento:U_REG|reg_8bit:P5|D_flip_flop:my_storage_element"
+ 42. Port Connectivity Checks: "barramento:U_REG|reg_8bit:P4|D_flip_flop:my_storage_element"
+ 43. Port Connectivity Checks: "barramento:U_REG|reg_8bit:P3|D_flip_flop:my_storage_element"
+ 44. Port Connectivity Checks: "barramento:U_REG|reg_8bit:P2|D_flip_flop:my_storage_element"
+ 45. Port Connectivity Checks: "barramento:U_REG|reg_8bit:P1|D_flip_flop:my_storage_element"
+ 46. Port Connectivity Checks: "barramento:U_REG|reg_8bit:P0|D_flip_flop:my_storage_element"
+ 47. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF6"
+ 48. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFFALU3"
+ 49. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF5"
+ 50. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFFALU2"
+ 51. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFFALU1"
+ 52. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF4"
+ 53. Port Connectivity Checks: "arithmetic_control:U_AC|Demux_1x2:U_DEMUX"
+ 54. Port Connectivity Checks: "arithmetic_control:U_AC|comparator:U_COMP"
+ 55. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF3"
+ 56. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF2"
+ 57. Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF1"
+ 58. Post-Synthesis Netlist Statistics for Top Partition
+ 59. Elapsed Time Per Partition
+ 60. Analysis & Synthesis Messages
 
 
 
@@ -69,15 +92,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec  5 17:33:39 2025          ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec  9 23:23:02 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; CPU                                            ;
 ; Top-level Entity Name              ; CPU                                            ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 198                                            ;
-;     Total combinational functions  ; 125                                            ;
-;     Dedicated logic registers      ; 92                                             ;
-; Total registers                    ; 92                                             ;
+; Total logic elements               ; 221                                            ;
+;     Total combinational functions  ; 126                                            ;
+;     Dedicated logic registers      ; 104                                            ;
+; Total registers                    ; 104                                            ;
 ; Total pins                         ; 24                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
@@ -213,20 +236,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 198       ;
+; Estimated Total logic elements              ; 221       ;
 ;                                             ;           ;
-; Total combinational functions               ; 125       ;
+; Total combinational functions               ; 126       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 89        ;
-;     -- 3 input functions                    ; 25        ;
-;     -- <=2 input functions                  ; 11        ;
+;     -- 4 input functions                    ; 81        ;
+;     -- 3 input functions                    ; 27        ;
+;     -- <=2 input functions                  ; 18        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 117       ;
+;     -- normal mode                          ; 118       ;
 ;     -- arithmetic mode                      ; 8         ;
 ;                                             ;           ;
-; Total registers                             ; 92        ;
-;     -- Dedicated logic registers            ; 92        ;
+; Total registers                             ; 104       ;
+;     -- Dedicated logic registers            ; 104       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 24        ;
@@ -234,38 +257,49 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 92        ;
-; Total fan-out                               ; 761       ;
-; Average fan-out                             ; 2.87      ;
+; Maximum fan-out                             ; 104       ;
+; Total fan-out                               ; 849       ;
+; Average fan-out                             ; 3.05      ;
 +---------------------------------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                           ;
-+--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                 ; Entity Name        ; Library Name ;
-+--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------+--------------------+--------------+
-; |CPU                           ; 125 (0)             ; 92 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 24   ; 0            ; 0          ; |CPU                                                ; CPU                ; work         ;
-;    |arithmetic_control:U_AC|   ; 96 (48)             ; 28 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC                        ; arithmetic_control ; work         ;
-;       |ALU:U_ALU|              ; 44 (44)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|ALU:U_ALU              ; ALU                ; work         ;
-;       |D_flip_flop:U_DFF1|     ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF1     ; D_flip_flop        ; work         ;
-;       |D_flip_flop:U_DFF2|     ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2     ; D_flip_flop        ; work         ;
-;       |D_flip_flop:U_DFF3|     ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3     ; D_flip_flop        ; work         ;
-;       |D_flip_flop:U_DFFALU1|  ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU1  ; D_flip_flop        ; work         ;
-;       |D_flip_flop:U_DFF_ACC|  ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF_ACC  ; D_flip_flop        ; work         ;
-;       |D_flip_flop:U_DFF_PIPE| ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF_PIPE ; D_flip_flop        ; work         ;
-;       |Demux_1x2:U_DEMUX|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|Demux_1x2:U_DEMUX      ; Demux_1x2          ; work         ;
-;       |comparator:U_COMP|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|comparator:U_COMP      ; comparator         ; work         ;
-;    |barramento:U_REG|          ; 29 (0)              ; 64 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG                               ; barramento         ; work         ;
-;       |reg_8bit:P0|            ; 5 (5)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P0                   ; reg_8bit           ; work         ;
-;       |reg_8bit:P1|            ; 5 (5)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P1                   ; reg_8bit           ; work         ;
-;       |reg_8bit:P2|            ; 4 (4)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P2                   ; reg_8bit           ; work         ;
-;       |reg_8bit:P3|            ; 3 (3)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P3                   ; reg_8bit           ; work         ;
-;       |reg_8bit:P4|            ; 3 (3)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P4                   ; reg_8bit           ; work         ;
-;       |reg_8bit:P5|            ; 3 (3)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P5                   ; reg_8bit           ; work         ;
-;       |reg_8bit:P6|            ; 3 (3)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P6                   ; reg_8bit           ; work         ;
-;       |reg_8bit:P7|            ; 3 (3)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P7                   ; reg_8bit           ; work         ;
-+--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------+--------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                   ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                              ; Entity Name        ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------+--------------------+--------------+
+; |CPU                                      ; 126 (0)             ; 104 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 24   ; 0            ; 0          ; |CPU                                                             ; CPU                ; work         ;
+;    |arithmetic_control:U_AC|              ; 106 (56)            ; 40 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC                                     ; arithmetic_control ; work         ;
+;       |ALU:U_ALU|                         ; 46 (46)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|ALU:U_ALU                           ; ALU                ; work         ;
+;       |D_flip_flop:U_DFF1|                ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF1                  ; D_flip_flop        ; work         ;
+;       |D_flip_flop:U_DFF2|                ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF2                  ; D_flip_flop        ; work         ;
+;       |D_flip_flop:U_DFF3|                ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF3                  ; D_flip_flop        ; work         ;
+;       |D_flip_flop:U_DFF4|                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF4                  ; D_flip_flop        ; work         ;
+;       |D_flip_flop:U_DFF5|                ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF5                  ; D_flip_flop        ; work         ;
+;       |D_flip_flop:U_DFF6|                ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF6                  ; D_flip_flop        ; work         ;
+;       |D_flip_flop:U_DFFALU1|             ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU1               ; D_flip_flop        ; work         ;
+;       |D_flip_flop:U_DFFALU2|             ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU2               ; D_flip_flop        ; work         ;
+;       |D_flip_flop:U_DFFALU3|             ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU3               ; D_flip_flop        ; work         ;
+;       |Mux_2x1:U_MUX|                     ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|Mux_2x1:U_MUX                       ; Mux_2x1            ; work         ;
+;       |comparator:U_COMP|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|arithmetic_control:U_AC|comparator:U_COMP                   ; comparator         ; work         ;
+;    |barramento:U_REG|                     ; 20 (0)              ; 64 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG                                            ; barramento         ; work         ;
+;       |reg_8bit:P0|                       ; 3 (3)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P0                                ; reg_8bit           ; work         ;
+;          |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P0|D_flip_flop:my_storage_element ; D_flip_flop        ; work         ;
+;       |reg_8bit:P1|                       ; 3 (3)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P1                                ; reg_8bit           ; work         ;
+;          |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P1|D_flip_flop:my_storage_element ; D_flip_flop        ; work         ;
+;       |reg_8bit:P2|                       ; 3 (3)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P2                                ; reg_8bit           ; work         ;
+;          |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P2|D_flip_flop:my_storage_element ; D_flip_flop        ; work         ;
+;       |reg_8bit:P3|                       ; 3 (3)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P3                                ; reg_8bit           ; work         ;
+;          |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P3|D_flip_flop:my_storage_element ; D_flip_flop        ; work         ;
+;       |reg_8bit:P4|                       ; 3 (3)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P4                                ; reg_8bit           ; work         ;
+;          |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P4|D_flip_flop:my_storage_element ; D_flip_flop        ; work         ;
+;       |reg_8bit:P5|                       ; 2 (2)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P5                                ; reg_8bit           ; work         ;
+;          |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P5|D_flip_flop:my_storage_element ; D_flip_flop        ; work         ;
+;       |reg_8bit:P6|                       ; 2 (2)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P6                                ; reg_8bit           ; work         ;
+;          |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P6|D_flip_flop:my_storage_element ; D_flip_flop        ; work         ;
+;       |reg_8bit:P7|                       ; 1 (1)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P7                                ; reg_8bit           ; work         ;
+;          |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CPU|barramento:U_REG|reg_8bit:P7|D_flip_flop:my_storage_element ; D_flip_flop        ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -274,23 +308,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 92    ;
+; Total registers                              ; 104   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 28    ;
+; Number of registers using Asynchronous Clear ; 104   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 64    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux1 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |CPU|arithmetic_control:U_AC|Mux_2x1:U_MUX|Selector2 ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |CPU|arithmetic_control:U_AC|ALU:U_ALU|Mux1          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------+
@@ -343,13 +378,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFF_PIPE ;
-+----------------+-------+--------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                               ;
-+----------------+-------+--------------------------------------------------------------------+
-; w              ; 8     ; Signed Integer                                                     ;
-+----------------+-------+--------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFF4 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; w              ; 1     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -373,6 +408,46 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFFALU2 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFF5 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFFALU3 ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFF6 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: arithmetic_control:U_AC|ALU:U_ALU ;
 +----------------+-------+-------------------------------------------------------+
@@ -380,16 +455,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------+
 ; w              ; 8     ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: arithmetic_control:U_AC|D_flip_flop:U_DFF_ACC ;
-+----------------+-------+-------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                              ;
-+----------------+-------+-------------------------------------------------------------------+
-; w              ; 8     ; Signed Integer                                                    ;
-+----------------+-------+-------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -403,6 +468,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P0|D_flip_flop:my_storage_element ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P1 ;
 +----------------+-------+--------------------------------------------------+
@@ -410,6 +485,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------------+
 ; faddr          ; 001   ; Unsigned Binary                                  ;
 +----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P1|D_flip_flop:my_storage_element ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -423,6 +508,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P2|D_flip_flop:my_storage_element ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P3 ;
 +----------------+-------+--------------------------------------------------+
@@ -430,6 +525,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------------+
 ; faddr          ; 011   ; Unsigned Binary                                  ;
 +----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P3|D_flip_flop:my_storage_element ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -443,6 +548,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P4|D_flip_flop:my_storage_element ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P5 ;
 +----------------+-------+--------------------------------------------------+
@@ -450,6 +565,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------------+
 ; faddr          ; 101   ; Unsigned Binary                                  ;
 +----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P5|D_flip_flop:my_storage_element ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -463,6 +588,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P6|D_flip_flop:my_storage_element ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P7 ;
 +----------------+-------+--------------------------------------------------+
@@ -473,8 +608,117 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: barramento:U_REG|reg_8bit:P7|D_flip_flop:my_storage_element ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF_ACC"                                      ;
+; Port Connectivity Checks: "barramento:U_REG|reg_8bit:P7|D_flip_flop:my_storage_element"                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barramento:U_REG|reg_8bit:P6|D_flip_flop:my_storage_element"                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barramento:U_REG|reg_8bit:P5|D_flip_flop:my_storage_element"                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barramento:U_REG|reg_8bit:P4|D_flip_flop:my_storage_element"                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barramento:U_REG|reg_8bit:P3|D_flip_flop:my_storage_element"                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barramento:U_REG|reg_8bit:P2|D_flip_flop:my_storage_element"                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barramento:U_REG|reg_8bit:P1|D_flip_flop:my_storage_element"                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "barramento:U_REG|reg_8bit:P0|D_flip_flop:my_storage_element"                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF6"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFFALU3"                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF5"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFFALU2"                                      ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -491,14 +735,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF_PIPE"                                        ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; q[7..3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; qn      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arithmetic_control:U_AC|D_flip_flop:U_DFF4"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arithmetic_control:U_AC|Demux_1x2:U_DEMUX"                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; y1[7..3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------+
@@ -543,20 +795,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 24                          ;
-; cycloneiii_ff         ; 92                          ;
-;     CLR               ; 28                          ;
-;     ENA               ; 64                          ;
-; cycloneiii_lcell_comb ; 125                         ;
+; cycloneiii_ff         ; 104                         ;
+;     CLR               ; 40                          ;
+;     ENA CLR           ; 64                          ;
+; cycloneiii_lcell_comb ; 126                         ;
 ;     arith             ; 8                           ;
 ;         2 data inputs ; 1                           ;
 ;         3 data inputs ; 7                           ;
-;     normal            ; 117                         ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 18                          ;
-;         4 data inputs ; 89                          ;
+;     normal            ; 118                         ;
+;         2 data inputs ; 17                          ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 81                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.50                        ;
-; Average LUT depth     ; 5.76                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.52                        ;
 +-----------------------+-----------------------------+
 
 
@@ -565,7 +817,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -575,12 +827,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Dec  5 17:33:30 2025
+    Info: Processing started: Tue Dec  9 23:22:56 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd
-    Info (12022): Found design unit 1: reg_8bit-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 16
+    Info (12022): Found design unit 1: reg_8bit-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 17
     Info (12023): Found entity 1: reg_8bit File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd
     Info (12022): Found design unit 1: Mux_2x1-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 15
@@ -592,13 +844,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/p
     Info (12022): Found design unit 1: comparator-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd Line: 15
     Info (12023): Found entity 1: comparator File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/comparator/comparator.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd
-    Info (12022): Found design unit 1: ALU-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd Line: 16
+    Info (12022): Found design unit 1: ALU-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd Line: 14
     Info (12023): Found entity 1: ALU File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
     Info (12022): Found design unit 1: D_flip_flop-behavourial File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 14
     Info (12023): Found entity 1: D_flip_flop File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd
-    Info (12022): Found design unit 1: barramento-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 13
+    Info (12022): Found design unit 1: barramento-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 14
     Info (12023): Found entity 1: barramento File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd
     Info (12022): Found design unit 1: arithmetic_control-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 18
@@ -611,41 +863,42 @@ Info (12021): Found 2 design units, including 1 entities, in source file tb_CPU.
     Info (12023): Found entity 1: tb_CPU File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/tb_CPU.vhd Line: 5
 Info (12127): Elaborating entity "CPU" for the top level hierarchy
 Info (12128): Elaborating entity "arithmetic_control" for hierarchy "arithmetic_control:U_AC" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 20
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "arithmetic_control:U_AC|D_flip_flop:U_DFF1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 47
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "arithmetic_control:U_AC|D_flip_flop:U_DFF2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 52
-Info (12128): Elaborating entity "comparator" for hierarchy "arithmetic_control:U_AC|comparator:U_COMP" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 62
-Info (12128): Elaborating entity "Demux_1x2" for hierarchy "arithmetic_control:U_AC|Demux_1x2:U_DEMUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 71
-Info (12128): Elaborating entity "Mux_2x1" for hierarchy "arithmetic_control:U_AC|Mux_2x1:U_MUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 102
-Info (12128): Elaborating entity "ALU" for hierarchy "arithmetic_control:U_AC|ALU:U_ALU" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 118
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "arithmetic_control:U_AC|D_flip_flop:U_DFF1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 43
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "arithmetic_control:U_AC|D_flip_flop:U_DFF2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 47
+Info (12128): Elaborating entity "comparator" for hierarchy "arithmetic_control:U_AC|comparator:U_COMP" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 55
+Info (12128): Elaborating entity "Demux_1x2" for hierarchy "arithmetic_control:U_AC|Demux_1x2:U_DEMUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 59
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "arithmetic_control:U_AC|D_flip_flop:U_DFF4" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 65
+Info (12128): Elaborating entity "Mux_2x1" for hierarchy "arithmetic_control:U_AC|Mux_2x1:U_MUX" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 69
+Info (12128): Elaborating entity "ALU" for hierarchy "arithmetic_control:U_AC|ALU:U_ALU" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 99
 Info (12128): Elaborating entity "barramento" for hierarchy "barramento:U_REG" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/CPU/CPU.vhd Line: 33
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P0" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 15
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 19
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 23
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P3" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 27
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P4" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 31
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P5" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 35
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P6" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 39
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P7" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 43
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P0" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 18
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 22
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 26
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P3" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 30
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P4" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 34
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P5" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 38
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P6" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 42
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "barramento:U_REG|reg_8bit:P7" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 46
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[0]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux7" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[1]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux6" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[2]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux5" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[3]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux4" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[4]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux3" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[5]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux2" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[6]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux1" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
-    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[7]" to the node "arithmetic_control:U_AC|ALU:U_ALU|Mux0" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[0]" to the node "arithmetic_control:U_AC|D_flip_flop:U_DFF5|internal_Q[0]" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[1]" to the node "arithmetic_control:U_AC|D_flip_flop:U_DFF5|internal_Q[1]" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[2]" to the node "arithmetic_control:U_AC|D_flip_flop:U_DFF5|internal_Q[2]" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[3]" to the node "arithmetic_control:U_AC|D_flip_flop:U_DFF5|internal_Q[3]" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[4]" to the node "arithmetic_control:U_AC|D_flip_flop:U_DFF5|internal_Q[4]" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[5]" to the node "arithmetic_control:U_AC|D_flip_flop:U_DFF5|internal_Q[5]" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[6]" to the node "arithmetic_control:U_AC|D_flip_flop:U_DFF5|internal_Q[6]" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
+    Warning (13047): Converted the fan-out from the tri-state buffer "arithmetic_control:U_AC|DATA[7]" to the node "arithmetic_control:U_AC|D_flip_flop:U_DFF5|internal_Q[7]" into an OR gate File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 238 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 254 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 214 logic cells
+    Info (21061): Implemented 230 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 462 megabytes
-    Info: Processing ended: Fri Dec  5 17:33:39 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Peak virtual memory: 453 megabytes
+    Info: Processing ended: Tue Dec  9 23:23:02 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:14
 
 

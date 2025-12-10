@@ -3,12 +3,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity CPU is
 port (
-        OPCODE             : in    std_logic_vector(2 downto 0);
-        OPERAND1           : in    std_logic_vector(7 downto 0);
-        OPERAND2           : in    std_logic_vector(2 downto 0);
-        CLK                : in    std_logic;
-        RST                : in    std_logic; 
-        OUTP               : out   std_logic_vector(7 downto 0)
+        OPCODE                     : in    std_logic_vector(2 downto 0);
+        OPERAND1                   : in    std_logic_vector(7 downto 0);
+        OPERAND2                   : in    std_logic_vector(2 downto 0);
+        CLK                        : in    std_logic;
+        RST                        : in    std_logic; 
+        OUTP                       : out   std_logic_vector(7 downto 0)
     );
 end CPU;
 
@@ -21,7 +21,7 @@ begin
         port map (
             OPCODE   => OPCODE,
             OPERAND1 => OPERAND1,        
-            OPERAND2 => OPERAND2,      
+            OPERAND2 => OPERAND2,       
             CLK      => CLK, 
             RST      => RST,    
             OUTP     => OUTP,  
@@ -32,9 +32,10 @@ begin
 
     U_REG : entity work.barramento
         port map (
-            CLK => CLK,
-            addr => toADDR,
-            data => toDATA,
+            CLK   => CLK,
+            RST   => RST, 
+            addr  => toADDR,
+            data  => toDATA,
             readw => toREADW
         );
 end structural;

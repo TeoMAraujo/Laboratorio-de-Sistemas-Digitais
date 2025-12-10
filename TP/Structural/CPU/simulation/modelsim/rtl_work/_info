@@ -8,27 +8,27 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/simulation/modelsim
+Z0 dC:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/simulation/modelsim
 Ealu
-Z1 w1764964868
+Z1 w1765311309
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 4
 R0
-Z5 8C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd
-Z6 FC:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd
+Z5 8C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd
+Z6 FC:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd
 l0
 L5 1
-V@iM1g]j7oO>P;:0Ua5`il0
-!s100 <j6<0^Wd?:5B_?=JVkHo33
+V]=IL^ZbL_Z^;`W0BEC]UX1
+!s100 Mc^:JkD06UI07FUAL]Sb@0
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1764965916
+Z8 !s110 1765311983
 !i10b 1
-Z9 !s108 1764965916.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd|
-Z11 !s107 C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd|
+Z9 !s108 1765311983.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd|
+Z11 !s107 C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1 CvgOpt 0
@@ -36,12 +36,12 @@ Adata_flow
 R2
 R3
 R4
-Z14 DEx4 work 3 alu 0 22 @iM1g]j7oO>P;:0Ua5`il0
+Z14 DEx4 work 3 alu 0 22 ]=IL^ZbL_Z^;`W0BEC]UX1
 !i122 4
-l17
-L16 13
-VRM?OZU8j8dek6^hGEjZ>;1
-!s100 7GGZf`69B;j_`zIM^5MQS1
+l15
+Z15 L14 17
+V82DkE4fRkLSYbZi5LS0o^3
+!s100 7S6>`GL^mHI[QD3DL@LW[0
 R7
 31
 R8
@@ -53,24 +53,24 @@ R11
 R12
 R13
 Earithmetic_control
-Z15 w1764963577
+Z16 w1765311898
 R3
 R4
 !i122 7
 R0
-Z16 8C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd
-Z17 FC:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd
+Z17 8C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd
+Z18 FC:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd
 l0
 L4 1
 VI]gh7^XCK@PYmE1oB_hZz3
 !s100 WVA8j54M:]_b;^^BSR6To1
 R7
 31
-Z18 !s110 1764965917
+R8
 !i10b 1
 R9
-Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd|
-Z20 !s107 C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd|
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd|
+Z20 !s107 C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd|
 !i113 1
 R12
 R13
@@ -91,7 +91,7 @@ V59k6RXl4F4[X@3Jj>IN?83
 !s100 RJT0_nc`SG?a0BWnG9hgZ1
 R7
 31
-R18
+R8
 !i10b 1
 R9
 R19
@@ -100,13 +100,13 @@ R20
 R12
 R13
 Ebarramento
-Z26 w1764959490
+Z26 w1764969185
 R3
 R4
 !i122 6
 R0
-Z27 8C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd
-Z28 FC:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd
+Z27 8C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd
+Z28 FC:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd
 l0
 L4 1
 V>mIHX1G<Y:nTc6WCS]akg0
@@ -116,8 +116,8 @@ R7
 R8
 !i10b 1
 R9
-Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd|
-Z30 !s107 C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd|
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd|
+Z30 !s107 C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/barramento/barramento.vhd|
 !i113 1
 R12
 R13
@@ -147,8 +147,8 @@ R3
 R4
 !i122 3
 R0
-Z33 8C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd
-Z34 FC:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd
+Z33 8C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd
+Z34 FC:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd
 l0
 L4 1
 VIbo5ZWYPF6E:E2W<[@_C^0
@@ -158,8 +158,8 @@ R7
 R8
 !i10b 1
 R9
-Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd|
-Z36 !s107 C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd|
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd|
+Z36 !s107 C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd|
 !i113 1
 R12
 R13
@@ -188,19 +188,19 @@ R3
 R4
 !i122 8
 R0
-Z37 8C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd
-Z38 FC:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd
+Z37 8C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd
+Z38 FC:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd
 l0
 L4 1
 V?iYbO]hil1ni]C3H]0>]`2
 !s100 0TXKciUCFGfUL8MPiDYke0
 R7
 31
-R18
+R8
 !i10b 1
-Z39 !s108 1764965917.000000
-Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd|
-Z41 !s107 C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd|
+R9
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd|
+Z40 !s107 C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/CPU.vhd|
 !i113 1
 R12
 R13
@@ -217,11 +217,11 @@ VocCNeQ3O>JBR5WaN0BGVO3
 !s100 oaa@V?g14gJPG9I1<1W]l2
 R7
 31
-R18
+R8
 !i10b 1
+R9
 R39
 R40
-R41
 !i113 1
 R12
 R13
@@ -231,8 +231,8 @@ R3
 R4
 !i122 5
 R0
-Z42 8C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
-Z43 FC:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
+Z41 8C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
+Z42 FC:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
 l0
 L4 1
 V^RX:Volb[>PIZUkKEMUIm2
@@ -242,8 +242,8 @@ R7
 R8
 !i10b 1
 R9
-Z44 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd|
-Z45 !s107 C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd|
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd|
+Z44 !s107 C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd|
 !i113 1
 R12
 R13
@@ -253,7 +253,7 @@ R4
 R24
 !i122 5
 l16
-L14 17
+R15
 VXMonlkB?BYEo7[oWEBk0:3
 !s100 HJ;JFKKnLTO:g0JUZf]:k1
 R7
@@ -261,8 +261,8 @@ R7
 R8
 !i10b 1
 R9
+R43
 R44
-R45
 !i113 1
 R12
 R13
@@ -272,8 +272,8 @@ R3
 R4
 !i122 2
 R0
-Z46 8C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd
-Z47 FC:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd
+Z45 8C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd
+Z46 FC:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd
 l0
 L4 1
 Vi^4NozKmDBg77cB@mZSbf1
@@ -283,8 +283,8 @@ R7
 R8
 !i10b 1
 R9
-Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd|
-Z49 !s107 C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd|
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd|
+Z48 !s107 C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd|
 !i113 1
 R12
 R13
@@ -302,8 +302,8 @@ R7
 R8
 !i10b 1
 R9
+R47
 R48
-R49
 !i113 1
 R12
 R13
@@ -313,8 +313,8 @@ R3
 R4
 !i122 1
 R0
-Z50 8C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd
-Z51 FC:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd
+Z49 8C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd
+Z50 FC:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd
 l0
 L4 1
 V9k^>92]QhLjAnZ7@TPjHR2
@@ -323,9 +323,9 @@ R7
 31
 R8
 !i10b 1
-R9
-Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd|
-Z53 !s107 C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd|
+Z51 !s108 1765311982.000000
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd|
+Z53 !s107 C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd|
 !i113 1
 R12
 R13
@@ -342,31 +342,31 @@ R7
 31
 R8
 !i10b 1
-R9
+R51
 R52
 R53
 !i113 1
 R12
 R13
 Ereg_8bit
-R26
+Z54 w1765311331
 R3
 R4
 !i122 0
 R0
-Z54 8C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd
-Z55 FC:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd
+Z55 8C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd
+Z56 FC:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd
 l0
 L4 1
 VmQW7l<6CGihN8GQd6<_Qd1
 !s100 `77>CICa?gBU6bPMdk8LV1
 R7
 31
-R8
+Z57 !s110 1765311982
 !i10b 1
-R9
-Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd|
-Z57 !s107 C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd|
+R51
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd|
+Z59 !s107 C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd|
 !i113 1
 R12
 R13
@@ -381,34 +381,34 @@ VbcX:A`B>MP`Ca5C;h1D;03
 !s100 aGdod39J_jS@0AZ<]MUQl0
 R7
 31
-R8
-!i10b 1
-R9
-R56
 R57
+!i10b 1
+R51
+R58
+R59
 !i113 1
 R12
 R13
 Etb_cpu
-Z58 w1764965865
+R26
 R2
 R3
 R4
 !i122 9
 R0
-Z59 8C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/tb_CPU.vhd
-Z60 FC:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/tb_CPU.vhd
+Z60 8C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/tb_CPU.vhd
+Z61 FC:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/tb_CPU.vhd
 l0
 L5 1
 VH6U<Q5z=JeU7[X4hiF4lz0
 !s100 nR;Im7nK0zjjYVkl3TA2?1
 R7
 31
-R18
+R8
 !i10b 1
-R39
-Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/tb_CPU.vhd|
-!s107 C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/tb_CPU.vhd|
+R9
+Z62 !s90 -reportprogress|300|-93|-work|work|C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/tb_CPU.vhd|
+!s107 C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/tb_CPU.vhd|
 !i113 1
 R12
 R13
@@ -424,11 +424,11 @@ V6hRAMG;5VAzUah?Yj9M[B0
 !s100 _zVL9Wgf8QHSJEGgL@B922
 R7
 31
-R18
+R8
 !i10b 1
-R39
-R61
-Z62 !s107 C:/Users/Aluno/Downloads/Jiovana/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/tb_CPU.vhd|
+R9
+R62
+Z63 !s107 C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/CPU/tb_CPU.vhd|
 !i113 1
 R12
 R13
