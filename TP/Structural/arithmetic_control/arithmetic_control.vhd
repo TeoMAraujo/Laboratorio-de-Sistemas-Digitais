@@ -16,30 +16,29 @@ entity arithmetic_control is
 end arithmetic_control;
 
 architecture structural of arithmetic_control is
-    -- Data Path Signals
+    -- data path signals
     signal toALUB              : std_logic_vector(7 downto 0);
     signal toMuxA              : std_logic_vector(2 downto 0);
     signal toMuxB              : std_logic_vector(7 downto 0);
     alias  toMuxBAddr is toMuxB (2 downto 0);
     
-    -- Control Signals
+    -- control signals
     signal toMuxS              : std_logic;
     signal toDemuxA            : std_logic_vector(7 downto 0);
     signal toDemuxSel_read_dff : std_logic;
     signal demux_to_data_bus   : std_logic_vector(7 downto 0); 
     
-    -- Pipeline Signals
+    -- pipeline signals
     signal op_stage1           : std_logic_vector(2 downto 0); 
     signal op_stage2           : std_logic_vector(2 downto 0); 
     signal op_stage3           : std_logic_vector(2 downto 0); 
     signal op_stage4           : std_logic_vector(2 downto 0); 
 
-    -- Data Pipeline
+    -- data pipeline
     signal data_stage3         : std_logic_vector(7 downto 0); -- ALU Input A
 
 begin
-
-    -- Stage 1
+-- stage 1
     U_DFF1: entity work.D_flip_flop
         generic map (W => 3)
         port map (D => OPCODE, CLK => CLK, RST => RST, Q => op_stage1, Qn => open);
@@ -60,6 +59,7 @@ begin
         generic map (W => 8)
         port map (A => toDemuxA, S => not(toDemuxSel_Read_dff), Y0 => demux_to_data_bus, Y1 => toMuxB);
     
+    -- tri-state logic
     DATA <= demux_to_data_bus when toDemuxSel_Read_dff = '1' else (others => 'Z');
     
     U_DFF4: entity work.D_flip_flop
@@ -70,27 +70,27 @@ begin
         generic map(W => 3)
         port map (A => toMuxA, B => toMuxBAddr, S => toMuxS, Y => ADDR);
     
-    -- Stage 2
+-- stage 2
     U_DFFALU1: entity work.D_flip_flop
         generic map (W => 3)
         port map (D => op_stage1, CLK => CLK, RST => RST, Q => op_stage2, Qn => open);
 
-    -- Stage 3
+ -- stage 3
     U_DFFALU2: entity work.D_flip_flop
         generic map (W => 3)
         port map (D => op_stage2, CLK => CLK, RST => RST, Q => op_stage3, Qn => open);
     
-    -- Data Capture (Latest Data)
+    -- data capture (latest data)
     U_DFF5: entity work.D_flip_flop
         generic map (W => 8)
         port map (D => DATA, CLK => CLK, RST => RST, Q => data_stage3, Qn => open);
 
-    -- Stage 4
+    -- stage 4
     U_DFFALU3: entity work.D_flip_flop
         generic map (W => 3)
         port map (D => op_stage3, CLK => CLK, RST => RST, Q => op_stage4, Qn => open);
 
-    -- Data Shift (Previous Data)
+    -- data shift (previous data)
     U_DFF6: entity work.D_flip_flop
         generic map (W => 8)
         port map (D => data_stage3, CLK => CLK, RST => RST, Q => toALUB, Qn => open);
@@ -99,8 +99,8 @@ begin
     U_ALU: entity work.ALU
         generic map (W => 8)
         port map (
-            A      => data_stage3, -- Newest Data
-            B      => toALUB,      -- Old Data (Shifted)
+            A      => data_stage3, -- newest data
+            B      => toALUB,      -- dld data (shifted)
             opcode => op_stage4,   
             Y      => OUTP
         );

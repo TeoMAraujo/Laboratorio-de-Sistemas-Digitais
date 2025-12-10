@@ -16,14 +16,14 @@ begin
     process(A, B, opcode)
     begin
         case opcode is
-            when "000" => Y <= B;                           -- Pass Accumulator
-            when "001" => Y <= A;                           -- Pass Memory Data
+            when "000" => Y <= B;                           -- acumulator
+            when "001" => Y <= A;                           -- actually memory
             when "010" => Y <= NOT(A);                      -- NOT
             when "011" => Y <= A AND B;                     -- AND
             when "100" => Y <= std_logic_vector(signed(A) + signed(B)); -- ADD
             when "101" => Y <= std_logic_vector(signed(A) - signed(B)); -- SUB
-            when "110" => Y <= std_logic_vector(shift_left(signed(B), 1)); 
-            when "111" => Y <= std_logic_vector(shift_right(signed(B), 1));
+            when "110" => Y <= std_logic_vector(shift_left(signed(B), 1)); -- sll
+            when "111" => Y <= std_logic_vector(shift_right(signed(B), 1)); --srl
             when others => Y <= (others => '0');
         end case;
     end process;

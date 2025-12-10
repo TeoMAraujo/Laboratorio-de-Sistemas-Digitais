@@ -33,34 +33,29 @@ architecture structural of reg_8bit is
 
 begin
 
-    -- Address decoding
     eq_addr <= '1' when addr = faddr else '0';
     write_enable <= '1' when (readw = '1' and eq_addr = '1') else '0';
 
-    -- [!] HERE IS THE CHANGE: MUX LOGIC USING "IF"
-    -- This process decides what goes into the Flip-Flop.
-    -- It is purely combinatorial (no CLK in sensitivity list).
     process (write_enable, data, stored_q)
     begin
         if write_enable = '1' then
-            next_d <= data;      -- Load new data
+            next_d <= data;      
         else
-            next_d <= stored_q;  -- Keep old data (feedback loop)
+            next_d <= stored_q; 
         end if;
     end process;
 
-    -- Structural Instantiation of the Flip-Flop
     my_storage_element : D_flip_flop
     generic map ( W => 8 )
     port map (
         CLK => CLK,
         RST => RST,
-        D   => next_d,     -- The result of our IF statement goes here
+        D   => next_d,     
         Q   => stored_q,
         Qn  => open
     );
     
-    -- Tri-state buffer for reading
+    -- Tri-state buffer 
     data <= stored_q when (readw = '0' and eq_addr = '1') else (others => 'Z');
 
 end structural;

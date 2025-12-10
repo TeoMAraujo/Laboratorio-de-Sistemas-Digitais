@@ -6,7 +6,7 @@ entity D_flip_flop is
     port(   
         D     : in  std_logic_vector(W-1 downto 0);
         CLK   : in  std_logic;
-        RST   : in  std_logic; -- Reset Input
+        RST   : in  std_logic; 
         Q, Qn : out std_logic_vector(W-1 downto 0) 
     );
 end D_flip_flop;
@@ -18,7 +18,7 @@ begin
     process (CLK, RST)
     begin
         if RST = '1' then
-            internal_Q <= (others => '0');
+            internal_Q <= (others => '0'); -- asyncronnous
         elsif rising_edge(CLK) then 
             internal_Q <= D;
         end if;

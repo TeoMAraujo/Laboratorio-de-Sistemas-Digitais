@@ -4,7 +4,7 @@ use IEEE.std_logic_1164.all;
 entity barramento is 
     port (
         CLK   : in    std_logic;
-        RST   : in    std_logic; -- 1. Added RST Input here
+        RST   : in    std_logic; 
         addr  : in    std_logic_vector(2 downto 0);
         data  : inout std_logic_vector (7 downto 0);
         readw : in    std_logic
@@ -13,7 +13,6 @@ end barramento;
 
 architecture structural of barramento is
 begin
-    -- You must map RST => RST for every instance
     
     P0: entity work.reg_8bit 
     generic map(faddr => "000") 
