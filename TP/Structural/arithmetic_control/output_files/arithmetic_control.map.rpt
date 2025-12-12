@@ -1,6 +1,6 @@
 Analysis & Synthesis report for arithmetic_control
-Thu Dec 11 01:19:36 2025
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Fri Dec 12 14:06:24 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -22,30 +22,28 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  14. Parameter Settings for User Entity Instance: Mux_2x1:U_MUX_ADDR
  15. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF_ALU1
  16. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF_ALU2
- 17. Parameter Settings for User Entity Instance: D_flip_flop:U_DFF5
- 18. Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU3
- 19. Parameter Settings for User Entity Instance: D_EN_flip_flop:U_DFF_EN1
- 20. Parameter Settings for User Entity Instance: D_EN_flip_flop:U_DFF_EN2
- 21. Parameter Settings for User Entity Instance: ALU:U_ALU
- 22. Port Connectivity Checks: "D_EN_flip_flop:U_DFF_EN2"
- 23. Port Connectivity Checks: "D_EN_flip_flop:U_DFF_EN1"
- 24. Port Connectivity Checks: "D_flip_flop:U_DFFALU3"
- 25. Port Connectivity Checks: "D_flip_flop:U_DFF5"
- 26. Port Connectivity Checks: "D_flip_flop:U_DFF_ALU2"
- 27. Port Connectivity Checks: "D_flip_flop:U_DFF_ALU1"
- 28. Port Connectivity Checks: "D_flip_flop:U_DFF3"
- 29. Port Connectivity Checks: "D_flip_flop:U_DFF2"
- 30. Port Connectivity Checks: "D_flip_flop:U_DFF1"
- 31. Post-Synthesis Netlist Statistics for Top Partition
- 32. Elapsed Time Per Partition
- 33. Analysis & Synthesis Messages
+ 17. Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU3
+ 18. Parameter Settings for User Entity Instance: D_EN_flip_flop:U_DFF_EN1
+ 19. Parameter Settings for User Entity Instance: D_EN_flip_flop:U_DFF_EN2
+ 20. Parameter Settings for User Entity Instance: ALU:U_ALU
+ 21. Port Connectivity Checks: "D_EN_flip_flop:U_DFF_EN2"
+ 22. Port Connectivity Checks: "D_EN_flip_flop:U_DFF_EN1"
+ 23. Port Connectivity Checks: "D_flip_flop:U_DFFALU3"
+ 24. Port Connectivity Checks: "D_flip_flop:U_DFF_ALU2"
+ 25. Port Connectivity Checks: "D_flip_flop:U_DFF_ALU1"
+ 26. Port Connectivity Checks: "D_flip_flop:U_DFF3"
+ 27. Port Connectivity Checks: "D_flip_flop:U_DFF2"
+ 28. Port Connectivity Checks: "D_flip_flop:U_DFF1"
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -62,26 +60,26 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 11 01:19:36 2025       ;
-; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                      ; arithmetic_control                          ;
-; Top-level Entity Name              ; arithmetic_control                          ;
-; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 91                                          ;
-;     Total combinational functions  ; 52                                          ;
-;     Dedicated logic registers      ; 40                                          ;
-; Total registers                    ; 40                                          ;
-; Total pins                         ; 36                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-; UFM blocks                         ; 0                                           ;
-; ADC blocks                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Dec 12 14:06:24 2025          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; arithmetic_control                             ;
+; Top-level Entity Name              ; arithmetic_control                             ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 91                                             ;
+;     Total combinational functions  ; 52                                             ;
+;     Dedicated logic registers      ; 40                                             ;
+; Total registers                    ; 40                                             ;
+; Total pins                         ; 36                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -175,7 +173,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
+; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -187,18 +185,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                      ;
-+--------------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                 ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                               ; Library ;
-+--------------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; ../FSM/FSM.vhd                                   ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/FSM/FSM.vhd                                   ;         ;
-; ../Components/D__EN_flip_flop/D_EN_flip_flop.vhd ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D__EN_flip_flop/D_EN_flip_flop.vhd ;         ;
-; ../Components/Mux_2x1/Mux_2x1.vhd                ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd                ;         ;
-; ../Components/D_flip_flop/D_flip_flop.vhd        ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd        ;         ;
-; ../Components/ALU/ALU.vhd                        ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd                        ;         ;
-; arithmetic_control.vhd                           ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd     ;         ;
-+--------------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
++-------------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                   ; Library ;
++-------------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------+---------+
+; ../Components/D_EN_flip_flop/D_EN_flip_flop.vhd ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_EN_flip_flop/D_EN_flip_flop.vhd ;         ;
+; ../FSM/FSM.vhd                                  ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/FSM/FSM.vhd                                  ;         ;
+; ../Components/Mux_2x1/Mux_2x1.vhd               ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd               ;         ;
+; ../Components/D_flip_flop/D_flip_flop.vhd       ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd       ;         ;
+; ../Components/ALU/ALU.vhd                       ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd                       ;         ;
+; arithmetic_control.vhd                          ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd    ;         ;
++-------------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -228,8 +226,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 40        ;
-; Total fan-out                               ; 371       ;
-; Average fan-out                             ; 2.16      ;
+; Total fan-out                               ; 379       ;
+; Average fan-out                             ; 2.20      ;
 +---------------------------------------------+-----------+
 
 
@@ -241,10 +239,10 @@ https://fpgasoftware.intel.com/eula.
 ; |arithmetic_control           ; 52 (0)              ; 40 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 36   ; 0            ; 0          ; |arithmetic_control                          ; arithmetic_control ; work         ;
 ;    |ALU:U_ALU|                ; 46 (46)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|ALU:U_ALU                ; ALU                ; work         ;
 ;    |D_EN_flip_flop:U_DFF_EN1| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_EN_flip_flop:U_DFF_EN1 ; D_EN_flip_flop     ; work         ;
+;    |D_EN_flip_flop:U_DFF_EN2| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_EN_flip_flop:U_DFF_EN2 ; D_EN_flip_flop     ; work         ;
 ;    |D_flip_flop:U_DFF1|       ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF1       ; D_flip_flop        ; work         ;
 ;    |D_flip_flop:U_DFF2|       ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF2       ; D_flip_flop        ; work         ;
 ;    |D_flip_flop:U_DFF3|       ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF3       ; D_flip_flop        ; work         ;
-;    |D_flip_flop:U_DFF5|       ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF5       ; D_flip_flop        ; work         ;
 ;    |D_flip_flop:U_DFFALU3|    ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFFALU3    ; D_flip_flop        ; work         ;
 ;    |D_flip_flop:U_DFF_ALU1|   ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF_ALU1   ; D_flip_flop        ; work         ;
 ;    |D_flip_flop:U_DFF_ALU2|   ; 0 (0)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |arithmetic_control|D_flip_flop:U_DFF_ALU2   ; D_flip_flop        ; work         ;
@@ -275,7 +273,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 40    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Clock Enable       ; 16    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -285,7 +283,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |arithmetic_control|ALU:U_ALU|Mux6 ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; No         ; |arithmetic_control|ALU:U_ALU|Mux5 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
 
 
@@ -349,16 +347,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: D_flip_flop:U_DFF5 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; w              ; 8     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +--------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: D_flip_flop:U_DFFALU3 ;
 +----------------+-------+-------------------------------------------+
@@ -404,7 +392,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -420,15 +407,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "D_flip_flop:U_DFFALU3"                                                              ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "D_flip_flop:U_DFF5"                                                                 ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -488,8 +466,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 36                          ;
 ; cycloneiii_ff         ; 40                          ;
-;     CLR               ; 32                          ;
-;     ENA CLR           ; 8                           ;
+;     CLR               ; 24                          ;
+;     ENA CLR           ; 16                          ;
 ; cycloneiii_io_obuf    ; 8                           ;
 ; cycloneiii_lcell_comb ; 52                          ;
 ;     arith             ; 8                           ;
@@ -510,7 +488,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -519,51 +497,47 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Dec 11 01:19:29 2025
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Fri Dec 12 14:06:14 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off arithmetic_control -c arithmetic_control
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/laboratorio-de-sistemas-digitais-main/tp/structural/fsm/fsm.vhd
-    Info (12022): Found design unit 1: FSM-behavioral File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/FSM/FSM.vhd Line: 14
-    Info (12023): Found entity 1: FSM File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/FSM/FSM.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/laboratorio-de-sistemas-digitais-main/tp/structural/components/d__en_flip_flop/d_en_flip_flop.vhd
-    Info (12022): Found design unit 1: D_EN_flip_flop-behavioral File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D__EN_flip_flop/D_EN_flip_flop.vhd Line: 16
-    Info (12023): Found entity 1: D_EN_flip_flop File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D__EN_flip_flop/D_EN_flip_flop.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/laboratorio-de-sistemas-digitais-main/tp/structural/components/mux_2x1/mux_2x1.vhd
-    Info (12022): Found design unit 1: Mux_2x1-data_flow File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 15
-    Info (12023): Found entity 1: Mux_2x1 File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/laboratorio-de-sistemas-digitais-main/tp/structural/components/d_flip_flop/d_flip_flop.vhd
-    Info (12022): Found design unit 1: D_flip_flop-behavourial File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 14
-    Info (12023): Found entity 1: D_flip_flop File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/laboratorio-de-sistemas-digitais-main/tp/structural/components/demux_1x2/demux_1x2.vhd
-    Info (12022): Found design unit 1: Demux_1x2-data_flow File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd Line: 15
-    Info (12023): Found entity 1: Demux_1x2 File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/Demux_1x2/Demux_1x2.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/laboratorio-de-sistemas-digitais-main/tp/structural/components/comparator/comparator.vhd
-    Info (12022): Found design unit 1: comparator-data_flow File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd Line: 15
-    Info (12023): Found entity 1: comparator File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/comparator/comparator.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/laboratorio-de-sistemas-digitais-main/tp/structural/components/alu/alu.vhd
-    Info (12022): Found design unit 1: ALU-data_flow File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd Line: 14
-    Info (12023): Found entity 1: ALU File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/ALU/ALU.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/laboratorio-de-sistemas-digitais-main/tp/structural/components/reg_8bit/reg_8bit.vhd
-    Info (12022): Found design unit 1: reg_8bit-structural File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 17
-    Info (12023): Found entity 1: reg_8bit File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_EN_flip_flop/D_EN_flip_flop.vhd
+    Info (12022): Found design unit 1: D_EN_flip_flop-behavioral File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_EN_flip_flop/D_EN_flip_flop.vhd Line: 16
+    Info (12023): Found entity 1: D_EN_flip_flop File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_EN_flip_flop/D_EN_flip_flop.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/FSM/FSM.vhd
+    Info (12022): Found design unit 1: FSM-behavioral File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/FSM/FSM.vhd Line: 14
+    Info (12023): Found entity 1: FSM File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/FSM/FSM.vhd Line: 4
+Warning (12019): Can't analyze file -- file ../Components/D__EN_flip_flop/D_EN_flip_flop.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd
+    Info (12022): Found design unit 1: Mux_2x1-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 15
+    Info (12023): Found entity 1: Mux_2x1 File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/Mux_2x1/Mux_2x1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
+    Info (12022): Found design unit 1: D_flip_flop-behavourial File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 14
+    Info (12023): Found entity 1: D_flip_flop File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 4
+Warning (12019): Can't analyze file -- file ../Components/Demux_1x2/Demux_1x2.vhd is missing
+Warning (12019): Can't analyze file -- file ../Components/comparator/comparator.vhd is missing
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd
+    Info (12022): Found design unit 1: ALU-data_flow File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd Line: 14
+    Info (12023): Found entity 1: ALU File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/ALU/ALU.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd
+    Info (12022): Found design unit 1: reg_8bit-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 17
+    Info (12023): Found entity 1: reg_8bit File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file arithmetic_control.vhd
-    Info (12022): Found design unit 1: arithmetic_control-structural File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 18
-    Info (12023): Found entity 1: arithmetic_control File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 4
+    Info (12022): Found design unit 1: arithmetic_control-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 18
+    Info (12023): Found entity 1: arithmetic_control File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_arithmetic_control.vhd
-    Info (12022): Found design unit 1: tb_arithmetic_control-behavior File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/tb_arithmetic_control.vhd Line: 9
-    Info (12023): Found entity 1: tb_arithmetic_control File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/tb_arithmetic_control.vhd Line: 5
+    Info (12022): Found design unit 1: tb_arithmetic_control-behavior File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/tb_arithmetic_control.vhd Line: 8
+    Info (12023): Found entity 1: tb_arithmetic_control File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/tb_arithmetic_control.vhd Line: 5
 Info (12127): Elaborating entity "arithmetic_control" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at arithmetic_control.vhd(22): object "toALUA" assigned a value but never read File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 22
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF1" File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 42
-Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF2" File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 46
-Info (12128): Elaborating entity "FSM" for hierarchy "FSM:U_FSM" File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 54
-Warning (10631): VHDL Process Statement warning at FSM.vhd(48): inferring latch(es) for signal or variable "ENABLE", which holds its previous value in one or more paths through the process File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/FSM/FSM.vhd Line: 48
-Info (10041): Inferred latch for "ENABLE" at FSM.vhd(48) File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/FSM/FSM.vhd Line: 48
-Info (12128): Elaborating entity "Mux_2x1" for hierarchy "Mux_2x1:U_MUX_ADDR" File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 68
-Info (12128): Elaborating entity "D_EN_flip_flop" for hierarchy "D_EN_flip_flop:U_DFF_EN1" File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 94
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U_ALU" File: C:/Users/Aluno/Downloads/Laboratorio-de-Sistemas-Digitais-main/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 102
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 42
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:U_DFF2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 46
+Info (12128): Elaborating entity "FSM" for hierarchy "FSM:U_FSM" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 54
+Warning (10631): VHDL Process Statement warning at FSM.vhd(48): inferring latch(es) for signal or variable "ENABLE", which holds its previous value in one or more paths through the process File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/FSM/FSM.vhd Line: 48
+Info (10041): Inferred latch for "ENABLE" at FSM.vhd(48) File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/FSM/FSM.vhd Line: 48
+Info (12128): Elaborating entity "Mux_2x1" for hierarchy "Mux_2x1:U_MUX_ADDR" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 68
+Info (12128): Elaborating entity "D_EN_flip_flop" for hierarchy "D_EN_flip_flop:U_DFF_EN1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 90
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:U_ALU" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/arithmetic_control/arithmetic_control.vhd Line: 98
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -572,10 +546,10 @@ Info (21057): Implemented 127 device resources after synthesis - the final resou
     Info (21059): Implemented 12 output pins
     Info (21060): Implemented 8 bidirectional pins
     Info (21061): Implemented 91 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4820 megabytes
-    Info: Processing ended: Thu Dec 11 01:19:36 2025
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 456 megabytes
+    Info: Processing ended: Fri Dec 12 14:06:24 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:20
 
 

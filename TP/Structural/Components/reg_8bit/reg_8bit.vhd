@@ -32,8 +32,9 @@ architecture structural of reg_8bit is
     signal write_enable : std_logic;
 
 begin
-
+    -- bus
     eq_addr <= '1' when addr = faddr else '0';
+    -- bus write
     write_enable <= '1' when (readw = '1' and eq_addr = '1') else '0';
 
     process (write_enable, data, stored_q)
@@ -55,7 +56,7 @@ begin
         Qn  => open
     );
     
-    -- Tri-state buffer 
+    -- tri-state 
     data <= stored_q when (readw = '0' and eq_addr = '1') else (others => 'Z');
 
 end structural;

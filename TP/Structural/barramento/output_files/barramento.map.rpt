@@ -1,6 +1,6 @@
 Analysis & Synthesis report for barramento
-Thu Dec 04 18:19:21 2025
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Fri Dec 12 14:12:01 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -15,23 +15,39 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Parameter Settings for User Entity Instance: reg_8bit:P0
- 10. Parameter Settings for User Entity Instance: reg_8bit:P1
- 11. Parameter Settings for User Entity Instance: reg_8bit:P2
- 12. Parameter Settings for User Entity Instance: reg_8bit:P3
- 13. Parameter Settings for User Entity Instance: reg_8bit:P4
- 14. Parameter Settings for User Entity Instance: reg_8bit:P5
- 15. Parameter Settings for User Entity Instance: reg_8bit:P6
- 16. Parameter Settings for User Entity Instance: reg_8bit:P7
- 17. Post-Synthesis Netlist Statistics for Top Partition
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+ 10. Parameter Settings for User Entity Instance: reg_8bit:P0|D_flip_flop:my_storage_element
+ 11. Parameter Settings for User Entity Instance: reg_8bit:P1
+ 12. Parameter Settings for User Entity Instance: reg_8bit:P1|D_flip_flop:my_storage_element
+ 13. Parameter Settings for User Entity Instance: reg_8bit:P2
+ 14. Parameter Settings for User Entity Instance: reg_8bit:P2|D_flip_flop:my_storage_element
+ 15. Parameter Settings for User Entity Instance: reg_8bit:P3
+ 16. Parameter Settings for User Entity Instance: reg_8bit:P3|D_flip_flop:my_storage_element
+ 17. Parameter Settings for User Entity Instance: reg_8bit:P4
+ 18. Parameter Settings for User Entity Instance: reg_8bit:P4|D_flip_flop:my_storage_element
+ 19. Parameter Settings for User Entity Instance: reg_8bit:P5
+ 20. Parameter Settings for User Entity Instance: reg_8bit:P5|D_flip_flop:my_storage_element
+ 21. Parameter Settings for User Entity Instance: reg_8bit:P6
+ 22. Parameter Settings for User Entity Instance: reg_8bit:P6|D_flip_flop:my_storage_element
+ 23. Parameter Settings for User Entity Instance: reg_8bit:P7
+ 24. Parameter Settings for User Entity Instance: reg_8bit:P7|D_flip_flop:my_storage_element
+ 25. Port Connectivity Checks: "reg_8bit:P7|D_flip_flop:my_storage_element"
+ 26. Port Connectivity Checks: "reg_8bit:P6|D_flip_flop:my_storage_element"
+ 27. Port Connectivity Checks: "reg_8bit:P5|D_flip_flop:my_storage_element"
+ 28. Port Connectivity Checks: "reg_8bit:P4|D_flip_flop:my_storage_element"
+ 29. Port Connectivity Checks: "reg_8bit:P3|D_flip_flop:my_storage_element"
+ 30. Port Connectivity Checks: "reg_8bit:P2|D_flip_flop:my_storage_element"
+ 31. Port Connectivity Checks: "reg_8bit:P1|D_flip_flop:my_storage_element"
+ 32. Port Connectivity Checks: "reg_8bit:P0|D_flip_flop:my_storage_element"
+ 33. Post-Synthesis Netlist Statistics for Top Partition
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -48,26 +64,26 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 04 18:19:21 2025       ;
-; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                      ; barramento                                  ;
-; Top-level Entity Name              ; barramento                                  ;
-; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 120                                         ;
-;     Total combinational functions  ; 56                                          ;
-;     Dedicated logic registers      ; 64                                          ;
-; Total registers                    ; 64                                          ;
-; Total pins                         ; 13                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-; UFM blocks                         ; 0                                           ;
-; ADC blocks                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Dec 12 14:12:01 2025          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; barramento                                     ;
+; Top-level Entity Name              ; barramento                                     ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 120                                            ;
+;     Total combinational functions  ; 56                                             ;
+;     Dedicated logic registers      ; 64                                             ;
+; Total registers                    ; 64                                             ;
+; Total pins                         ; 14                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -161,8 +177,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -172,14 +188,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+-------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path    ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
-+-------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; ../Components/reg_8bit/reg_8bit.vhd ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd ;         ;
-; barramento.vhd                      ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd        ;         ;
-+-------------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
++-------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                             ; Library ;
++-------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+; ../Components/D_flip_flop/D_flip_flop.vhd ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd ;         ;
+; ../Components/reg_8bit/reg_8bit.vhd       ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd       ;         ;
+; barramento.vhd                            ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd              ;         ;
++-------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -203,32 +220,40 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Dedicated logic registers            ; 64        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 13        ;
+; I/O pins                                    ; 14        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 64        ;
-; Total fan-out                               ; 453       ;
-; Average fan-out                             ; 2.94      ;
+; Total fan-out                               ; 518       ;
+; Average fan-out                             ; 3.32      ;
 +---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name     ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------+-------------+--------------+
-; |barramento                ; 56 (0)              ; 64 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 13   ; 0            ; 0          ; |barramento             ; barramento  ; work         ;
-;    |reg_8bit:P0|           ; 42 (42)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P0 ; reg_8bit    ; work         ;
-;    |reg_8bit:P1|           ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P1 ; reg_8bit    ; work         ;
-;    |reg_8bit:P2|           ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P2 ; reg_8bit    ; work         ;
-;    |reg_8bit:P3|           ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P3 ; reg_8bit    ; work         ;
-;    |reg_8bit:P4|           ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P4 ; reg_8bit    ; work         ;
-;    |reg_8bit:P5|           ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P5 ; reg_8bit    ; work         ;
-;    |reg_8bit:P6|           ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P6 ; reg_8bit    ; work         ;
-;    |reg_8bit:P7|           ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P7 ; reg_8bit    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                               ;
++----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                    ; Entity Name ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------+-------------+--------------+
+; |barramento                            ; 56 (0)              ; 64 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 14   ; 0            ; 0          ; |barramento                                            ; barramento  ; work         ;
+;    |reg_8bit:P0|                       ; 42 (42)             ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P0                                ; reg_8bit    ; work         ;
+;       |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P0|D_flip_flop:my_storage_element ; D_flip_flop ; work         ;
+;    |reg_8bit:P1|                       ; 2 (2)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P1                                ; reg_8bit    ; work         ;
+;       |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P1|D_flip_flop:my_storage_element ; D_flip_flop ; work         ;
+;    |reg_8bit:P2|                       ; 2 (2)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P2                                ; reg_8bit    ; work         ;
+;       |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P2|D_flip_flop:my_storage_element ; D_flip_flop ; work         ;
+;    |reg_8bit:P3|                       ; 2 (2)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P3                                ; reg_8bit    ; work         ;
+;       |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P3|D_flip_flop:my_storage_element ; D_flip_flop ; work         ;
+;    |reg_8bit:P4|                       ; 2 (2)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P4                                ; reg_8bit    ; work         ;
+;       |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P4|D_flip_flop:my_storage_element ; D_flip_flop ; work         ;
+;    |reg_8bit:P5|                       ; 2 (2)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P5                                ; reg_8bit    ; work         ;
+;       |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P5|D_flip_flop:my_storage_element ; D_flip_flop ; work         ;
+;    |reg_8bit:P6|                       ; 2 (2)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P6                                ; reg_8bit    ; work         ;
+;       |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P6|D_flip_flop:my_storage_element ; D_flip_flop ; work         ;
+;    |reg_8bit:P7|                       ; 2 (2)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P7                                ; reg_8bit    ; work         ;
+;       |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |barramento|reg_8bit:P7|D_flip_flop:my_storage_element ; D_flip_flop ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -240,7 +265,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 64    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 64    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 64    ;
 ; Number of registers using Preset             ; 0     ;
@@ -257,6 +282,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_8bit:P0|D_flip_flop:my_storage_element ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: reg_8bit:P1 ;
 +----------------+-------+---------------------------------+
@@ -264,6 +299,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------+
 ; faddr          ; 001   ; Unsigned Binary                 ;
 +----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_8bit:P1|D_flip_flop:my_storage_element ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -277,6 +322,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_8bit:P2|D_flip_flop:my_storage_element ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: reg_8bit:P3 ;
 +----------------+-------+---------------------------------+
@@ -284,6 +339,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------+
 ; faddr          ; 011   ; Unsigned Binary                 ;
 +----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_8bit:P3|D_flip_flop:my_storage_element ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -297,6 +362,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_8bit:P4|D_flip_flop:my_storage_element ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: reg_8bit:P5 ;
 +----------------+-------+---------------------------------+
@@ -304,6 +379,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------+
 ; faddr          ; 101   ; Unsigned Binary                 ;
 +----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_8bit:P5|D_flip_flop:my_storage_element ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -317,6 +402,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_8bit:P6|D_flip_flop:my_storage_element ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: reg_8bit:P7 ;
 +----------------+-------+---------------------------------+
@@ -327,21 +422,103 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_8bit:P7|D_flip_flop:my_storage_element ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; w              ; 8     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reg_8bit:P7|D_flip_flop:my_storage_element"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reg_8bit:P6|D_flip_flop:my_storage_element"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reg_8bit:P5|D_flip_flop:my_storage_element"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reg_8bit:P4|D_flip_flop:my_storage_element"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reg_8bit:P3|D_flip_flop:my_storage_element"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reg_8bit:P2|D_flip_flop:my_storage_element"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reg_8bit:P1|D_flip_flop:my_storage_element"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reg_8bit:P0|D_flip_flop:my_storage_element"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 13                          ;
+; boundary_port         ; 14                          ;
 ; cycloneiii_ff         ; 64                          ;
-;     ENA               ; 64                          ;
+;     ENA CLR           ; 64                          ;
 ; cycloneiii_io_obuf    ; 8                           ;
 ; cycloneiii_lcell_comb ; 56                          ;
 ;     normal            ; 56                          ;
 ;         4 data inputs ; 56                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.07                        ;
+; Average LUT depth     ; 2.06                        ;
 +-----------------------+-----------------------------+
 
 
@@ -359,41 +536,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Dec 04 18:19:10 2025
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Fri Dec 12 14:11:53 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off barramento -c barramento
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/aluno/downloads/tp/structural/components/reg_8bit/reg_8bit.vhd
-    Info (12022): Found design unit 1: reg_8bit-structural File: C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 16
-    Info (12023): Found entity 1: reg_8bit File: C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 4
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
+    Info (12022): Found design unit 1: D_flip_flop-behavourial File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 14
+    Info (12023): Found entity 1: D_flip_flop File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd
+    Info (12022): Found design unit 1: reg_8bit-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 17
+    Info (12023): Found entity 1: reg_8bit File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_barramento.vhd
-    Info (12022): Found design unit 1: tb_barramento-sim File: C:/Users/Aluno/Downloads/TP/Structural/barramento/tb_barramento.vhd Line: 9
-    Info (12023): Found entity 1: tb_barramento File: C:/Users/Aluno/Downloads/TP/Structural/barramento/tb_barramento.vhd Line: 5
+    Info (12022): Found design unit 1: tb_barramento-behavior File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/tb_barramento.vhd Line: 8
+    Info (12023): Found entity 1: tb_barramento File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/tb_barramento.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file barramento.vhd
-    Info (12022): Found design unit 1: barramento-structural File: C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd Line: 13
-    Info (12023): Found entity 1: barramento File: C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd Line: 4
+    Info (12022): Found design unit 1: barramento-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 14
+    Info (12023): Found entity 1: barramento File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 4
 Info (12127): Elaborating entity "barramento" for the top level hierarchy
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P0" File: C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd Line: 15
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P1" File: C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd Line: 19
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P2" File: C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd Line: 23
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P3" File: C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd Line: 27
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P4" File: C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd Line: 31
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P5" File: C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd Line: 35
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P6" File: C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd Line: 39
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P7" File: C:/Users/Aluno/Downloads/TP/Structural/barramento/barramento.vhd Line: 43
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P0" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 17
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "reg_8bit:P0|D_flip_flop:my_storage_element" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 49
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P1" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 21
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P2" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 25
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P3" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 29
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P4" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 33
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P5" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 37
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P6" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 41
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_8bit:P7" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/barramento/barramento.vhd Line: 45
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 133 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
+Info (21057): Implemented 134 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
     Info (21059): Implemented 0 output pins
     Info (21060): Implemented 8 bidirectional pins
     Info (21061): Implemented 120 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 647 megabytes
-    Info: Processing ended: Thu Dec 04 18:19:21 2025
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Peak virtual memory: 429 megabytes
+    Info: Processing ended: Fri Dec 12 14:12:01 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:18
 
 

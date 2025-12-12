@@ -22,7 +22,6 @@ CLK => d_flip_flop:U_DFF3.CLK
 CLK => fsm:U_FSM.CLK
 CLK => d_flip_flop:U_DFF_ALU1.CLK
 CLK => d_flip_flop:U_DFF_ALU2.CLK
-CLK => d_flip_flop:U_DFF5.CLK
 CLK => d_flip_flop:U_DFFALU3.CLK
 CLK => d_en_flip_flop:U_DFF_EN1.CLK
 CLK => d_en_flip_flop:U_DFF_EN2.CLK
@@ -32,7 +31,6 @@ RST => d_flip_flop:U_DFF3.RST
 RST => fsm:U_FSM.RST
 RST => d_flip_flop:U_DFF_ALU1.RST
 RST => d_flip_flop:U_DFF_ALU2.RST
-RST => d_flip_flop:U_DFF5.RST
 RST => d_flip_flop:U_DFFALU3.RST
 RST => d_en_flip_flop:U_DFF_EN1.RST
 RST => d_en_flip_flop:U_DFF_EN2.RST
@@ -202,49 +200,6 @@ Q[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
 Qn[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
 Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
 Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|arithmetic_control|D_flip_flop:U_DFF5
-D[0] => internal_Q[0].DATAIN
-D[1] => internal_Q[1].DATAIN
-D[2] => internal_Q[2].DATAIN
-D[3] => internal_Q[3].DATAIN
-D[4] => internal_Q[4].DATAIN
-D[5] => internal_Q[5].DATAIN
-D[6] => internal_Q[6].DATAIN
-D[7] => internal_Q[7].DATAIN
-CLK => internal_Q[0].CLK
-CLK => internal_Q[1].CLK
-CLK => internal_Q[2].CLK
-CLK => internal_Q[3].CLK
-CLK => internal_Q[4].CLK
-CLK => internal_Q[5].CLK
-CLK => internal_Q[6].CLK
-CLK => internal_Q[7].CLK
-RST => internal_Q[0].ACLR
-RST => internal_Q[1].ACLR
-RST => internal_Q[2].ACLR
-RST => internal_Q[3].ACLR
-RST => internal_Q[4].ACLR
-RST => internal_Q[5].ACLR
-RST => internal_Q[6].ACLR
-RST => internal_Q[7].ACLR
-Q[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= internal_Q[3].DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
-Qn[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
-Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
-Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
-Qn[3] <= internal_Q[3].DB_MAX_OUTPUT_PORT_TYPE
-Qn[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
-Qn[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
-Qn[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
-Qn[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |arithmetic_control|D_flip_flop:U_DFFALU3

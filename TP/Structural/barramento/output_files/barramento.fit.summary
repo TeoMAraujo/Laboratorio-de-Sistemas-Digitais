@@ -1,5 +1,5 @@
-Fitter Status : Successful - Thu Dec 04 18:19:30 2025
-Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Fitter Status : Successful - Fri Dec 12 14:12:14 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : barramento
 Top-level Entity Name : barramento
 Family : MAX 10
@@ -9,7 +9,7 @@ Total logic elements : 89 / 49,760 ( < 1 % )
     Total combinational functions : 57 / 49,760 ( < 1 % )
     Dedicated logic registers : 64 / 49,760 ( < 1 % )
 Total registers : 64
-Total pins : 13 / 360 ( 4 % )
+Total pins : 14 / 360 ( 4 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )

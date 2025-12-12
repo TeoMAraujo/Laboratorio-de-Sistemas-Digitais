@@ -62,31 +62,31 @@ begin
       
     READW <= readwtri;
     
-    -- Tri-state logic (Correctly uses registered signal)
+    -- tri-state 
     DATA <= toaddr_data when readwtri = '1' else (others => 'Z');
     
     U_MUX_ADDR: entity work.Mux_2x1
         generic map(W => 3)
-        -- FIXED: Sliced 'toaddr_data' down to 3 bits
         port map (A => toMuxA, B => toaddr_data(2 downto 0), S => toMuxS_ENABLE, Y => ADDR);
     
-    -- Stage 2
+    -- stage 2
     U_DFF_ALU1: entity work.D_flip_flop
         generic map (W => 3)
         port map (D => op_stage1, CLK => CLK, RST => RST, Q => op_stage2, Qn => open);
 
-    -- Stage 3
+    -- stage 3
     U_DFF_ALU2: entity work.D_flip_flop
         generic map (W => 3)
         port map (D => op_stage2, CLK => CLK, RST => RST, Q => op_stage3, Qn => open);
     
-    -- Stage 4
+    -- stage 4
     U_DFFALU3: entity work.D_flip_flop
         generic map (W => 3)
         port map (D => op_stage3, CLK => CLK, RST => RST, Q => op_stage4, Qn => open);
 
     notEnable <= not (toMuxS_ENABLE);
     
+	 -- alternance
     U_DFF_EN1: entity work.D_EN_flip_flop
         generic map (W => 8)
         port map (D => DATA, CLK => CLK, RST => RST, EN => toMuxS_ENABLE, Q => toALUB, Qn => open);

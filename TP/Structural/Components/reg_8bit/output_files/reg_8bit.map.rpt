@@ -1,6 +1,6 @@
 Analysis & Synthesis report for reg_8bit
-Thu Dec 04 18:11:45 2025
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Fri Dec 12 13:56:23 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -15,16 +15,18 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Parameter Settings for User Entity Instance: Top-level Entity: |reg_8bit
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+ 10. Parameter Settings for User Entity Instance: D_flip_flop:my_storage_element
+ 11. Port Connectivity Checks: "D_flip_flop:my_storage_element"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -41,26 +43,26 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 04 18:11:45 2025       ;
-; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                      ; reg_8bit                                    ;
-; Top-level Entity Name              ; reg_8bit                                    ;
-; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 10                                          ;
-;     Total combinational functions  ; 2                                           ;
-;     Dedicated logic registers      ; 8                                           ;
-; Total registers                    ; 8                                           ;
-; Total pins                         ; 13                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-; UFM blocks                         ; 0                                           ;
-; ADC blocks                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Dec 12 13:56:23 2025          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; reg_8bit                                       ;
+; Top-level Entity Name              ; reg_8bit                                       ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 10                                             ;
+;     Total combinational functions  ; 2                                              ;
+;     Dedicated logic registers      ; 8                                              ;
+; Total registers                    ; 8                                              ;
+; Total pins                         ; 14                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -154,8 +156,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -165,13 +167,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
-; reg_8bit.vhd                     ; yes             ; User VHDL File  ; C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                             ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+; ../D_flip_flop/D_flip_flop.vhd   ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd ;         ;
+; reg_8bit.vhd                     ; yes             ; User VHDL File  ; /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd       ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------+
@@ -195,24 +198,25 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Dedicated logic registers            ; 8       ;
 ;     -- I/O registers                        ; 0       ;
 ;                                             ;         ;
-; I/O pins                                    ; 13      ;
+; I/O pins                                    ; 14      ;
 ;                                             ;         ;
 ; Embedded Multiplier 9-bit elements          ; 0       ;
 ;                                             ;         ;
 ; Maximum fan-out node                        ; data~16 ;
 ; Maximum fan-out                             ; 8       ;
-; Total fan-out                               ; 69      ;
-; Average fan-out                             ; 1.57    ;
+; Total fan-out                               ; 78      ;
+; Average fan-out                             ; 1.70    ;
 +---------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |reg_8bit                  ; 2 (2)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 13   ; 0            ; 0          ; |reg_8bit           ; reg_8bit    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                              ;
++-------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                      ; Entity Name ; Library Name ;
++-------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------+-------------+--------------+
+; |reg_8bit                           ; 2 (2)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 14   ; 0            ; 0          ; |reg_8bit                                ; reg_8bit    ; work         ;
+;    |D_flip_flop:my_storage_element| ; 0 (0)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reg_8bit|D_flip_flop:my_storage_element ; D_flip_flop ; work         ;
++-------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -224,7 +228,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 8     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 8     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
@@ -241,14 +245,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: D_flip_flop:my_storage_element ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; w              ; 8     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "D_flip_flop:my_storage_element"                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qn   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 13                          ;
+; boundary_port         ; 14                          ;
 ; cycloneiii_ff         ; 8                           ;
-;     ENA               ; 8                           ;
+;     ENA CLR           ; 8                           ;
 ; cycloneiii_io_obuf    ; 8                           ;
 ; cycloneiii_lcell_comb ; 2                           ;
 ;     normal            ; 2                           ;
@@ -273,30 +296,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Dec 04 18:11:34 2025
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Fri Dec 12 13:56:15 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off reg_8bit -c reg_8bit
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd
+    Info (12022): Found design unit 1: D_flip_flop-behavourial File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 14
+    Info (12023): Found entity 1: D_flip_flop File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/D_flip_flop/D_flip_flop.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_reg_8bit.vhd
-    Info (12022): Found design unit 1: tb_reg_8bit-sim File: C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/tb_reg_8bit.vhd Line: 8
-    Info (12023): Found entity 1: tb_reg_8bit File: C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/tb_reg_8bit.vhd Line: 5
+    Info (12022): Found design unit 1: tb_reg_8bit-behavior File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/tb_reg_8bit.vhd Line: 8
+    Info (12023): Found entity 1: tb_reg_8bit File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/tb_reg_8bit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file reg_8bit.vhd
-    Info (12022): Found design unit 1: reg_8bit-structural File: C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 16
-    Info (12023): Found entity 1: reg_8bit File: C:/Users/Aluno/Downloads/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 4
+    Info (12022): Found design unit 1: reg_8bit-structural File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 17
+    Info (12023): Found entity 1: reg_8bit File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 4
 Info (12127): Elaborating entity "reg_8bit" for the top level hierarchy
+Info (12128): Elaborating entity "D_flip_flop" for hierarchy "D_flip_flop:my_storage_element" File: /home/paula/github/Laboratorio-de-Sistemas-Digitais/TP/Structural/Components/reg_8bit/reg_8bit.vhd Line: 49
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 23 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
+Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
     Info (21059): Implemented 0 output pins
     Info (21060): Implemented 8 bidirectional pins
     Info (21061): Implemented 10 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 643 megabytes
-    Info: Processing ended: Thu Dec 04 18:11:45 2025
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Peak virtual memory: 428 megabytes
+    Info: Processing ended: Fri Dec 12 13:56:23 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:18
 
 
