@@ -29,8 +29,11 @@ OUTP[7] <= arithmetic_control:U_AC.OUTP[7]
 
 |CPU|arithmetic_control:U_AC
 OPCODE[0] => d_flip_flop:U_DFF1.D[0]
+OPCODE[0] => fsm:U_FSM.OPCODE[0]
 OPCODE[1] => d_flip_flop:U_DFF1.D[1]
+OPCODE[1] => fsm:U_FSM.OPCODE[1]
 OPCODE[2] => d_flip_flop:U_DFF1.D[2]
+OPCODE[2] => fsm:U_FSM.OPCODE[2]
 OPERAND1[0] => d_flip_flop:U_DFF2.D[0]
 OPERAND1[1] => d_flip_flop:U_DFF2.D[1]
 OPERAND1[2] => d_flip_flop:U_DFF2.D[2]
@@ -45,21 +48,21 @@ OPERAND2[2] => d_flip_flop:U_DFF3.D[2]
 CLK => d_flip_flop:U_DFF1.CLK
 CLK => d_flip_flop:U_DFF2.CLK
 CLK => d_flip_flop:U_DFF3.CLK
-CLK => d_flip_flop:U_DFF4.CLK
-CLK => d_flip_flop:U_DFFALU1.CLK
-CLK => d_flip_flop:U_DFFALU2.CLK
-CLK => d_flip_flop:U_DFF5.CLK
+CLK => fsm:U_FSM.CLK
+CLK => d_flip_flop:U_DFF_ALU1.CLK
+CLK => d_flip_flop:U_DFF_ALU2.CLK
 CLK => d_flip_flop:U_DFFALU3.CLK
-CLK => d_flip_flop:U_DFF6.CLK
+CLK => d_en_flip_flop:U_DFF_EN1.CLK
+CLK => d_en_flip_flop:U_DFF_EN2.CLK
 RST => d_flip_flop:U_DFF1.RST
 RST => d_flip_flop:U_DFF2.RST
 RST => d_flip_flop:U_DFF3.RST
-RST => d_flip_flop:U_DFF4.RST
-RST => d_flip_flop:U_DFFALU1.RST
-RST => d_flip_flop:U_DFFALU2.RST
-RST => d_flip_flop:U_DFF5.RST
+RST => fsm:U_FSM.RST
+RST => d_flip_flop:U_DFF_ALU1.RST
+RST => d_flip_flop:U_DFF_ALU2.RST
 RST => d_flip_flop:U_DFFALU3.RST
-RST => d_flip_flop:U_DFF6.RST
+RST => d_en_flip_flop:U_DFF_EN1.RST
+RST => d_en_flip_flop:U_DFF_EN2.RST
 OUTP[0] <= alu:U_ALU.Y[0]
 OUTP[1] <= alu:U_ALU.Y[1]
 OUTP[2] <= alu:U_ALU.Y[2]
@@ -68,9 +71,9 @@ OUTP[4] <= alu:U_ALU.Y[4]
 OUTP[5] <= alu:U_ALU.Y[5]
 OUTP[6] <= alu:U_ALU.Y[6]
 OUTP[7] <= alu:U_ALU.Y[7]
-ADDR[0] <= mux_2x1:U_MUX.Y[0]
-ADDR[1] <= mux_2x1:U_MUX.Y[1]
-ADDR[2] <= mux_2x1:U_MUX.Y[2]
+ADDR[0] <= mux_2x1:U_MUX_ADDR.Y[0]
+ADDR[1] <= mux_2x1:U_MUX_ADDR.Y[1]
+ADDR[2] <= mux_2x1:U_MUX_ADDR.Y[2]
 DATA[0] <> DATA[0]
 DATA[1] <> DATA[1]
 DATA[2] <> DATA[2]
@@ -79,7 +82,7 @@ DATA[4] <> DATA[4]
 DATA[5] <> DATA[5]
 DATA[6] <> DATA[6]
 DATA[7] <> DATA[7]
-READW <= comparator:U_COMP.equal
+READW <= fsm:U_FSM.READW
 
 
 |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF1
@@ -161,76 +164,20 @@ Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
 Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arithmetic_control:U_AC|comparator:U_COMP
-A[0] => Equal0.IN2
-A[1] => Equal0.IN1
-A[2] => Equal0.IN0
-B[0] => Equal0.IN5
-B[1] => Equal0.IN4
-B[2] => Equal0.IN3
-equal <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+|CPU|arithmetic_control:U_AC|FSM:U_FSM
+CLK => CS.CLK
+RST => CS.ACLR
+OPCODE[0] => Equal0.IN2
+OPCODE[0] => Equal1.IN2
+OPCODE[1] => Equal0.IN1
+OPCODE[1] => Equal1.IN1
+OPCODE[2] => Equal0.IN0
+OPCODE[2] => Equal1.IN0
+READW <= READW.DB_MAX_OUTPUT_PORT_TYPE
+ENABLE <= ENABLE$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arithmetic_control:U_AC|Demux_1x2:U_DEMUX
-A[0] => Y0.DATAB
-A[0] => Y1.DATAB
-A[1] => Y0.DATAB
-A[1] => Y1.DATAB
-A[2] => Y0.DATAB
-A[2] => Y1.DATAB
-A[3] => Y0.DATAB
-A[3] => Y1.DATAB
-A[4] => Y0.DATAB
-A[4] => Y1.DATAB
-A[5] => Y0.DATAB
-A[5] => Y1.DATAB
-A[6] => Y0.DATAB
-A[6] => Y1.DATAB
-A[7] => Y0.DATAB
-A[7] => Y1.DATAB
-S => Y1.OUTPUTSELECT
-S => Y1.OUTPUTSELECT
-S => Y1.OUTPUTSELECT
-S => Y1.OUTPUTSELECT
-S => Y1.OUTPUTSELECT
-S => Y1.OUTPUTSELECT
-S => Y1.OUTPUTSELECT
-S => Y1.OUTPUTSELECT
-S => Y0.OUTPUTSELECT
-S => Y0.OUTPUTSELECT
-S => Y0.OUTPUTSELECT
-S => Y0.OUTPUTSELECT
-S => Y0.OUTPUTSELECT
-S => Y0.OUTPUTSELECT
-S => Y0.OUTPUTSELECT
-S => Y0.OUTPUTSELECT
-Y0[0] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
-Y0[1] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
-Y0[2] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
-Y0[3] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
-Y0[4] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
-Y0[5] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
-Y0[6] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
-Y0[7] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
-Y1[0] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
-Y1[1] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
-Y1[2] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
-Y1[3] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
-Y1[4] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
-Y1[5] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
-Y1[6] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
-Y1[7] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF4
-D[0] => internal_Q[0].DATAIN
-CLK => internal_Q[0].CLK
-RST => internal_Q[0].ACLR
-Q[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
-Qn[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|CPU|arithmetic_control:U_AC|Mux_2x1:U_MUX
+|CPU|arithmetic_control:U_AC|Mux_2x1:U_MUX_ADDR
 A[0] => Selector2.IN3
 A[1] => Selector1.IN3
 A[2] => Selector0.IN3
@@ -248,7 +195,7 @@ Y[1] <= Selector1.DB_MAX_OUTPUT_PORT_TYPE
 Y[2] <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU1
+|CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF_ALU1
 D[0] => internal_Q[0].DATAIN
 D[1] => internal_Q[1].DATAIN
 D[2] => internal_Q[2].DATAIN
@@ -266,7 +213,7 @@ Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
 Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU2
+|CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF_ALU2
 D[0] => internal_Q[0].DATAIN
 D[1] => internal_Q[1].DATAIN
 D[2] => internal_Q[2].DATAIN
@@ -282,49 +229,6 @@ Q[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
 Qn[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
 Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
 Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
-
-
-|CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF5
-D[0] => internal_Q[0].DATAIN
-D[1] => internal_Q[1].DATAIN
-D[2] => internal_Q[2].DATAIN
-D[3] => internal_Q[3].DATAIN
-D[4] => internal_Q[4].DATAIN
-D[5] => internal_Q[5].DATAIN
-D[6] => internal_Q[6].DATAIN
-D[7] => internal_Q[7].DATAIN
-CLK => internal_Q[0].CLK
-CLK => internal_Q[1].CLK
-CLK => internal_Q[2].CLK
-CLK => internal_Q[3].CLK
-CLK => internal_Q[4].CLK
-CLK => internal_Q[5].CLK
-CLK => internal_Q[6].CLK
-CLK => internal_Q[7].CLK
-RST => internal_Q[0].ACLR
-RST => internal_Q[1].ACLR
-RST => internal_Q[2].ACLR
-RST => internal_Q[3].ACLR
-RST => internal_Q[4].ACLR
-RST => internal_Q[5].ACLR
-RST => internal_Q[6].ACLR
-RST => internal_Q[7].ACLR
-Q[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= internal_Q[3].DB_MAX_OUTPUT_PORT_TYPE
-Q[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
-Q[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
-Q[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
-Q[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
-Qn[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
-Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
-Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
-Qn[3] <= internal_Q[3].DB_MAX_OUTPUT_PORT_TYPE
-Qn[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
-Qn[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
-Qn[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
-Qn[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |CPU|arithmetic_control:U_AC|D_flip_flop:U_DFFALU3
@@ -345,7 +249,7 @@ Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
 Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|CPU|arithmetic_control:U_AC|D_flip_flop:U_DFF6
+|CPU|arithmetic_control:U_AC|D_EN_flip_flop:U_DFF_EN1
 D[0] => internal_Q[0].DATAIN
 D[1] => internal_Q[1].DATAIN
 D[2] => internal_Q[2].DATAIN
@@ -370,6 +274,65 @@ RST => internal_Q[4].ACLR
 RST => internal_Q[5].ACLR
 RST => internal_Q[6].ACLR
 RST => internal_Q[7].ACLR
+EN => internal_Q[7].ENA
+EN => internal_Q[6].ENA
+EN => internal_Q[5].ENA
+EN => internal_Q[4].ENA
+EN => internal_Q[3].ENA
+EN => internal_Q[2].ENA
+EN => internal_Q[1].ENA
+EN => internal_Q[0].ENA
+Q[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= internal_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
+Qn[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Qn[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Qn[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Qn[3] <= internal_Q[3].DB_MAX_OUTPUT_PORT_TYPE
+Qn[4] <= internal_Q[4].DB_MAX_OUTPUT_PORT_TYPE
+Qn[5] <= internal_Q[5].DB_MAX_OUTPUT_PORT_TYPE
+Qn[6] <= internal_Q[6].DB_MAX_OUTPUT_PORT_TYPE
+Qn[7] <= internal_Q[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|CPU|arithmetic_control:U_AC|D_EN_flip_flop:U_DFF_EN2
+D[0] => internal_Q[0].DATAIN
+D[1] => internal_Q[1].DATAIN
+D[2] => internal_Q[2].DATAIN
+D[3] => internal_Q[3].DATAIN
+D[4] => internal_Q[4].DATAIN
+D[5] => internal_Q[5].DATAIN
+D[6] => internal_Q[6].DATAIN
+D[7] => internal_Q[7].DATAIN
+CLK => internal_Q[0].CLK
+CLK => internal_Q[1].CLK
+CLK => internal_Q[2].CLK
+CLK => internal_Q[3].CLK
+CLK => internal_Q[4].CLK
+CLK => internal_Q[5].CLK
+CLK => internal_Q[6].CLK
+CLK => internal_Q[7].CLK
+RST => internal_Q[0].ACLR
+RST => internal_Q[1].ACLR
+RST => internal_Q[2].ACLR
+RST => internal_Q[3].ACLR
+RST => internal_Q[4].ACLR
+RST => internal_Q[5].ACLR
+RST => internal_Q[6].ACLR
+RST => internal_Q[7].ACLR
+EN => internal_Q[7].ENA
+EN => internal_Q[6].ENA
+EN => internal_Q[5].ENA
+EN => internal_Q[4].ENA
+EN => internal_Q[3].ENA
+EN => internal_Q[2].ENA
+EN => internal_Q[1].ENA
+EN => internal_Q[0].ENA
 Q[0] <= internal_Q[0].DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= internal_Q[1].DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= internal_Q[2].DB_MAX_OUTPUT_PORT_TYPE
